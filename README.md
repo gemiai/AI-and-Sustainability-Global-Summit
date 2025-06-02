@@ -34,8 +34,6 @@ A sleek, dynamic React web application built with Tailwind CSS, designed to show
 ├── src/
 │   ├── App.js              # Main routing logic
 │   ├── TechWeekApp.js      # Home page
-│   ├── EventsCalendarPage.js # Events calendar page
-│   ├── PartnersPage.js     # Partners listing page
 │   ├── index.js            # React entry point
 │   ├── index.css           # Tailwind CSS imports
 ├── tailwind.config.js      # Tailwind config

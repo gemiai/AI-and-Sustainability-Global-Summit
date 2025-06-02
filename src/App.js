@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import TechWeekApp from './TechWeekApp';
-import EventsCalendarPage from './EventsCalendarPage';
-import PartnersPage from './PartnersPage';
 
 const App = () => {
   // Start with the home page
@@ -17,8 +15,6 @@ const App = () => {
   return (
     <div className="app-container">
       {currentPage === 'home' && <TechWeekApp onNavigate={navigateTo} />}
-      {currentPage === 'calendar' && <EventsCalendarPage onNavigate={navigateTo} />}
-      {currentPage === 'partners' && <PartnersPage onNavigate={navigateTo} />}
     </div>
   );
 };
