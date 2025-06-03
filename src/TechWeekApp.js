@@ -503,12 +503,10 @@ const PartnersPage = ({onNavigate}) => {
                             {category.partners.map(partner => (
                                 <div
                                     key={partner.id}
-                                    /* ‼️ new classes: no p-8, add overflow-hidden so the image can touch the border */
-                                    className="border border-gray-800 rounded-lg bg-gray-900 aspect-square
-                 hover:border-gray-600 transition-colors group relative overflow-hidden"
+                                    className="border border-gray-200 bg-white rounded-lg aspect-square
+           hover:border-green-500 transition-colors group relative overflow-hidden"
                                 >
                                     {partner.logo ? (
-                                        /* ‼️ new classes: let the logo fill the whole box */
                                         <img
                                             src={partner.logo}
                                             alt={`${partner.name} logo`}
@@ -1050,26 +1048,58 @@ const TechWeekApp = () => {
                 {/* Earth Background */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                     <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif"
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/cb/An_EPIC_Eclipse.gif"
                         alt="/earth.png"
-                        className="w-[500px] h-[500px] object-contain opacity-40"
+                        className="w-[600px] md:w-[800px] object-contain opacity-40"
                     />
                 </div>
 
                 <div className="max-w-7xl mx-auto grid grid-cols-12 gap-8 relative z-10">
                     {/* Left Side - Countdown */}
-                    <div className="col-span-12 md:col-span-3 flex flex-col items-center md:items-start">
+                    {/* ► left-hand column inside your hero grid */}
+                    <div className="col-span-12 md:col-span-3 flex flex-col items-center md:items-start
+                space-y-6 md:space-y-8">
+
+                        {/* heading + countdown */}
                         <div className="text-center md:text-left">
-                            <h3 className="text-xl text-green-400 mb-4 uppercase tracking-wider">Event Countdown</h3>
+                            <h3 className="text-xl font-semibold uppercase tracking-wider text-green-400 mb-4">
+                                Event Countdown
+                            </h3>
                             <CountdownTimer targetDate="2025-07-19T09:00:00"/>
                         </div>
+
+                        {/* primary CTA */}
+                        <button
+                            onClick={handleRegisterClick}
+                            className="w-full md:w-auto bg-green-600 hover:bg-green-500 transition
+               py-3 px-10 rounded-md text-xl font-black text-center"
+                        >
+                            REGISTER
+                        </button>
+
+                        {/* quick-role hints */}
+                        <div className="text-center md:text-left text-gray-400 text-sm">
+                            <p className="mb-2 font-bold uppercase">Register as:</p>
+                            <div className="flex flex-wrap justify-center md:justify-start gap-2">
+                                {['Keynote Speakers', 'Event Sponsors', 'Start-ups', 'Academia'].map(role => (
+                                    <span
+                                        key={role}
+                                        className="px-2.5 py-1 rounded border border-gray-600 bg-gray-800
+                     hover:border-green-500 transition whitespace-nowrap text-xs"
+                                    >
+          {role}
+        </span>
+                                ))}
+                            </div>
+                        </div>
                     </div>
+
 
                     {/* Center - Title (wider) */}
                     <div className="col-span-12 md:col-span-6 flex flex-col items-center justify-center">
                         <div className="text-center">
-                            <h1 className="text-5xl font-black mb-2 text-green-400">AI and Sustainability Global</h1>
-                            <h2 className="text-5xl font-black mb-4">Summit</h2>
+                            <h1 className="text-5xl font-black mb-2 text-green-400">AI and Sustainability</h1>
+                            <h2 className="text-4xl font-black mb-4"> Global Summit</h2>
                             <p className="text-2xl font-bold">{eventData.date}</p>
                         </div>
                     </div>
@@ -1077,7 +1107,14 @@ const TechWeekApp = () => {
                     {/* Right Side - Description and CTA (wider) */}
                     <div className="col-span-12 md:col-span-3 flex flex-col items-center md:items-end justify-center">
                         <div className="text-center md:text-right max-w-sm">
-                            <p className="text-lg mb-4 font-bold whitespace-pre-line">{eventData.description}</p>
+                            <div className="mb-4 whitespace-pre-line">
+                                <p className="text-2xl font-extrabold text-white mb-1">
+                                    Thrive in an AI World.
+                                </p>
+                                <p className="text-lg font-medium text-gray-300">
+                                    AI with strong guardrails, clear purpose, and real-world impact.
+                                </p>
+                            </div>
                             <div className="space-y-3">
 
                                 <button
@@ -1266,7 +1303,7 @@ const TechWeekApp = () => {
                                     <div className="grid grid-cols-2 gap-4 text-sm mb-4">
                                         <div>
                                             <div className="text-green-300">DATE</div>
-                                            <div className="text-white">July 19,<br/>2025</div>
+                                            <div className="text-white">July 19, 2025</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1274,10 +1311,12 @@ const TechWeekApp = () => {
 
                             <div className="p-8 flex flex-col justify-center">
                                 <div className="font-black mb-2 text-green-300">SATURDAY, JULY 19 / 1:00 PM</div>
-                                <h3 className="text-3xl font-black mb-4 text-white">AI and Sustainability Global
-                                </h3>
+                                {/*<h3 className="text-3xl font-black mb-4 text-white">AI and Sustainability Global*/}
+                                {/*</h3>*/}
                                 <p className="text-blue-200 font-bold">
-                                    Our mission is to harness the transformative power of artificial intelligence to drive ethical innovation, social impact, and sustainability, fostering a future where AI serves humanity’s most pressing challenges.
+                                    Our mission is to harness the transformative power of artificial intelligence to
+                                    drive ethical innovation, social impact, and sustainability, fostering a future
+                                    where AI serves humanity’s most pressing challenges.
                                 </p>
                             </div>
                         </div>
