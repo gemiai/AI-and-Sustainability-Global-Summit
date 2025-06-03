@@ -8,34 +8,34 @@ const RegistrationModal = ({isOpen, onClose}) => {
             title: 'Keynote Speakers',
             description: 'Leading experts presenting groundbreaking research',
             icon: '🎤',
-            link: '/register/keynote-speakers'
+            link: 'https://surveymars.com/q/75KogrGH8'
         },
         {
             id: 'sponsors',
             title: 'Event Sponsors',
             description: 'Organizations supporting the summit',
             icon: '🏢',
-            link: '/register/event-sponsors'
+            link: 'https://surveymars.com/q/yJumV4rCq'
         },
         {
             id: 'startups',
             title: 'Start-ups',
             description: 'Innovative companies in AI and sustainability',
             icon: '🚀',
-            link: '/register/startups'
+            link: 'https://surveymars.com/q/380ngVo5k'
         },
         {
             id: 'academic',
-            title: 'Academic',
+            title: 'Academia',
             description: 'Researchers and academic institutions',
             icon: '🎓',
-            link: '/register/academic'
+            link: 'https://surveymars.com/q/TQhQUKbz3\n'
         }
     ];
 
     const handleRoleSelect = (role) => {
         // Mock link navigation - in a real app, this would use proper routing
-        console.log(`Navigating to: ${role.link}`);
+        window.open(role.link, '_blank', 'noopener,noreferrer');
         alert(`Redirecting to registration for ${role.title}...\nLink: ${role.link}`);
         onClose();
     };
@@ -183,20 +183,25 @@ const LoadingScreen = ({onLoadingComplete}) => {
         <div className="min-h-screen bg-black text-white font-bold flex flex-col items-center justify-center">
             {/* Main loading content */}
             <div className="text-center">
-                <div className="text-xl mb-8 tracking-wider font-black">LOADING TTW...</div>
+                <div className="text-xl mb-8 tracking-wider font-black">LOADING...</div>
 
                 {/* Loading bar container */}
                 <div className="flex items-center space-x-4">
-                    {/* Progress segments */}
+
+                    {/* Left 10 segments */}
                     <div className="flex space-x-1">
-                        {[...Array(10)].map((_, i) => (
-                            <div
-                                key={i}
-                                className={`w-8 h-8 border-2 ${
-                                    progress > i * 10 ? 'bg-gray-600 border-gray-500' : 'border-gray-600 bg-transparent'
-                                }`}
-                            />
-                        ))}
+                        {[...Array(10)].map((_, i) => {
+                            // segment index 0-9 → thresholds 5%, 10%, … 50%
+                            const filled = progress >= (i + 1) * 5;
+                            return (
+                                <div
+                                    key={i}
+                                    className={`w-8 h-8 border-2 ${
+                                        filled ? 'bg-gray-600 border-gray-500' : 'border-gray-600 bg-transparent'
+                                    }`}
+                                />
+                            );
+                        })}
                     </div>
 
                     {/* Center logo */}
@@ -206,11 +211,11 @@ const LoadingScreen = ({onLoadingComplete}) => {
                             alt="Gemi Logo"
                             className="w-8 h-8 object-contain"
                             onError={(e) => {
-                                // Fallback to original pattern if image fails to load
                                 e.target.style.display = 'none';
                                 e.target.nextSibling.style.display = 'grid';
                             }}
                         />
+                        {/* fallback pattern */}
                         <div className="hidden w-8 h-8 grid grid-cols-2 gap-0.5">
                             <div className="bg-gray-900 rounded-tl"></div>
                             <div className="bg-cyan-400 rounded-tr"></div>
@@ -219,23 +224,26 @@ const LoadingScreen = ({onLoadingComplete}) => {
                         </div>
                     </div>
 
-                    {/* Progress segments */}
+                    {/* Right 10 segments */}
                     <div className="flex space-x-1">
-                        {[...Array(10)].map((_, i) => (
-                            <div
-                                key={i + 10}
-                                className={`w-8 h-8 border-2 ${
-                                    progress > (i + 10) * 5 ? 'bg-gray-600 border-gray-500' : 'border-gray-600 bg-transparent'
-                                }`}
-                            />
-                        ))}
+                        {[...Array(10)].map((_, i) => {
+                            // segment index 10-19 → thresholds 55%, 60%, … 100%
+                            const globalIndex = i + 10;          // 10-19
+                            const filled = progress >= (globalIndex + 1) * 5;
+                            return (
+                                <div
+                                    key={globalIndex}
+                                    className={`w-8 h-8 border-2 ${
+                                        filled ? 'bg-gray-600 border-gray-500' : 'border-gray-600 bg-transparent'
+                                    }`}
+                                />
+                            );
+                        })}
                     </div>
                 </div>
 
                 {/* Progress percentage */}
-                <div className="mt-6 text-cyan-400 text-sm">
-                    {Math.round(progress)}%
-                </div>
+                <div className="mt-6 text-cyan-400 text-sm">{Math.round(progress)}%</div>
             </div>
         </div>
     );
@@ -448,9 +456,9 @@ const PartnersPage = ({onNavigate}) => {
                             className="p-1 rounded-full hover:bg-gray-800 transition-colors"
                         >
                             <div
-                                className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-600 bg-white shadow-lg">
+                                className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-600 shadow-lg">
                                 <img
-                                    src="/gemi-logo.png"
+                                    src="/gemi-logo-nobg.png"
                                     alt="Gemi Logo"
                                     className="w-8 h-8 object-contain"
                                     onError={(e) => {
@@ -527,7 +535,27 @@ const PartnersPage = ({onNavigate}) => {
                                         <div className="absolute inset-0 bg-black bg-opacity-90 rounded-lg opacity-0
                         group-hover:opacity-100 transition-opacity duration-300 flex flex-col
                         justify-center items-center p-4">
-                                            {/* …overlay content… */}
+                                            <div className="text-center">
+                                                <div className="text-lg font-bold mb-2">{partner.name}</div>
+                                                <div
+                                                    className="text-sm text-gray-300 mb-2">Founder: {partner.founder}</div>
+                                                {partner.linkedin && (
+                                                    <a
+                                                        href={partner.linkedin}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="inline-flex items-center text-blue-400 hover:text-blue-300 text-xs"
+                                                    >
+                                                        <svg className="w-4 h-4 mr-1" fill="currentColor"
+                                                             viewBox="0 0 20 20">
+                                                            <path fillRule="evenodd"
+                                                                  d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                                                                  clipRule="evenodd"/>
+                                                        </svg>
+                                                        LinkedIn
+                                                    </a>
+                                                )}
+                                            </div>
                                         </div>
                                     )}
                                 </div>
@@ -562,7 +590,7 @@ const EventsCalendarPage = ({onNavigate}) => {
                 id: 1,
                 title: "AI and Sustainability Summit: Opening Keynote",
                 date: "July 19",
-                time: "9:00 AM",
+                time: "1:00 PM",
                 type: "KEYNOTE",
                 image: "/ai-sustainability-opening.jpg",
                 description: "Welcome to the AI and Sustainability Summit! Join us for an inspiring opening keynote exploring how artificial intelligence can address the world's most pressing environmental challenges.",
@@ -573,7 +601,7 @@ const EventsCalendarPage = ({onNavigate}) => {
                 id: 2,
                 title: "Machine Learning for Climate Modeling",
                 date: "July 19",
-                time: "10:30 AM",
+                time: "1:30 PM",
                 type: "RESEARCH",
                 image: "/climate-ml.jpg",
                 description: "Dive deep into cutting-edge research on how machine learning algorithms are revolutionizing climate prediction models and helping scientists understand complex environmental systems.",
@@ -582,9 +610,9 @@ const EventsCalendarPage = ({onNavigate}) => {
             },
             {
                 id: 3,
-                title: "AI-Powered Smart Grid Technologies",
+                title: "Redefining Education in the Age of AI: Empowering Learners, Educators, and Systems",
                 date: "July 19",
-                time: "11:45 AM",
+                time: "2:00 PM",
                 type: "TECHNICAL",
                 image: "/smart-grid.jpg",
                 description: "Explore how artificial intelligence is transforming energy distribution systems, optimizing renewable energy integration, and creating more efficient power grids for sustainable cities.",
@@ -704,9 +732,9 @@ const EventsCalendarPage = ({onNavigate}) => {
                             onClick={handleHomeClick}
                         >
                             <div
-                                className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-600 bg-white shadow-lg">
+                                className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-600 shadow-lg">
                                 <img
-                                    src="/gemi-logo.png"
+                                    src="/gemi-logo-nobg.png"
                                     alt="Gemi Logo"
                                     className="w-8 h-8 object-contain"
                                     onError={(e) => {
@@ -876,7 +904,8 @@ const TechWeekApp = () => {
     const eventData = {
         totalSessions: 8,
         date: "July 19, 2025",
-        description: "Where AI meets environmental impact for a sustainable future.",
+        description: "Thrive in an AI World.\n" +
+            "AI with strong guardrails, clear purpose, and real-world impact.",
         longDescription: "The AI and Sustainability Summit brings together leading researchers, innovators, and industry experts to explore how artificial intelligence can address climate change, environmental conservation, and sustainable development challenges. Join us for a day of groundbreaking research, innovative solutions, and meaningful connections.",
     };
 
@@ -885,19 +914,19 @@ const TechWeekApp = () => {
         {
             id: 1,
             title: "AI and Sustainability Summit: Opening Keynote",
-            date: "July 19, 9:00 AM",
+            date: "July 19, 1:00 PM",
             description: "Welcome to the AI and Sustainability Summit! Join us for an inspiring opening keynote exploring how artificial intelligence can address the world's most pressing environmental challenges.",
         },
         {
             id: 2,
             title: "Machine Learning for Climate Modeling",
-            date: "July 19, 10:30 AM",
+            date: "July 19, 1:30 PM",
             description: "Dive deep into cutting-edge research on how machine learning algorithms are revolutionizing climate prediction models and helping scientists understand complex environmental systems.",
         },
         {
             id: 3,
-            title: "AI-Powered Smart Grid Technologies",
-            date: "July 19, 11:45 AM",
+            title: "Redefining Education in the Age of AI: Empowering Learners, Educators, and Systems",
+            date: "July 19, 2:00 PM",
             description: "Explore how artificial intelligence is transforming energy distribution systems, optimizing renewable energy integration, and creating more efficient power grids for sustainable cities."
         },
         {
@@ -914,17 +943,17 @@ const TechWeekApp = () => {
             id: 1,
             name: "Matt James",
             title: "KEYNOTE SPEAKER",
-            event: "KEYNOTE SESSION",
+            event: "Lead the animal operations team to ensure the health, safety, and well-being of animals.",
             logo: '/MattJames.png',
-            affiliation: "AI & Sustainability Expert"
+            affiliation: "Chief Animal Officer at Colossal"
         },
         {
             id: 2,
             name: "Matthew Collado",
             title: "KEYNOTE SPEAKER",
-            event: "KEYNOTE SESSION",
+            event: "A seasoned entrepreneur, executive and strategic advisor operating at the nexus of media, entertainment, and technology.",
             logo: '/MatthewCollado.png',
-            affiliation: "Technology Innovation Leader"
+            affiliation: "Executive & Partner in Arcana"
         }
     ];
 
@@ -992,9 +1021,9 @@ const TechWeekApp = () => {
                             className="p-1 rounded-full hover:bg-gray-800 transition-colors"
                         >
                             <div
-                                className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-600 bg-white shadow-lg">
+                                className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-600 shadow-lg">
                                 <img
-                                    src="/gemi-logo.png"
+                                    src="/gemi-logo-nobg.png"
                                     alt="Gemi Logo"
                                     className="w-8 h-8 object-contain"
                                     onError={(e) => {
@@ -1019,14 +1048,13 @@ const TechWeekApp = () => {
             {/* Hero Section */}
             <section className="py-16 px-6 relative min-h-[600px] overflow-hidden">
                 {/* Earth Background */}
-                <div className="absolute inset-0 flex items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                     <img
-                        src="/earth.png"
-                        alt="Earth background"
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif"
+                        alt="/earth.png"
                         className="w-[500px] h-[500px] object-contain opacity-40"
                     />
                 </div>
-
 
                 <div className="max-w-7xl mx-auto grid grid-cols-12 gap-8 relative z-10">
                     {/* Left Side - Countdown */}
@@ -1040,7 +1068,7 @@ const TechWeekApp = () => {
                     {/* Center - Title (wider) */}
                     <div className="col-span-12 md:col-span-6 flex flex-col items-center justify-center">
                         <div className="text-center">
-                            <h1 className="text-6xl font-black mb-2 text-green-400">AI & Sustainability</h1>
+                            <h1 className="text-5xl font-black mb-2 text-green-400">AI and Sustainability Global</h1>
                             <h2 className="text-5xl font-black mb-4">Summit</h2>
                             <p className="text-2xl font-bold">{eventData.date}</p>
                         </div>
@@ -1049,71 +1077,55 @@ const TechWeekApp = () => {
                     {/* Right Side - Description and CTA (wider) */}
                     <div className="col-span-12 md:col-span-3 flex flex-col items-center md:items-end justify-center">
                         <div className="text-center md:text-right max-w-sm">
-                            <p className="text-lg mb-4 font-bold">{eventData.description}</p>
+                            <p className="text-lg mb-4 font-bold whitespace-pre-line">{eventData.description}</p>
                             <div className="space-y-3">
-                                <div className="text-4xl font-black text-green-400">{eventData.totalSessions}</div>
-                                <div className="text-gray-400 uppercase tracking-widest text-sm font-black">SESSIONS
-                                </div>
+
                                 <button
                                     className="bg-green-600 text-white font-black py-2 px-4 text-sm rounded-md hover:bg-green-500 transition w-full"
                                     onClick={() => handleNavigation('calendar')}
                                 >
-                                    VIEW FULL PROGRAM
+                                    Event Schedule
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                {/* Environmental Visual - moved to bottom */}
-                <div className="max-w-7xl mx-auto mt-16 relative z-10">
-                    <div className="w-full h-24 relative">
-                        <div className="absolute bottom-0 w-full border-t border-green-800/50 p-4">
-                            <div className="h-8 flex items-center justify-center">
-                                <div className="flex space-x-4">
-                                    <div className="w-12 h-4 bg-green-600 rounded-full"></div>
-                                    <div className="w-8 h-4 bg-blue-500 rounded-full"></div>
-                                    <div className="w-16 h-4 bg-green-500 rounded-full"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </section>
 
-            {/* Description Section */}
-            <section className="py-16 px-6 border-t border-gray-800">
-                <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
-                    <div className="md:col-span-1">
-                        <p className="text-3xl leading-relaxed font-bold">
-                            {eventData.longDescription}
-                        </p>
-                    </div>
-                    <div className="md:col-span-1 flex justify-end items-center">
-                        <div className="grid grid-cols-1 gap-4">
-                            <button
-                                className="bg-green-600 text-center py-8 px-12 rounded-md hover:bg-green-500 transition"
-                                onClick={handleRegisterClick}
-                            >
-                                <span className="text-xl font-black">REGISTER</span>
-                            </button>
+            {/*/!* Description Section *!/*/}
+            {/*<section className="py-16 px-6 border-t border-gray-800">*/}
+            {/*    <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">*/}
+            {/*        <div className="md:col-span-1">*/}
+            {/*            <p className="text-3xl leading-relaxed font-bold">*/}
+            {/*                {eventData.longDescription}*/}
+            {/*            </p>*/}
+            {/*        </div>*/}
+            {/*        <div className="md:col-span-1 flex justify-end items-center">*/}
+            {/*            <div className="grid grid-cols-1 gap-4">*/}
+            {/*                <button*/}
+            {/*                    className="bg-green-600 text-center py-8 px-12 rounded-md hover:bg-green-500 transition"*/}
+            {/*                    onClick={handleRegisterClick}*/}
+            {/*                >*/}
+            {/*                    <span className="text-xl font-black">REGISTER</span>*/}
+            {/*                </button>*/}
 
-                            {/* Registration Role Options */}
-                            <div className="text-center text-gray-400 text-sm mt-2">
-                                <p className="mb-2 font-bold">Register for role:</p>
-                                <div className="flex flex-wrap justify-center gap-2 text-xs">
-                                    <span className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Keynote Speakers</span>
-                                    <span className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Event Sponsors</span>
-                                    <span
-                                        className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Start-ups</span>
-                                    <span
-                                        className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Academic</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            {/*                /!* Registration Role Options *!/*/}
+            {/*                <div className="text-center text-gray-400 text-sm mt-2">*/}
+            {/*                    <p className="mb-2 font-bold">Register for role:</p>*/}
+            {/*                    <div className="flex flex-wrap justify-center gap-2 text-xs">*/}
+            {/*                        <span className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Keynote Speakers</span>*/}
+            {/*                        <span className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Event Sponsors</span>*/}
+            {/*                        <span*/}
+            {/*                            className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Start-ups</span>*/}
+            {/*                        <span*/}
+            {/*                            className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Academia</span>*/}
+            {/*                    </div>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
 
             {/* Featured Speakers Section */}
             <section className="py-16 px-6 border-t border-gray-800">
@@ -1159,17 +1171,11 @@ const TechWeekApp = () => {
                                 {speaker.affiliation && (
                                     <div className="text-green-400 text-sm mb-2">{speaker.affiliation}</div>
                                 )}
-                                <div
-                                    className="inline-flex items-center bg-black border border-gray-700 px-3 py-1 rounded-md">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-green-400"
-                                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                                              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                    </svg>
-                                    <span className="text-xs tracking-wider">{speaker.event}</span>
-                                </div>
+                                {speaker.event && (
+                                    <p className="text-xs text-gray-400">
+                                        {speaker.event}
+                                    </p>
+                                )}
                             </div>
                         ))}
                     </div>
@@ -1255,11 +1261,7 @@ const TechWeekApp = () => {
                                     <div className="font-black text-4xl mb-2 text-green-300">AI for Greater Good
                                         Challenges
                                     </div>
-                                    <div className="font-black text-2xl mb-4 text-blue-300">Summit</div>
-                                    <div
-                                        className="inline-block border border-green-400 rounded px-2 py-1 text-sm mb-6 text-green-300 font-bold">Leading
-                                        Research
-                                    </div>
+                                    <div className="font-black text-2xl mb-4 text-blue-300">Roadshow</div>
 
                                     <div className="grid grid-cols-2 gap-4 text-sm mb-4">
                                         <div>
@@ -1271,13 +1273,11 @@ const TechWeekApp = () => {
                             </div>
 
                             <div className="p-8 flex flex-col justify-center">
-                                <div className="font-black mb-2 text-green-300">SATURDAY, JULY 19 / 9:00 AM</div>
-                                <h3 className="text-3xl font-black mb-4 text-white">AI and Sustainability<br/>Summit
+                                <div className="font-black mb-2 text-green-300">SATURDAY, JULY 19 / 1:00 PM</div>
+                                <h3 className="text-3xl font-black mb-4 text-white">AI and Sustainability Global
                                 </h3>
                                 <p className="text-blue-200 font-bold">
-                                    A comprehensive summit exploring the intersection of artificial intelligence
-                                    and sustainability. Featuring leading researchers, startup founders, and
-                                    industry experts discussing how AI can drive environmental solutions.
+                                    Our mission is to harness the transformative power of artificial intelligence to drive ethical innovation, social impact, and sustainability, fostering a future where AI serves humanity’s most pressing challenges.
                                 </p>
                             </div>
                         </div>
