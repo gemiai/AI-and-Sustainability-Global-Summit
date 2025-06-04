@@ -1112,7 +1112,7 @@ const TechWeekApp = () => {
                                     Thrive in an AI World.
                                 </p>
                                 <p className="text-lg font-medium text-gray-300">
-                                    AI with strong guardrails, clear purpose, and real-world impact.
+                                    AI with clear purpose, strong guardrails, and real-world impact.
                                 </p>
                             </div>
                             <div className="space-y-3">
