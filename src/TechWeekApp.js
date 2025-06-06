@@ -976,24 +976,28 @@ const TechWeekApp = () => {
             id: 1,
             title: "Opening Remark",
             date: "July 19, 9:00 AM",
+            category: 'Opening',
             description: "The AI and Sustainability Global Summit brings together leaders from academia, industry, government, and entrepreneurship to explore how artificial intelligence can be leveraged to accelerate sustainable development.",
         },
         {
             id: 2,
             title: "AI and Education",
             date: "July 19, 9:30 AM",
+            category: 'Education',
             description: "This session explores how education can harness the power of AI to cultivate a new wave of entrepreneurs committed to sustainability. As institutions rethink how they prepare students for the green economy, AI offers tools to personalize learning, simulate real-world challenges, and support venture creation.",
         },
         {
             id: 3,
             title: "AI and the Planet",
             date: "July 19, 10:30 AM",
+            category: 'Planet',
             description: "From tracking endangered species DNA to optimizing conservation efforts and network, AI gives us tools to respond faster, smarter, and at scale."
         },
         {
             id: 4,
             title: "AI and Art",
             date: "July 19, 11:30 AM",
+            category: 'Art',
             description: "AI is making every artistic dream feel possible and important. By keeping humans at the center, it brings more joy and meaning to the creative process. Accessibility doesn’t mean compromise, but rather, better quality and new possibilities for everyone.",
         }
     ];
@@ -1308,30 +1312,34 @@ const TechWeekApp = () => {
                         {upcomingSessions.map((session, index) => (
                             <div key={session.id} className="flex mb-8">
                                 <div className="w-32 h-32 bg-gray-800 rounded-md mr-6 flex-shrink-0 overflow-hidden">
-                                    {index === 0 && (
-                                        <div
-                                            className="h-full w-full flex items-center justify-center bg-gradient-to-b from-purple-500 to-green-600">
-                                            {/*<div className="text-white text-2xl">🎤</div>*/}
+                                    <div
+                                        className={`w-full h-full flex items-center justify-center relative overflow-hidden rounded-md ${
+                                            session.category === 'Opening' ? 'bg-gradient-to-br from-blue-600 via-cyan-500 to-teal-400' :
+                                                session.category === 'Education' ? 'bg-gradient-to-br from-indigo-600 via-blue-500 to-cyan-400' :
+                                                    session.category === 'Planet' ? 'bg-gradient-to-br from-green-600 via-emerald-500 to-teal-400' :
+                                                        session.category === 'Art' ? 'bg-gradient-to-br from-purple-600 via-fuchsia-500 to-pink-400' :
+                                                            'bg-gradient-to-br from-green-500 to-blue-600'
+                                        }`}>
+                                        {/* Background pattern */}
+                                        <div className="absolute inset-0 opacity-20">
+                                            <div className="absolute top-2 left-2 w-3 h-3 bg-white rounded-full"></div>
+                                            <div className="absolute top-6 right-4 w-2 h-2 bg-white rounded-full"></div>
+                                            <div
+                                                className="absolute bottom-4 left-6 w-1.5 h-1.5 bg-white rounded-full"></div>
+                                            <div
+                                                className="absolute bottom-2 right-2 w-2.5 h-2.5 bg-white rounded-full"></div>
                                         </div>
-                                    )}
-                                    {index === 1 && (
+
+                                        {/* Main icon */}
                                         <div
-                                            className="h-full w-full flex items-center justify-center bg-gradient-to-b from-blue-600 to-green-500">
-                                            {/*<div className="text-white text-2xl">🌍</div>*/}
+                                            className="text-5xl font-bold text-white drop-shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                                            {session.category === 'Opening' && '🎯'}
+                                            {session.category === 'Education' && '🎓'}
+                                            {session.category === 'Planet' && '🌍'}
+                                            {session.category === 'Art' && '🎨'}
+                                            {!['Opening', 'Education', 'Planet', 'Art'].includes(session.category) && '💡'}
                                         </div>
-                                    )}
-                                    {index === 2 && (
-                                        <div
-                                            className="h-full w-full flex items-center justify-center bg-gradient-to-b from-green-500 to-blue-600">
-                                            {/*<div className="text-white text-2xl">⚡</div>*/}
-                                        </div>
-                                    )}
-                                    {index === 3 && (
-                                        <div
-                                            className="h-full w-full flex items-center justify-center bg-gradient-to-b from-orange-500 to-green-600">
-                                            {/*<div className="text-white text-2xl">🔧</div>*/}
-                                        </div>
-                                    )}
+                                    </div>
                                 </div>
                                 <div>
                                     <div className="text-gray-400 mb-1">{session.date}</div>
