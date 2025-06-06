@@ -36,7 +36,7 @@ const RegistrationModal = ({isOpen, onClose}) => {
     const handleRoleSelect = (role) => {
         // Mock link navigation - in a real app, this would use proper routing
         window.open(role.link, '_blank', 'noopener,noreferrer');
-        alert(`Redirecting to registration for ${role.title}...\nLink: ${role.link}`);
+        // alert(`Redirecting to registration for ${role.title}...\nLink: ${role.link}`);
         onClose();
     };
 
@@ -102,7 +102,7 @@ const RegistrationModal = ({isOpen, onClose}) => {
                 <div className="border-t border-gray-700 p-6 bg-gray-800 rounded-b-lg">
                     <div className="text-center text-gray-400 text-sm">
                         <p>Questions about registration? Contact us at <span
-                            className="text-green-400">register@aisustainabilitysummit.com</span></p>
+                            className="text-green-400">people@londonesganalytics.co.uk</span></p>
                     </div>
                 </div>
             </div>
@@ -580,98 +580,124 @@ const EventsCalendarPage = ({onNavigate}) => {
 
     // AI and Sustainability Summit focused events data
     const eventsData = {
-        totalEvents: 8,
-        categories: ['All', 'AI Research', 'Sustainability', 'Keynotes', 'Workshops', 'Networking'],
+        totalEvents: 11,
+        categories: ['All', 'Networking', 'Education', 'Planet', 'Art', 'Technology', 'Food', 'Finance', 'Challenge'],
         days: ['SAT'],
         events: [
             {
                 id: 1,
-                title: "AI and Sustainability Summit: Opening Keynote",
+                title: "Breakfast and Networking",
                 date: "July 19",
-                time: "1:00 PM",
-                type: "KEYNOTE",
-                image: "/ai-sustainability-opening.jpg",
-                description: "Welcome to the AI and Sustainability Summit! Join us for an inspiring opening keynote exploring how artificial intelligence can address the world's most pressing environmental challenges.",
+                time: "8:30 AM",
+                type: "NETWORKING",
+                description: "Start the day with breakfast and connect with fellow attendees, speakers, and partners.",
                 day: 'SAT',
-                category: 'Keynotes',
+                category: 'Networking',
             },
             {
                 id: 2,
-                title: "Machine Learning for Climate Modeling",
+                title: "Opening Remark",
                 date: "July 19",
-                time: "1:30 PM",
-                type: "RESEARCH",
-                image: "/climate-ml.jpg",
-                description: "Dive deep into cutting-edge research on how machine learning algorithms are revolutionizing climate prediction models and helping scientists understand complex environmental systems.",
+                time: "9:00 AM",
+                type: "KEYNOTE",
+                speaker: "Xiaoran Cai",
+                description: "The AI and Sustainability Global Summit brings together leaders from academia, industry, government, and entrepreneurship to explore how artificial intelligence can be leveraged to accelerate sustainable development. The summit focuses on three core themes: AI for Climate and Environmental Solutions, AI in Education for Sustainable Futures, and Ethical and Inclusive AI for People and Planet.",
                 day: 'SAT',
-                category: 'AI Research',
+                category: 'Opening',
             },
             {
                 id: 3,
-                title: "Redefining Education in the Age of AI: Empowering Learners, Educators, and Systems",
+                title: "AI and Education",
                 date: "July 19",
-                time: "2:00 PM",
-                type: "TECHNICAL",
-                image: "/smart-grid.jpg",
-                description: "Explore how artificial intelligence is transforming energy distribution systems, optimizing renewable energy integration, and creating more efficient power grids for sustainable cities.",
+                time: "9:30 AM",
+                type: "PANEL",
+                description: "This session explores how education can harness the power of AI to cultivate a new wave of entrepreneurs committed to sustainability. As institutions rethink how they prepare students for the green economy, AI offers tools to personalize learning, simulate real-world challenges, and support venture creation.",
                 day: 'SAT',
-                category: 'Sustainability',
+                category: 'Education',
             },
             {
                 id: 4,
-                title: "Startup Showcase: GreenTech AI Solutions",
+                title: "AI and the Planet",
                 date: "July 19",
-                time: "1:30 PM",
-                type: "SHOWCASE",
-                image: "/greentech-showcase.jpg",
-                description: "Meet innovative startups leveraging AI for environmental solutions. From precision agriculture to carbon capture optimization, discover the next generation of green technology.",
+                time: "10:30 AM",
+                type: "PANEL",
+                speaker: "Matt James",
+                description: "Yes, we are in crisis. Species extinction is accelerating, ecosystems are under pressure, and the planet is approaching critical tipping points. The urgency is real. This panel emphasized that while the challenges are immense, technology can play a powerful role in addressing them. From tracking endangered species DNA to optimizing conservation efforts and network, AI gives us tools to respond faster, smarter, and at scale.",
                 day: 'SAT',
-                category: 'Networking',
-                location: "Innovation Lab"
+                category: 'Planet',
             },
             {
                 id: 5,
-                title: "Workshop: AI Ethics in Environmental Applications",
+                title: "AI and Art",
                 date: "July 19",
-                time: "2:45 PM",
-                type: "WORKSHOP",
-                image: "/ai-ethics.jpg",
-                description: "Hands-on workshop exploring the ethical implications of deploying AI systems for environmental monitoring and decision-making. Learn best practices for responsible AI development.",
+                time: "11:30 AM",
+                type: "PANEL",
+                speaker: "Matthew Collado",
+                description: "AI is making every artistic dream feel possible and important. By keeping humans at the center, it brings more joy and meaning to the creative process. Accessibility doesn’t mean compromise, but rather, better quality and new possibilities for everyone.",
                 day: 'SAT',
-                category: 'Workshops',
+                category: 'Art',
             },
             {
                 id: 6,
-                title: "Computer Vision for Wildlife Conservation",
+                title: "Lunch and Networking",
                 date: "July 19",
-                time: "4:00 PM",
-                type: "RESEARCH",
-                image: "/wildlife-cv.jpg",
-                description: "Discover how computer vision and deep learning are revolutionizing wildlife monitoring and conservation efforts, from tracking endangered species to preventing poaching.",
+                time: "12:30 PM",
+                type: "NETWORKING",
+                description: "Enjoy lunch while networking with peers and discussing the morning sessions.",
                 day: 'SAT',
-                category: 'AI Research',
+                category: 'Networking',
             },
             {
                 id: 7,
-                title: "Panel: Corporate Sustainability and AI Strategy",
+                title: "AI and Technology",
                 date: "July 19",
-                time: "5:15 PM",
+                time: "1:00 PM",
                 type: "PANEL",
-                image: "/corporate-panel.jpg",
-                description: "Industry leaders discuss how major corporations are integrating AI into their sustainability strategies, sharing real-world case studies and lessons learned.",
+                speaker: "Emily Fontaine",
+                description: "Artificial intelligence is transforming the traditional cost-performance trade-off in business and technology. Rather than sacrificing quality or speed for savings, leading experts will share how AI enables organizations to simultaneously reduce operational costs and enhance capabilities — from automating complex tasks to optimizing decision-making and driving innovation.",
                 day: 'SAT',
-                category: 'Sustainability',
+                category: 'Technology',
             },
             {
                 id: 8,
-                title: "Networking Reception: AI for Greater Good",
+                title: "AI and Food",
                 date: "July 19",
-                time: "6:30 PM",
-                type: "NETWORKING",
-                image: "/networking.jpg",
-                description: "Connect with researchers, entrepreneurs, and industry professionals working at the intersection of AI and sustainability. Light refreshments and poster sessions included.",
+                time: "2:00 PM",
+                type: "PANEL",
+                speaker: "YF Feng",
+                description: "Food is not just taste; it’s culture, emotion, and identity. This panel explores how AI is teaming up with food experts, flavor scientists, and food lovers to craft unforgettable flavor experiences. From generating new recipes based on local, seasonal ingredients to enhancing umami or texture without additives, AI is enabling a new era of conscious indulgence.",
                 day: 'SAT',
-                category: 'Networking',
+                category: 'Food',
+            },
+            {
+                id: 9,
+                title: "AI and Finance and Compliance",
+                date: "July 19",
+                time: "3:00 PM",
+                type: "PANEL",
+                description: "Redefining Finance: Precision, Speed, and Insight. This session will cover how AI is revolutionizing the financial sector.",
+                day: 'SAT',
+                category: 'Finance',
+            },
+            {
+                id: 10,
+                title: "AI for Greater Good Challenge (Roadshow)",
+                date: "July 19",
+                time: "4:00 PM",
+                type: "CHALLENGE",
+                description: "Five teams from Columbia University, Carnegie Mellon University, Babson College and McGill University will present their AI and Sustainability projects to win the AI for Greater Good Grand Prize, Second Place Award, Human-Centered AI Design Award, and the Community Impact Award.",
+                day: 'SAT',
+                category: 'Challenge',
+            },
+            {
+                id: 11,
+                title: "AI for Greater Good Foundation",
+                date: "July 19",
+                time: "4:30 PM",
+                type: "EVENT",
+                description: "Introducing the AI for Greater Good Foundation, a foundation dedicated to applying artificial intelligence to solve humanity’s most urgent challenges. We believe AI should be a force that enhances human well-being, promotes equity, and empowers communities around the world.",
+                day: 'SAT',
+                category: 'Foundation',
             }
         ]
     };
@@ -811,16 +837,53 @@ const EventsCalendarPage = ({onNavigate}) => {
                                 <div key={event.id} className="flex border-b border-gray-800 pb-6">
                                     <div className="w-40 h-40 flex-shrink-0 mr-6">
                                         <div
-                                            className="w-full h-full bg-gray-800 rounded-lg overflow-hidden flex items-center justify-center">
+                                            className="w-full h-full bg-gray-800 rounded-lg overflow-hidden flex items-center justify-center relative group">
                                             <div
-                                                className="w-full h-full bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center">
-                                                <div className="text-3xl font-bold opacity-75">
-                                                    {event.category === 'Keynotes'}
-                                                    {event.category === 'AI Research'}
-                                                    {event.category === 'Sustainability'}
-                                                    {event.category === 'Workshops'}
-                                                    {event.category === 'Networking'}
-                                                    {!['Keynotes', 'AI Research', 'Sustainability', 'Workshops', 'Networking'].includes(event.category) && '💡'}
+                                                className={`w-full h-full flex items-center justify-center relative overflow-hidden rounded-lg ${
+                                                    event.category === 'Networking' ? 'bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500' :
+                                                        event.category === 'Opening' ? 'bg-gradient-to-br from-blue-600 via-cyan-500 to-teal-400' :
+                                                            event.category === 'Education' ? 'bg-gradient-to-br from-indigo-600 via-blue-500 to-cyan-400' :
+                                                                event.category === 'Planet' ? 'bg-gradient-to-br from-green-600 via-emerald-500 to-teal-400' :
+                                                                    event.category === 'Art' ? 'bg-gradient-to-br from-purple-600 via-fuchsia-500 to-pink-400' :
+                                                                        event.category === 'Technology' ? 'bg-gradient-to-br from-gray-600 via-slate-500 to-blue-400' :
+                                                                            event.category === 'Food' ? 'bg-gradient-to-br from-orange-600 via-amber-500 to-yellow-400' :
+                                                                                event.category === 'Finance' ? 'bg-gradient-to-br from-emerald-600 via-green-500 to-lime-400' :
+                                                                                    event.category === 'Challenge' ? 'bg-gradient-to-br from-red-600 via-orange-500 to-yellow-400' :
+                                                                                        event.category === 'Foundation' ? 'bg-gradient-to-br from-indigo-600 via-purple-500 to-pink-400' :
+                                                                                            'bg-gradient-to-br from-green-500 to-blue-600'
+                                                }`}>
+                                                {/* Background pattern */}
+                                                <div className="absolute inset-0 opacity-20">
+                                                    <div
+                                                        className="absolute top-2 left-2 w-3 h-3 bg-white rounded-full"></div>
+                                                    <div
+                                                        className="absolute top-6 right-4 w-2 h-2 bg-white rounded-full"></div>
+                                                    <div
+                                                        className="absolute bottom-4 left-6 w-1.5 h-1.5 bg-white rounded-full"></div>
+                                                    <div
+                                                        className="absolute bottom-2 right-2 w-2.5 h-2.5 bg-white rounded-full"></div>
+                                                </div>
+
+                                                {/* Main icon */}
+                                                <div
+                                                    className="text-5xl font-bold text-white drop-shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                                                    {event.category === 'Networking' && '🤝'}
+                                                    {event.category === 'Opening' && '🎯'}
+                                                    {event.category === 'Education' && '🎓'}
+                                                    {event.category === 'Planet' && '🌍'}
+                                                    {event.category === 'Art' && '🎨'}
+                                                    {event.category === 'Technology' && '⚙️'}
+                                                    {event.category === 'Food' && '🍽️'}
+                                                    {event.category === 'Finance' && '💰'}
+                                                    {event.category === 'Challenge' && '🏆'}
+                                                    {event.category === 'Foundation' && '🌟'}
+                                                    {!['Networking', 'Opening', 'Education', 'Planet', 'Art', 'Technology', 'Food', 'Finance', 'Challenge', 'Foundation'].includes(event.category) && '💡'}
+                                                </div>
+
+                                                {/* Category label overlay */}
+                                                <div
+                                                    className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-xs font-bold py-1 px-2 text-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                                    {event.category}
                                                 </div>
                                             </div>
                                         </div>
@@ -900,38 +963,38 @@ const TechWeekApp = () => {
     const [isRegistrationModalOpen, setIsRegistrationModalOpen] = useState(false);
 
     const eventData = {
-        totalSessions: 8,
+        totalSessions: 11,
         date: "July 19, 2025",
-        description: "Thrive in an AI World.\n" +
-            "AI with strong guardrails, clear purpose, and real-world impact.",
-        longDescription: "The AI and Sustainability Summit brings together leading researchers, innovators, and industry experts to explore how artificial intelligence can address climate change, environmental conservation, and sustainable development challenges. Join us for a day of groundbreaking research, innovative solutions, and meaningful connections.",
+        description: "Thrive in the AI World.\n" +
+            "AI with clear purpose, strong guardrails and real-world impact.",
+        longDescription: "The AI and Sustainability Global Summit brings together leaders from academia, industry, government, and entrepreneurship to explore how artificial intelligence can be leveraged to accelerate sustainable development. The summit focuses on three core themes: AI for Climate and Environmental Solutions – Highlighting innovations in energy, agriculture, waste, and biodiversity driven by AI technologies. AI in Education for Sustainable Futures – Exploring how AI can enhance sustainability education, empower the next generation of impact entrepreneurs, and bridge global knowledge gaps. Ethical and Inclusive AI for People and Planet – Addressing governance, transparency, and the importance of ensuring AI serves all communities equitably.",
     };
 
     // AI and Sustainability focused upcoming sessions
     const upcomingSessions = [
         {
             id: 1,
-            title: "AI and Sustainability Summit: Opening Keynote",
-            date: "July 19, 1:00 PM",
-            description: "Welcome to the AI and Sustainability Summit! Join us for an inspiring opening keynote exploring how artificial intelligence can address the world's most pressing environmental challenges.",
+            title: "Opening Remark",
+            date: "July 19, 9:00 AM",
+            description: "The AI and Sustainability Global Summit brings together leaders from academia, industry, government, and entrepreneurship to explore how artificial intelligence can be leveraged to accelerate sustainable development.",
         },
         {
             id: 2,
-            title: "Machine Learning for Climate Modeling",
-            date: "July 19, 1:30 PM",
-            description: "Dive deep into cutting-edge research on how machine learning algorithms are revolutionizing climate prediction models and helping scientists understand complex environmental systems.",
+            title: "AI and Education",
+            date: "July 19, 9:30 AM",
+            description: "This session explores how education can harness the power of AI to cultivate a new wave of entrepreneurs committed to sustainability. As institutions rethink how they prepare students for the green economy, AI offers tools to personalize learning, simulate real-world challenges, and support venture creation.",
         },
         {
             id: 3,
-            title: "Redefining Education in the Age of AI: Empowering Learners, Educators, and Systems",
-            date: "July 19, 2:00 PM",
-            description: "Explore how artificial intelligence is transforming energy distribution systems, optimizing renewable energy integration, and creating more efficient power grids for sustainable cities."
+            title: "AI and the Planet",
+            date: "July 19, 10:30 AM",
+            description: "From tracking endangered species DNA to optimizing conservation efforts and network, AI gives us tools to respond faster, smarter, and at scale."
         },
         {
             id: 4,
-            title: "Workshop: AI Ethics in Environmental Applications",
-            date: "July 19, 2:45 PM",
-            description: "Hands-on workshop exploring the ethical implications of deploying AI systems for environmental monitoring and decision-making. Learn best practices for responsible AI development.",
+            title: "AI and Art",
+            date: "July 19, 11:30 AM",
+            description: "AI is making every artistic dream feel possible and important. By keeping humans at the center, it brings more joy and meaning to the creative process. Accessibility doesn’t mean compromise, but rather, better quality and new possibilities for everyone.",
         }
     ];
 
@@ -940,16 +1003,16 @@ const TechWeekApp = () => {
         {
             id: 1,
             name: "Matt James",
-            title: "KEYNOTE SPEAKER",
-            event: "Lead the animal operations team to ensure the health, safety, and well-being of animals.",
+            title: "SPEAKER",
+            event: "Planetary Resilience: Strengthening Ecosystems, Fostering Biodiversity, and Enabling All Life to Thrive with AI.",
             logo: '/MattJames.png',
             affiliation: "Chief Animal Officer at Colossal"
         },
         {
             id: 2,
             name: "Matthew Collado",
-            title: "KEYNOTE SPEAKER",
-            event: "A seasoned entrepreneur, executive and strategic advisor operating at the nexus of media, entertainment, and technology.",
+            title: "SPEAKER",
+            event: "Igniting Every Artist’s Dream with AI: Unlock Opportunities and make high-quality art accessible to all—bringing joy and visions of the future to life.",
             logo: '/MatthewCollado.png',
             affiliation: "Executive & Partner in Arcana"
         }
@@ -1109,10 +1172,10 @@ const TechWeekApp = () => {
                         <div className="text-center md:text-right max-w-sm">
                             <div className="mb-4 whitespace-pre-line">
                                 <p className="text-2xl font-extrabold text-white mb-1">
-                                    Thrive in an AI World.
+                                    Thrive in the AI World.
                                 </p>
-                                <p className="text-lg font-medium text-gray-300">
-                                    AI with clear purpose, strong guardrails, and real-world impact.
+                                <p className="text-normal font-medium text-gray-300">
+                                    AI with clear purpose, strong guardrails and real-world impact.
                                 </p>
                             </div>
                             <div className="space-y-3">
@@ -1132,36 +1195,36 @@ const TechWeekApp = () => {
 
             {/*/!* Description Section *!/*/}
             {/*<section className="py-16 px-6 border-t border-gray-800">*/}
-            {/*    <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">*/}
-            {/*        <div className="md:col-span-1">*/}
-            {/*            <p className="text-3xl leading-relaxed font-bold">*/}
-            {/*                {eventData.longDescription}*/}
-            {/*            </p>*/}
-            {/*        </div>*/}
-            {/*        <div className="md:col-span-1 flex justify-end items-center">*/}
-            {/*            <div className="grid grid-cols-1 gap-4">*/}
-            {/*                <button*/}
-            {/*                    className="bg-green-600 text-center py-8 px-12 rounded-md hover:bg-green-500 transition"*/}
-            {/*                    onClick={handleRegisterClick}*/}
-            {/*                >*/}
-            {/*                    <span className="text-xl font-black">REGISTER</span>*/}
-            {/*                </button>*/}
+            {/* <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">*/}
+            {/* <div className="md:col-span-1">*/}
+            {/* <p className="text-3xl leading-relaxed font-bold">*/}
+            {/* {eventData.longDescription}*/}
+            {/* </p>*/}
+            {/* </div>*/}
+            {/* <div className="md:col-span-1 flex justify-end items-center">*/}
+            {/* <div className="grid grid-cols-1 gap-4">*/}
+            {/* <button*/}
+            {/* className="bg-green-600 text-center py-8 px-12 rounded-md hover:bg-green-500 transition"*/}
+            {/* onClick={handleRegisterClick}*/}
+            {/* >*/}
+            {/* <span className="text-xl font-black">REGISTER</span>*/}
+            {/* </button>*/}
 
-            {/*                /!* Registration Role Options *!/*/}
-            {/*                <div className="text-center text-gray-400 text-sm mt-2">*/}
-            {/*                    <p className="mb-2 font-bold">Register for role:</p>*/}
-            {/*                    <div className="flex flex-wrap justify-center gap-2 text-xs">*/}
-            {/*                        <span className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Keynote Speakers</span>*/}
-            {/*                        <span className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Event Sponsors</span>*/}
-            {/*                        <span*/}
-            {/*                            className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Start-ups</span>*/}
-            {/*                        <span*/}
-            {/*                            className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Academia</span>*/}
-            {/*                    </div>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
+            {/* /!* Registration Role Options *!/*/}
+            {/* <div className="text-center text-gray-400 text-sm mt-2">*/}
+            {/* <p className="mb-2 font-bold">Register for role:</p>*/}
+            {/* <div className="flex flex-wrap justify-center gap-2 text-xs">*/}
+            {/* <span className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Keynote Speakers</span>*/}
+            {/* <span className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Event Sponsors</span>*/}
+            {/* <span*/}
+            {/* className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Start-ups</span>*/}
+            {/* <span*/}
+            {/* className="bg-gray-800 px-2 py-1 rounded border border-gray-600">Academia</span>*/}
+            {/* </div>*/}
+            {/* </div>*/}
+            {/* </div>*/}
+            {/* </div>*/}
+            {/* </div>*/}
             {/*</section>*/}
 
             {/* Featured Speakers Section */}
@@ -1311,8 +1374,6 @@ const TechWeekApp = () => {
 
                             <div className="p-8 flex flex-col justify-center">
                                 <div className="font-black mb-2 text-green-300">SATURDAY, JULY 19 / 1:00 PM</div>
-                                {/*<h3 className="text-3xl font-black mb-4 text-white">AI and Sustainability Global*/}
-                                {/*</h3>*/}
                                 <p className="text-blue-200 font-bold">
                                     Our mission is to harness the transformative power of artificial intelligence to
                                     drive ethical innovation, social impact, and sustainability, fostering a future
