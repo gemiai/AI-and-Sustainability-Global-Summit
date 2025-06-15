@@ -964,7 +964,7 @@ const TechWeekApp = () => {
 
     const eventData = {
         totalSessions: 11,
-        date: "July 19, 2025",
+        date: "July 18, 2025",
         description: "Thrive in the AI World.\n" +
             "AI with clear purpose, strong guardrails and real-world impact.",
         longDescription: "The AI and Sustainability Global Summit brings together leaders from academia, industry, government, and entrepreneurship to explore how artificial intelligence can be leveraged to accelerate sustainable development. The summit focuses on three core themes: AI for Climate and Environmental Solutions – Highlighting innovations in energy, agriculture, waste, and biodiversity driven by AI technologies. AI in Education for Sustainable Futures – Exploring how AI can enhance sustainability education, empower the next generation of impact entrepreneurs, and bridge global knowledge gaps. Ethical and Inclusive AI for People and Planet – Addressing governance, transparency, and the importance of ensuring AI serves all communities equitably.",
@@ -975,28 +975,28 @@ const TechWeekApp = () => {
         {
             id: 1,
             title: "Opening Remark",
-            date: "July 19, 9:00 AM",
+            date: "July 18, 9:00 AM",
             category: 'Opening',
             description: "The AI and Sustainability Global Summit brings together leaders from academia, industry, government, and entrepreneurship to explore how artificial intelligence can be leveraged to accelerate sustainable development.",
         },
         {
             id: 2,
             title: "AI and Education",
-            date: "July 19, 9:30 AM",
+            date: "July 18, 9:30 AM",
             category: 'Education',
             description: "This session explores how education can harness the power of AI to cultivate a new wave of entrepreneurs committed to sustainability. As institutions rethink how they prepare students for the green economy, AI offers tools to personalize learning, simulate real-world challenges, and support venture creation.",
         },
         {
             id: 3,
             title: "AI and the Planet",
-            date: "July 19, 10:30 AM",
+            date: "July 18, 10:30 AM",
             category: 'Planet',
             description: "From tracking endangered species DNA to optimizing conservation efforts and network, AI gives us tools to respond faster, smarter, and at scale."
         },
         {
             id: 4,
             title: "AI and Art",
-            date: "July 19, 11:30 AM",
+            date: "July 18, 11:30 AM",
             category: 'Art',
             description: "AI is making every artistic dream feel possible and important. By keeping humans at the center, it brings more joy and meaning to the creative process. Accessibility doesn’t mean compromise, but rather, better quality and new possibilities for everyone.",
         }
