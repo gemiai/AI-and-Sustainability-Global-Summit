@@ -8,21 +8,21 @@ const RegistrationModal = ({isOpen, onClose}) => {
             title: 'Keynote Speakers',
             description: 'Leading experts presenting groundbreaking research',
             icon: '🎤',
-            link: 'https://surveymars.com/q/75KogrGH8'
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSeM_XWIrg5qi7ECvk6LM2AFUKmu-lNeTiGg4SjWDvJUerddlA/viewform?usp=header   '
         },
         {
             id: 'sponsors',
             title: 'Event Sponsors',
             description: 'Organizations supporting the summit',
             icon: '🏢',
-            link: 'https://surveymars.com/q/yJumV4rCq'
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSeg6lMKN5m77zl6Ae0L-4bt4CnZr795JKCsJJLLDPoczGa8uA/viewform?usp=header   '
         },
         {
             id: 'startups',
             title: 'Start-ups',
             description: 'Innovative companies in AI and sustainability',
             icon: '🚀',
-            link: 'https://surveymars.com/q/380ngVo5k'
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSd9PNOxNz3G4cZylWIznBAGonVv-4DvviFVRRUKuOTtuKtzEQ/viewform?usp=header'
         },
         {
             id: 'academic',
