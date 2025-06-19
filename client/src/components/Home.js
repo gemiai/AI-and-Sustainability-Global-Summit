@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CountdownTimer from './CountdownTimer';
 import Registration from './Registration';
+import { useNavigate } from 'react-router-dom';
 // Main App Component - Refactored with separated components
 const Home = () => {
     const [currentPage, setCurrentPage] = useState('home');
@@ -9,6 +10,7 @@ const Home = () => {
     const [fetchError, setFetchError] = useState(null);
 
     const [data, setData] = useState(null);
+    const navigate = useNavigate()
    
   useEffect(() => {
     fetch('/api/home')  // adjust if your server URL is different
@@ -375,7 +377,11 @@ const Home = () => {
                 </div>
             </section>
 
-       
+            <Registration
+            isOpen={isRegistrationModalOpen}
+            onClose={handleCloseRegistrationModal}
+            navigateHome={() => navigate('/home', { replace: true })}
+            />             
 
          
         </div>

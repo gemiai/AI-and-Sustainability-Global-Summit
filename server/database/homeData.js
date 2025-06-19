@@ -18,7 +18,7 @@ export const upcomingSessions = [
         format: 'keynote',
         keynoteSpeaker: {
             name: "Steven Cohen",
-            avatar: '/DeanCohen.png'
+            avatar: '/speakers/DeanCohen.png'
         },
         panelSpeakers: [
             {name: "Xiaoran Cai", avatar: '/XiaoranCai.jpg'}
@@ -33,16 +33,16 @@ export const upcomingSessions = [
         format: 'panel',
         keynoteSpeaker: {
             name: "Steven Cohen",
-            avatar: '/DeanCohen.png'
+            avatar: '/speakers/DeanCohen.png'
         },
         panelSpeakers: [
-            {name: "Katja Schroeder", avatar: '/KatjaSchroeder.png'},
-            {name: "Ben Jakob Zulechner", avatar: '/placeholder-avatar.png'},
-            {name: "Dr. Dong Guo", avatar: '/DongGuo.png'},
-            {name: "Al Olsen", avatar: '/placeholder-avatar.png'},
-            {name: "Tia Kumar", avatar: '/placeholder-avatar.png'},
-            {name: "Vivan Zhang", avatar: '/placeholder-avatar.png'},
-            {name: "Phil Ahn", avatar: '/placeholder-avatar.png'}
+            {name: "Katja Schroeder", avatar: '/speakers/KatjaSchroeder.png'},
+            {name: "Ben Jakob Zulechner", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Dr. Dong Guo", avatar: '/speakers/DongGuo.png'},
+            {name: "Al Olsen", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Tia Kumar", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Vivan Zhang", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Phil Ahn", avatar: '/speakers/placeholder-avatar.png'}
         ],
         description: "This session explores how education can harness the power of AI to cultivate a new wave of entrepreneurs committed to sustainability. As institutions rethink how they prepare students for the green economy, AI offers tools to personalize learning, simulate real-world challenges, and support venture creation.",
     },
@@ -54,16 +54,16 @@ export const upcomingSessions = [
         format: 'panel',
         keynoteSpeaker: {
             name: "Matt James",
-            avatar: '/MattJames.png'
+            avatar: '/speakers/MattJames.png'
         },
         panelSpeakers: [
-            {name: "Matt James", avatar: '/MattJames.png'},
-            {name: "Erik Solheim", avatar: '/ErikSolheim.png'},
-            {name: "Di Wu", avatar: '/DiWu.png'},
-            {name: "Andrew Dumit", avatar: '/placeholder-avatar.png'},
-            {name: "Anthony Leiserowitz", avatar: '/placeholder-avatar.png'},
-            {name: "Anna Lerner Nesbitt", avatar: '/placeholder-avatar.png'},
-            {name: "Maria Mähl", avatar: '/placeholder-avatar.png'}
+            {name: "Matt James", avatar: '/speakers/MattJames.png'},
+            {name: "Erik Solheim", avatar: '/speakers/ErikSolheim.png'},
+            {name: "Di Wu", avatar: '/speakers/DiWu.png'},
+            {name: "Andrew Dumit", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Anthony Leiserowitz", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Anna Lerner Nesbitt", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Maria Mähl", avatar: '/speakers/placeholder-avatar.png'}
         ],
         description: "From tracking endangered species DNA to optimizing conservation efforts and network, AI gives us tools to respond faster, smarter, and at scale."
     },
@@ -75,13 +75,13 @@ export const upcomingSessions = [
         format: 'panel',
         keynoteSpeaker: {
             name: "Johnathan",
-            avatar: '/Johnathan.png'
+            avatar: '/speakers/Johnathan.png'
         },
         panelSpeakers: [
-            {name: "Johnathan", avatar: '/Johnathan.png'},
-            {name: "Zach Krall", avatar: '/ZachKrall.png'},
-            {name: "Matthew Collado", avatar: '/MatthewCollado.png'},
-            {name: "Joshua", avatar: '/placeholder-avatar.png'}
+            {name: "Johnathan", avatar: '/speakers/Johnathan.png'},
+            {name: "Zach Krall", avatar: '/speakers/ZachKrall.png'},
+            {name: "Matthew Collado", avatar: '/speakers/MatthewCollado.png'},
+            {name: "Joshua", avatar: '/speakers/placeholder-avatar.png'}
         ],
         description: "AI is making every artistic dream feel possible and important. By keeping humans at the center, it brings more joy and meaning to the creative process. Accessibility doesn't mean compromise, but rather, better quality and new possibilities for everyone.",
     },
@@ -93,15 +93,15 @@ export const upcomingSessions = [
         format: 'panel',
         keynoteSpeaker: {
             name: "Renee Yao",
-            avatar: '/placeholder-avatar.png'
+            avatar: '/speakers/placeholder-avatar.png'
         },
         panelSpeakers: [
-            {name: "Oussama Elachqar", avatar: '/placeholder-avatar.png'},
-            {name: "Justin Cappos", avatar: '/JustinCappos.png'},
-            {name: "David Baum", avatar: '/DavidBaum.png'},
-            {name: "Karen Farah", avatar: '/KarenFarah.png'},
-            {name: "Arthy Krishnamurthy", avatar: '/ArthyKrishnamurthy.png'},
-            {name: "Lakshminarayanan Subramanian", avatar: '/placeholder-avatar.png'}
+            {name: "Oussama Elachqar", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Justin Cappos", avatar: '/speakers/JustinCappos.png'},
+            {name: "David Baum", avatar: '/speakers/DavidBaum.png'},
+            {name: "Karen Farah", avatar: '/speakers/KarenFarah.png'},
+            {name: "Arthy Krishnamurthy", avatar: '/speakers/ArthyKrishnamurthy.png'},
+            {name: "Lakshminarayanan Subramanian", avatar: '/speakers/placeholder-avatar.png'}
         ],
         description: "Artificial intelligence is transforming the traditional cost-performance trade-off in business and technology. Rather than sacrificing quality or speed for savings, leading experts will share how AI enables organizations to simultaneously reduce operational costs and enhance capabilities.",
     },
@@ -113,16 +113,16 @@ export const upcomingSessions = [
         format: 'panel',
         keynoteSpeaker: {
             name: "Veeral Shah",
-            avatar: '/VeeralShah.png'
+            avatar: '/speakers/VeeralShah.png'
         },
         panelSpeakers: [
-            {name: "Anand Chaturvedi", avatar: '/placeholder-avatar.png'},
-            {name: "Miguel CuUnjieng", avatar: '/placeholder-avatar.png'},
-            {name: "Jared Haite", avatar: '/placeholder-avatar.png'},
-            {name: "Bao Te", avatar: '/placeholder-avatar.png'},
-            {name: "Taylor Meadows", avatar: '/placeholder-avatar.png'},
-            {name: "Talha Khan", avatar: '/placeholder-avatar.png'},
-            {name: "Phil Brady", avatar: '/placeholder-avatar.png'}
+            {name: "Anand Chaturvedi", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Miguel CuUnjieng", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Jared Haite", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Bao Te", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Taylor Meadows", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Talha Khan", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Phil Brady", avatar: '/speakers/placeholder-avatar.png'}
         ],
         description: "AI is redefining the future of finance by powering smarter investment strategies, real-time risk detection, and automated compliance. This panel explores how financial institutions, regulators, and investors are leveraging AI to enhance decision-making.",
     },
@@ -134,14 +134,14 @@ export const upcomingSessions = [
         format: 'panel',
         keynoteSpeaker: {
             name: "Eric Horvitz",
-            avatar: '/EricHorvitz.png'
+            avatar: '/speakers/EricHorvitz.png'
         },
         panelSpeakers: [
-            {name: "Matt Ford", avatar: '/MattFord.png'},
-            {name: "Xiaoran Cai", avatar: '/XiaoranCai.jpg'},
-            {name: "Courtney Greer", avatar: '/CourtneyGreer.png'},
-            {name: "Himanshu Joshi", avatar: '/placeholder-avatar.png'},
-            {name: "Dan Reich", avatar: '/placeholder-avatar.png'}
+            {name: "Matt Ford", avatar: '/speakers/MattFord.png'},
+            {name: "Xiaoran Cai", avatar: '/speakers/XiaoranCai.jpg'},
+            {name: "Courtney Greer", avatar: '/speakers/CourtneyGreer.png'},
+            {name: "Himanshu Joshi", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Dan Reich", avatar: '/speakers/placeholder-avatar.png'}
         ],
         description: "AI is advancing rapidly, but with great power comes greater responsibility. This panel dives into how researchers, policymakers, and technologists are working together to build AI systems that are transparent, fair, and aligned with human values.",
     }
@@ -154,7 +154,7 @@ export const featuredSpeakers = [
         name: "Steven Cohen",
         title: "SPEAKER",
         event: "Sustainability Management and Environmental Policy: Leading the Green Transformation in Business and Academia",
-        logo: '/DeanCohen.png',
+        logo: '/speakers/DeanCohen.png',
         affiliation: "Senior Vice Dean at Columbia University School of Professional Studies & Director of Sustainability Management Program"
     },
     {
@@ -162,7 +162,7 @@ export const featuredSpeakers = [
         name: "Eric Horvitz",
         title: "KEYNOTE SPEAKER",
         event: "AI at the Intersection of Science and Society: Navigating Technology's Role in Sustainable Innovation",
-        logo: '/EricHorvitz.png',
+        logo: '/speakers/EricHorvitz.png',
         affiliation: "Chief Scientific Officer at Microsoft"
     },
     {
@@ -170,7 +170,7 @@ export const featuredSpeakers = [
         name: "Veeral Shah",
         title: "SPEAKER",
         event: "Building Impactful Technology: 20+ Years of Innovation in Product Strategy and Sustainable Business Solutions",
-        logo: '/VeeralShah.png',
+        logo: '/speakers/VeeralShah.png',
         affiliation: "Managing Director in Kroll"
     },
     {
@@ -178,7 +178,7 @@ export const featuredSpeakers = [
         name: "Matt James",
         title: "SPEAKER",
         event: "Planetary Resilience: Strengthening Ecosystems, Fostering Biodiversity, and Enabling All Life to Thrive with AI.",
-        logo: '/MattJames.png',
+        logo: '/speakers/MattJames.png',
         affiliation: "Chief Animal Officer at Colossal"
     },
     {
@@ -186,7 +186,7 @@ export const featuredSpeakers = [
         name: "Katja Schroeder",
         title: "SPEAKER",
         event: "Technology-Enabled Sustainability: Leadership Communications and Entrepreneurial Innovation for Global Impact",
-        logo: '/KatjaSchroeder.png',
+        logo: '/speakers/KatjaSchroeder.png',
         affiliation: "Senior Lecturer, Columbia University Technology Management Program & Founder of Expedition PR"
     },
     {
@@ -194,7 +194,7 @@ export const featuredSpeakers = [
         name: "Justin Cappos",
         title: "SPEAKER",
         event: "Cybersecurity for Sustainable Systems: Real-World Solutions from Cloud Computing to Automotive Innovation",
-        logo: '/JustinCappos.png',
+        logo: '/speakers/JustinCappos.png',
         affiliation: "Professor of Computer Science & Engineering, NYU & Director, NYU Center for Cybersecurity"
     },
     {
@@ -202,7 +202,7 @@ export const featuredSpeakers = [
         name: "Matt Ford",
         title: "SPEAKER",
         event: "Strategic Innovation at Scale: Leading R&D and Go-to-Market Initiatives for Sustainable Technology Solutions",
-        logo: '/MattFord.png',
+        logo: '/speakers/MattFord.png',
         affiliation: "Senior Engagement Manager, IBM Strategic Business Initiatives"
     },
     {
@@ -210,7 +210,7 @@ export const featuredSpeakers = [
         name: "Arthy Krishnamurthy",
         title: "SPEAKER",
         event: "AI Literacy and Business Transformation: Bridging the Gap Between Technology and Human Capital",
-        logo: '/ArthyKrishnamurthy.png',
+        logo: '/speakers/ArthyKrishnamurthy.png',
         affiliation: "Senior Director of Business Transformation at Dataiku"
     },
     {
@@ -218,7 +218,7 @@ export const featuredSpeakers = [
         name: "Xiaoran Cai",
         title: "KEYNOTE SPEAKER",
         event: "AI for Good: Building Sustainable Technology Platforms and Global Communities for Positive Impact",
-        logo: '/XiaoranCai.jpg',
+        logo: '/speakers/XiaoranCai.jpg',
         affiliation: "Founder & Product Lead at GEMI.AI"
     },
     {
@@ -226,7 +226,7 @@ export const featuredSpeakers = [
         name: "Courtney Greer",
         title: "SPEAKER",
         event: "From Chaos to Connection: Building AI-Powered Solutions That Simplify Human Experiences",
-        logo: '/CourtneyGreer.png',
+        logo: '/speakers/CourtneyGreer.png',
         affiliation: "Founder & CEO of Voxxy AI & Former Senior Technical Program Manager at Microsoft"
     },
     {
@@ -234,7 +234,7 @@ export const featuredSpeakers = [
         name: "David Baum",
         title: "SPEAKER",
         event: "Human-Centered AI Design: Research-Driven Approaches to Sustainable User Experience Innovation",
-        logo: '/DavidBaum.png',
+        logo: '/speakers/DavidBaum.png',
         affiliation: "UX Research Lead at Amazon Ads & Service Design Strategist"
     },
     {
@@ -242,7 +242,7 @@ export const featuredSpeakers = [
         name: "Karen Farah",
         title: "SPEAKER",
         event: "Digital Transformation for Sustainability: AI, Cloud, and Cybersecurity Solutions for Future-Ready Organizations",
-        logo: '/KarenFarah.png',
+        logo: '/speakers/KarenFarah.png',
         affiliation: "CEO at The Melting Pot Studio & AI & Cloud Solutions Leader"
     },
   

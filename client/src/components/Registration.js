@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 // Registration Modal Component
-const Registration = ({isOpen, onClose}) => {
+const Registration = ({isOpen, onClose, navigateHome}) => {
     const registrationRoles = [
         {
             id: 'keynote',
@@ -33,17 +35,25 @@ const Registration = ({isOpen, onClose}) => {
         }
     ];
 
+   
+    const navigate = useNavigate()
+
     const handleRoleSelect = (role) => {
         // Mock link navigation - in a real app, this would use proper routing
         window.open(role.link, '_blank', 'noopener,noreferrer');
-        onClose();
+        handleClose();
     };
 
     const handleOverlayClick = (e) => {
         if (e.target === e.currentTarget) {
-            onClose();
+            handleClose();
         }
     };
+    
+    const handleClose = () => {
+    onClose();
+    navigate('/home', { replace: true });
+  };
 
     if (!isOpen) return null;
 
@@ -61,7 +71,7 @@ const Registration = ({isOpen, onClose}) => {
                         <p className="text-gray-600 mt-1">Select your role to continue registration</p>
                     </div>
                     <button
-                        onClick={onClose}
+                        onClick={handleClose}
                         className="text-gray-600 hover:text-black text-2xl font-bold w-8 h-8 flex items-center justify-center transition-colors"
                     >
                         ×
@@ -105,6 +115,8 @@ const Registration = ({isOpen, onClose}) => {
                     </div>
                 </div>
             </div>
+            
+     
         </div>
     );
 };
