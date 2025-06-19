@@ -1,20 +1,41 @@
-import React, {useState} from 'react';
-
-// Import components from current directory structure
-import RegistrationModal from './RegistrationModal';
+import React, { useState, useEffect } from 'react';
 import CountdownTimer from './CountdownTimer';
-import LoadingScreen from './LoadingScreen';
-import PartnersPage from './PartnersPage';
-import EventsCalendarPage from './EventsCalendarPage';
-
-// Import data from current directory structure
-import {eventData, upcomingSessions, featuredSpeakers} from './appData';
-
+import Registration from './Registration';
 // Main App Component - Refactored with separated components
-const TechWeekApp = () => {
+const Home = () => {
     const [currentPage, setCurrentPage] = useState('home');
     const [isLoading, setIsLoading] = useState(true);
     const [isRegistrationModalOpen, setIsRegistrationModalOpen] = useState(false);
+    const [fetchError, setFetchError] = useState(null);
+
+    const [data, setData] = useState(null);
+   
+  useEffect(() => {
+    fetch('/api/home')  // adjust if your server URL is different
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        return res.json();
+      })
+      .then(json => {
+        setData(json);
+        setFetchError(null);
+      })
+      .catch(err => {
+        console.error('Fetch failed:', err);
+        setFetchError('Failed to load data');
+      });
+  }, []);
+
+  if (fetchError) {
+    return <div className="text-red-600 font-bold text-center mt-10">{fetchError}</div>;
+  }
+
+  if (!data) {
+    return <div className="text-center font-bold text-xl mt-10">Loading data...</div>;
+  }
+
+  const { eventData, upcomingSessions, featuredSpeakers } = data;
+
 
     const handleNavigation = (page) => {
         setCurrentPage(page);
@@ -28,15 +49,21 @@ const TechWeekApp = () => {
         e.preventDefault();
         setIsRegistrationModalOpen(true);
     };
-
+  
     const handleCloseRegistrationModal = () => {
         setIsRegistrationModalOpen(false);
     };
 
-    // Show loading screen when app first loads
-    if (isLoading) {
-        return <LoadingScreen onLoadingComplete={handleLoadingComplete}/>;
-    }
+      const handleSubscribeClick = (e) => {
+        e.preventDefault();
+        setIsSubscribeModalOpen(true);
+    };
+
+    const handleCloseSubscribeModal = () => {
+        setIsSubscribeModalOpen(false);
+    };
+
+ 
 
     if (currentPage === 'calendar') {
         return <EventsCalendarPage onNavigate={handleNavigation}/>;
@@ -48,61 +75,6 @@ const TechWeekApp = () => {
 
     return (
         <div className="min-h-screen bg-white text-black font-bold">
-            {/* Header */}
-            <header className="border-b border-gray-200 py-4 px-6">
-                <div className="max-w-7xl mx-auto flex justify-between items-center">
-                    <div className="flex space-x-8">
-                        <a
-                            href="#"
-                            className="text-gray-600 hover:text-black font-bold"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                handleNavigation('calendar');
-                            }}
-                        >
-                            Summit Program
-                        </a>
-                        <a
-                            href="#"
-                            className="text-gray-600 hover:text-black font-bold"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                handleNavigation('partners');
-                            }}
-                        >
-                            Partners
-                        </a>
-                    </div>
-
-                    <div className="flex items-center space-x-4">
-                        <button
-                            onClick={() => handleNavigation('home')}
-                            className="p-1 rounded-full hover:bg-gray-100 transition-colors"
-                        >
-                            <div
-                                className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-400 shadow-lg">
-                                <img
-                                    src="/gemi-logo-nobg.png"
-                                    alt="Gemi Logo"
-                                    className="w-8 h-8 object-contain"
-                                    onError={(e) => {
-                                        // Fallback to emoji if image fails to load
-                                        e.target.style.display = 'none';
-                                        e.target.nextSibling.style.display = 'block';
-                                    }}
-                                />
-                                <span className="hidden text-2xl font-bold text-green-600">🌱</span>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div className="flex space-x-8">
-                        <a href="#" className="text-gray-600 hover:text-black font-bold"
-                           onClick={handleRegisterClick}>Register</a>
-                        <a href="#" className="text-gray-600 hover:text-black font-bold">Welcome!</a>
-                    </div>
-                </div>
-            </header>
 
             {/* Hero Section */}
             <section className="py-16 px-6 relative min-h-[600px] overflow-hidden">
@@ -403,20 +375,11 @@ const TechWeekApp = () => {
                 </div>
             </section>
 
-            {/* Footer */}
-            <footer className="py-8 px-6 border-t border-gray-200">
-                <div className="max-w-7xl mx-auto text-center text-gray-600">
-                    <p>© 2025 AI and Sustainability Summit. All rights reserved.</p>
-                </div>
-            </footer>
+       
 
-            {/* Registration Modal */}
-            <RegistrationModal
-                isOpen={isRegistrationModalOpen}
-                onClose={handleCloseRegistrationModal}
-            />
+         
         </div>
     );
 };
 
-export default TechWeekApp;
+export default Home;

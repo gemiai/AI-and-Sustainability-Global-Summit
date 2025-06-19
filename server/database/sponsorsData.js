@@ -1,9 +1,8 @@
-// Partner data for the AI and Sustainability Summit
-export const partnerData = [
+export const sponsorsData = [
     {
         id: 'keynote',
         title: 'Keynote Speakers',
-        partners: [
+        sponsors: [
             {
                 id: 1,
                 name: 'Matt James',
@@ -25,7 +24,7 @@ export const partnerData = [
     {
         id: 'events',
         title: 'Event Sponsors',
-        partners: [
+        sponsors: [
             {
                 id: 3,
                 name: 'Fantuan',
@@ -39,7 +38,7 @@ export const partnerData = [
     {
         id: 'startup',
         title: 'Start-up Collaborators',
-        partners: [
+        sponsors: [
             {
                 id: 4,
                 name: 'Wink Suite',
@@ -133,7 +132,7 @@ export const partnerData = [
     {
         id: 'institutional',
         title: 'Research & Academic Partners',
-        partners: [
+        sponsors: [
             {id: 15, name: 'Columbia University', logo: '/columbia-logo.png', type: 'institutional'},
             {id: 16, name: 'New York University', logo: '/nyu-logo.png', type: 'institutional'},
             {id: 17, name: 'Carnegie Mellon University', logo: '/cmu-logo.png', type: 'institutional'},

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Registration Modal Component
-const RegistrationModal = ({isOpen, onClose}) => {
+const Registration = ({isOpen, onClose}) => {
     const registrationRoles = [
         {
             id: 'keynote',
@@ -109,4 +109,4 @@ const RegistrationModal = ({isOpen, onClose}) => {
     );
 };
 
-export default RegistrationModal;
+export default Registration;

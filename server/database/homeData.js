@@ -245,13 +245,5 @@ export const featuredSpeakers = [
         logo: '/KarenFarah.png',
         affiliation: "CEO at The Melting Pot Studio & AI & Cloud Solutions Leader"
     },
-    //
-    // {
-    //     id: 2,
-    //     name: "Matthew Collado",
-    //     title: "SPEAKER",
-    //     event: "Igniting Every Artist's Dream with AI: Unlock Opportunities and make high-quality art accessible to all—bringing joy and visions of the future to life.",
-    //     logo: '/MatthewCollado.png',
-    //     affiliation: "Executive & Partner in Arcana"
-    // }
+  
 ];

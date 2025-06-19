@@ -1,9 +1,8 @@
-// Events data for the AI and Sustainability Summit
-export const eventsData = {
+export const scheduleData = {
     totalEvents: 11,
     categories: ['All', 'Networking', 'Education', 'Planet', 'Art', 'Technology', 'Food', 'Finance', 'Challenge'],
     days: ['SAT'],
-    events: [
+    schedule: [
         {
             id: 1,
             title: "Breakfast and Networking",
@@ -121,3 +120,5 @@ export const eventsData = {
         }
     ]
 };
+
+
