@@ -1,27 +1,42 @@
 import React, { useState, useEffect } from 'react';
-
+import { scheduleData } from './scheduleData.js';
+import { sponsorsData } from './sponsorsData.js';
 
 // Summit Program Page Component
 const Schedule = ({onNavigate}) => {
     const [activeDay, setActiveDay] = useState('SAT');
     const [activeCategory, setActiveCategory] = useState('All');
     const [isRegistrationModalOpen, setIsRegistrationModalOpen] = useState(false);
-    const [scheduleData, setScheduleData] = useState(null);
- 
-   
-    useEffect(() => {
-    fetch('/api/schedule')
-      .then(res => res.json())
-      .then(data => {
-        console.log('Fetched schedule data:', data);
-        setScheduleData(data);
-      })
-      .catch(err => console.error('Failed to load schedule data:', err));
-    }, []);
 
-    if (!scheduleData) {
-        return <div>Loading schedule...</div>;
-    }
+    // const [scheduleData, setScheduleData] = useState(null);
+
+
+   const [schedule, setSchedule] = useState(null);
+  const [sponsors, setSponsors] = useState(null);
+    
+  useEffect(() => {
+    setSchedule(scheduleData);
+  }, []);
+
+ useEffect(() => {
+  setSponsors(sponsorsData);
+}, []);
+   
+    // useEffect(() => {
+    // fetch('/api/schedule')
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     console.log('Fetched schedule data:', data);
+    //     setScheduleData(data);
+    //   })
+    //   .catch(err => console.error('Failed to load schedule data:', err));
+    // }, []);
+
+    // if (!scheduleData) {
+    //     return <div>Loading schedule...</div>;
+    // }
+
+    
 
     const handleRegisterClick = () => {
     setIsRegistrationModalOpen(true);
@@ -207,6 +222,24 @@ const Schedule = ({onNavigate}) => {
                 </div>
             </div>
 
+            {/* Sponsors Section */}
+            <div className="mt-12 px-8">
+              <h2 className="text-2xl mb-4">Summit Sponsors</h2>
+              {sponsorsData.map(group => (
+                <div key={group.id} className="mb-6">
+                  <h3 className="text-xl font-bold mb-2">{group.title}</h3>
+                  <div className="flex flex-wrap gap-4">
+                    {group.sponsors.map(sponsor => (
+                      <div key={sponsor.id} className="flex flex-col items-center w-32">
+                        <img src={sponsor.logo} alt={sponsor.name} className="w-16 h-16 object-contain mb-2" />
+                        <div className="text-sm font-bold">{sponsor.name}</div>
+                        {sponsor.founder && <div className="text-xs text-gray-500">{sponsor.founder}</div>}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
         </div>
     );
 };

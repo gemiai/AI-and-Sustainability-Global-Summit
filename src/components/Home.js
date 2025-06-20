@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CountdownTimer from './CountdownTimer';
 import Registration from './Registration';
 import { useNavigate } from 'react-router-dom';
+import { homeData } from './homeData.js';
 // Main App Component - Refactored with separated components
 const Home = () => {
     const [currentPage, setCurrentPage] = useState('home');
@@ -11,22 +12,27 @@ const Home = () => {
 
     const [data, setData] = useState(null);
     const navigate = useNavigate()
+     useEffect(() => {
+    // Simulate loading data
+     setData(homeData);
+     }, [])
    
-  useEffect(() => {
-    fetch('/api/home')  // adjust if your server URL is different
-      .then(res => {
-        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-        return res.json();
-      })
-      .then(json => {
-        setData(json);
-        setFetchError(null);
-      })
-      .catch(err => {
-        console.error('Fetch failed:', err);
-        setFetchError('Failed to load data');
-      });
-  }, []);
+//   useEffect(() => {
+//     fetch('/api/home')  // adjust if your server URL is different
+//       .then(res => {
+//         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+//         return res.json();
+//       })
+//       .then(json => {
+//         setData(json);
+//         setFetchError(null);
+//       })
+//       .catch(err => {
+//         console.error('Fetch failed:', err);
+//         setFetchError('Failed to load data');
+//       });
+//   }, []);
+;
 
   if (fetchError) {
     return <div className="text-red-600 font-bold text-center mt-10">{fetchError}</div>;
@@ -36,7 +42,7 @@ const Home = () => {
     return <div className="text-center font-bold text-xl mt-10">Loading data...</div>;
   }
 
-  const { eventData, upcomingSessions, featuredSpeakers } = data;
+ const { eventData = {}, upcomingSessions = [], featuredSpeakers = [] } = data;
 
 
     const handleNavigation = (page) => {
