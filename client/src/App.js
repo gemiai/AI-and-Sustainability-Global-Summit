@@ -140,6 +140,7 @@
 // };
 
 // export default App;
+import { Navigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from "./components/Navbar.js";
@@ -191,7 +192,7 @@ const AppContent = () => {
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/registration" element={<Registration />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate to="/home" replace />} />
         </Routes>
       </main>
 

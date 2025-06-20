@@ -1,3 +1,4 @@
+import { sponsorsData } from './sponsorsData.js';
 // Main application data
 export const eventData = {
     totalSessions: 11,
@@ -248,8 +249,3 @@ export const featuredSpeakers = [
     },
   
 ];
-
-export const homeData = {
-  // ...other home data properties
-  sponsors: sponsorsData
-};

@@ -1,22 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import CountdownTimer from './CountdownTimer.js';
 import Registration from './Registration.js';
+
+
 import { useNavigate } from 'react-router-dom';
-import { homeData } from './homeData.js';
+import { eventData,upcomingSessions,featuredSpeakers } from './homeData.js';
+
+
+
 // Main App Component - Refactored with separated components
 const Home = () => {
     const [currentPage, setCurrentPage] = useState('home');
     const [isLoading, setIsLoading] = useState(true);
     const [isRegistrationModalOpen, setIsRegistrationModalOpen] = useState(false);
     const [fetchError, setFetchError] = useState(null);
-    const [data, setData] = useState(null);
+    // const [data, setData] = useState(null);
+    const data = {eventData, upcomingSessions,featuredSpeakers };
 
     const navigate = useNavigate()
 
-     useEffect(() => {
-    // Simulate loading data
-     setData(homeData);
-     }, [])
+    //  useEffect(() => {
+    // // Simulate loading data
+    //  setData(homeData);
+    //  }, [])
    
 //   useEffect(() => {
 //     fetch('/api/home')  // adjust if your server URL is different
@@ -43,7 +49,7 @@ const Home = () => {
     return <div className="text-center font-bold text-xl mt-10">Loading data...</div>;
   }
 
- const { eventData = {}, upcomingSessions = [], featuredSpeakers = [] } = data;
+
 
 
     const handleNavigation = (page) => {
