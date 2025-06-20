@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import RegistrationModal from './Registration.js'; 
 import { sponsorsData } from './sponsorsData.js';
@@ -65,14 +64,14 @@ const Sponsors = ({onNavigate}) => {
                             {category.sponsors.map(sponsors => (
                                 <div
                                     key={sponsors.id}
-                                    className="border border-gray-300 bg-white rounded-lg aspect-square
-           hover:border-green-500 transition-colors group relative overflow-hidden"
+                                    className="border border-gray-300 bg-white rounded-lg p-4 flex items-center justify-center aspect-square
+                                    hover:border-green-500 transition-colors group relative overflow-hidden"
                                 >
                                     {sponsors.logo ? (
                                         <img
                                             src={sponsors.logo}
                                             alt={`${sponsors.name} logo`}
-                                            className="w-full h-full object-contain"
+                                            className="max-w-full max-h-full object-contain"
                                             onError={e => {
                                                 e.target.style.display = 'none';
                                                 e.target.nextSibling.style.display = 'flex';
