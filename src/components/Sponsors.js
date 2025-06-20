@@ -1,18 +1,19 @@
 
 import React, { useEffect, useState } from 'react';
 import RegistrationModal from './Registration'; 
+import { sponsorsData } from './sponsorData';
 
 // Detailed Partners Page Component with Real Partnership Data
 const Sponsors = ({onNavigate}) => {
     const [isRegistrationModalOpen, setIsRegistrationModalOpen] = useState(false);
     const [sponsorsData, setSponsorsData] = useState([]);
 
-    useEffect(() => {
-         fetch('/api/sponsors')
-          .then(res => res.json())
-            .then(data => setSponsorsData(data))
-     .catch(err => console.error('Failed to load sponsors data', err));
-    }, []);
+    // useEffect(() => {
+    //      fetch('/api/sponsors')
+    //       .then(res => res.json())
+    //         .then(data => setSponsorsData(data))
+    //  .catch(err => console.error('Failed to load sponsors data', err));
+    // }, []);
 
     const handleHomeClick = (e) => {
         e.preventDefault();
