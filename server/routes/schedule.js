@@ -1,10 +1,10 @@
-import express from 'express';
-import { scheduleData } from '../database/scheduleData.js'
+// import express from 'express';
+// import { scheduleData } from '../database/scheduleData.js'
 
-const router = express.Router();
+// const router = express.Router();
 
-router.get('/schedule', (req, res) => {
-  res.json(scheduleData);
-});
+// router.get('/schedule', (req, res) => {
+//   res.json(scheduleData);
+// });
 
-export default router;
+// export default router;

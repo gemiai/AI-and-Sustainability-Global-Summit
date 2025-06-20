@@ -1,10 +1,10 @@
-import express from 'express';
-import { sponsorsData } from '../database/sponsorsData.js'
+// import express from 'express';
+// import { sponsorsData } from '../database/sponsorsData.js'
 
-const router = express.Router();
+// const router = express.Router();
 
-router.get('/sponsors', (req, res) => {
-  res.json(sponsorsData);
-});
+// router.get('/sponsors', (req, res) => {
+//   res.json(sponsorsData);
+// });
 
-export default router;
+// export default router;
