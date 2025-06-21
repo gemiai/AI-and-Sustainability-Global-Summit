@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 // Registration Modal Component
 const Registration = ({isOpen, onClose, navigateHome}) => {
+    // Defines the roles available for registration
     const registrationRoles = [
         {
             id: 'early-bird',
