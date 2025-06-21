@@ -195,11 +195,11 @@ const Home = () => {
                         {featuredSpeakers.map((speaker, index) => (
                             <div key={speaker.id} className="mb-8">
                                 <div
-                                    className="w-full h-48 bg-gray-100 rounded-md mb-4 overflow-hidden relative">
+                                    className="w-full h-64 bg-gray-100 rounded-md mb-4 overflow-hidden relative">
                                     <img
                                         src={speaker.logo}
                                         alt={`${speaker.name} photo`}
-                                        className="w-full h-full object-cover object-center"
+                                        className="w-full h-full object-cover object-top"
                                         onError={(e) => {
                                             // Fallback to gradient with initials if image fails to load
                                             e.target.style.display = 'none';
