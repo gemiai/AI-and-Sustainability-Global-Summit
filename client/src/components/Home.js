@@ -164,9 +164,9 @@ const Home = () => {
                             <div className="space-y-3">
                                 <button
                                     className="bg-green-600 text-white font-black py-2 px-4 text-sm rounded-md hover:bg-green-500 transition w-full"
-                                    onClick={() => handleNavigation('calendar')}
+                                    onClick={() => navigate('/schedule')}
                                 >
-                                    Event Schedule
+                                    View Full Schedule
                                 </button>
                             </div>
                         </div>
@@ -245,9 +245,9 @@ const Home = () => {
                         </div>
                         <button
                             className="bg-green-600 text-white font-black py-2 px-4 rounded-md hover:bg-green-500 transition"
-                            onClick={() => handleNavigation('calendar')}
+                            onClick={() => navigate('/schedule')}
                         >
-                            VIEW FULL PROGRAM
+                            View Full Schedule
                         </button>
                     </div>
 
