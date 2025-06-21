@@ -6,6 +6,13 @@ import { useNavigate } from 'react-router-dom';
 const Registration = ({isOpen, onClose, navigateHome}) => {
     const registrationRoles = [
         {
+            id: 'early-bird',
+            title: 'Early Bird Ticket',
+            description: 'Get your discounted ticket now!',
+            icon: '🎟️',
+            link: 'https://www.eventbrite.com/e/1403279870869?aff=oddtdtcreator'
+        },
+        {
             id: 'keynote',
             title: 'Keynote Speakers',
             description: 'Leading experts presenting groundbreaking research',

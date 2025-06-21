@@ -236,7 +236,7 @@ export const featuredSpeakers = [
         name: "David Baum",
         title: "SPEAKER",
         event: "Human-Centered AI Design: Research-Driven Approaches to Sustainable User Experience Innovation",
-        logo: '/speakers/DavidBaum.png',
+        logo: '/speakers/DavidBaum.jpg',
         affiliation: "UX Research Lead at Amazon Ads & Service Design Strategist"
     },
     {
