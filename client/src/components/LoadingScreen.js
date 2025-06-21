@@ -54,7 +54,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
       <img 
         src="/earth.png" 
         alt="Globe background"
-        className="absolute top-1/2 left-1/2 w-80 h-80 object-cover z-0 transition-opacity duration-500"
+        className="absolute top-1/2 left-1/2 w-96 h-96 object-cover z-0 transition-opacity duration-500"
         style={{
           opacity: progress / 10,
           transform: 'translate(-50%, -50%)'// fades in as progress increases

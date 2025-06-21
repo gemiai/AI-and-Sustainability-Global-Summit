@@ -1,23 +1,58 @@
 export const sponsorsData = [
     {
+        id: 'cohosts',
+        title: 'Co-hosts',
+        sponsors: [
+            {
+                id: 26,
+                name: 'Columbia University',
+                logo: '/sponsors/columbia-logo.png',
+                type: 'cohost',
+                link: 'https://www.columbia.edu/',
+                founder: 'Columbia University',
+                linkedin: 'https://www.linkedin.com/school/columbia-university/'
+            },
+            {
+                id: 27,
+                name: 'New York University',
+                logo: '/sponsors/nyu-logo.png',
+                type: 'cohost',
+                link: 'https://www.nyu.edu/',
+                founder: 'New York University',
+                linkedin: 'https://www.linkedin.com/school/new-york-university/'
+            },
+            {
+                id: 28,
+                name: 'EntreConnect',
+                logo: '/sponsors/entreconnect-logo.png',
+                type: 'cohost',
+                link: 'https://entreconnect.org/',
+                founder: 'EntreConnect',
+                linkedin: 'https://www.linkedin.com/company/entreconnect/'
+            }
+        ]
+    },
+    {
         id: 'keynote',
-        title: 'Keynote Speakers',
+        title: 'Speaker Organizations',
         sponsors: [
             {
                 id: 1,
-                name: 'Matt James',
+                name: 'Colossal Biosciences',
                 logo: '/sponsors/colossal-logo.png',
                 type: 'keynote',
                 founder: 'Matt James',
-                linkedin: 'https://www.linkedin.com/in/matt-james-40b4a595/'
+                linkedin: 'https://www.linkedin.com/company/colossal/',
+                link: 'https://colossal.com/'
             },
             {
                 id: 2,
-                name: 'Matthew Collado',
+                name: 'Arcana',
                 logo: '/sponsors/arcana-logo.png',
                 type: 'keynote',
                 founder: 'Matthew Collado',
-                linkedin: 'https://www.linkedin.com/in/mathewcollado/'
+                linkedin: 'https://www.linkedin.com/company/arcanaai/posts/?feedView=all',
+                link: 'https://arcana.ai/'
             }
         ]
     },
@@ -31,7 +66,8 @@ export const sponsorsData = [
                 logo: '/sponsors/fantuan-logo.png',
                 type: 'events',
                 founder: 'FY',
-                linkedin: 'https://www.linkedin.com/company/fantuan/'
+                linkedin: 'https://www.linkedin.com/company/fantuan/',
+                link: 'https://www.fantuan.com/'
             }
         ]
     },
@@ -45,7 +81,8 @@ export const sponsorsData = [
                 logo: '/sponsors/wink-logo.png',
                 type: 'startup',
                 founder: 'Gabriele Rapetti',
-                linkedin: 'https://www.linkedin.com/in/gabriele-rapetti-63b365189/'
+                linkedin: 'https://www.linkedin.com/in/gabriele-rapetti-63b365189/',
+                link: 'https://winksuite.com/'
             },
             {
                 id: 5,
@@ -53,7 +90,8 @@ export const sponsorsData = [
                 logo: '/sponsors/veilstream-logo.png',
                 type: 'startup',
                 founder: 'Steve Jones',
-                linkedin: 'https://www.linkedin.com/in/jonessteven/'
+                linkedin: 'https://www.linkedin.com/in/jonessteven/',
+                link: 'https://veilstream.com/'
             },
             {
                 id: 6,
@@ -61,7 +99,8 @@ export const sponsorsData = [
                 logo: '/sponsors/edusight-logo.png',
                 type: 'startup',
                 founder: 'Kushal Kundanmal',
-                linkedin: 'https://www.linkedin.com/in/kundanmal/'
+                linkedin: 'https://www.linkedin.com/in/kundanmal/',
+                link: 'https://edusight.ai/'
             },
             {
                 id: 7,
@@ -69,7 +108,8 @@ export const sponsorsData = [
                 logo: '/sponsors/prh-logo.png',
                 type: 'startup',
                 founder: 'Johan Saavedra',
-                linkedin: 'https://www.linkedin.com/in/johan-saavedra-sanchez/'
+                linkedin: 'https://www.linkedin.com/in/johan-saavedra-sanchez/',
+                link: 'https://prh.org/'
             },
             {
                 id: 8,
@@ -77,7 +117,8 @@ export const sponsorsData = [
                 logo: '/sponsors/bookauthor-logo.png',
                 type: 'startup',
                 founder: 'Serena Y. Li',
-                linkedin: 'https://www.linkedin.com/in/serenayli/'
+                linkedin: 'https://www.linkedin.com/in/serenayli/',
+                link: 'https://bookanauthor.com/'
             },
             {
                 id: 9,
@@ -85,7 +126,8 @@ export const sponsorsData = [
                 logo: '/sponsors/greentech-logo.png',
                 type: 'startup',
                 founder: 'Niels Vilstrup',
-                linkedin: 'https://www.linkedin.com/in/nielsvilstrup/'
+                linkedin: 'https://www.linkedin.com/in/nielsvilstrup/',
+                link: 'https://greentechna.com/'
             },
             {
                 id: 10,
@@ -93,7 +135,8 @@ export const sponsorsData = [
                 logo: '/sponsors/frasify-logo.png',
                 type: 'startup',
                 founder: 'Wayne Wei',
-                linkedin: 'https://www.linkedin.com/in/wayne-wei-104a44286/'
+                linkedin: 'https://www.linkedin.com/in/wayne-wei-104a44286/',
+                link: 'https://frasify.ai/'
             },
             {
                 id: 11,
@@ -101,7 +144,8 @@ export const sponsorsData = [
                 logo: '/sponsors/hivo-logo.png',
                 type: 'startup',
                 founder: 'Fahad',
-                linkedin: 'https://www.linkedin.com/in/fahad-alruhayem/'
+                linkedin: 'https://www.linkedin.com/in/fahad-alruhayem/',
+                link: 'https://hivo.ai/'
             },
             {
                 id: 12,
@@ -109,7 +153,8 @@ export const sponsorsData = [
                 logo: '/sponsors/nubel-logo.png',
                 type: 'startup',
                 founder: 'Abel Osorio',
-                linkedin: 'https://www.linkedin.com/in/abelosorio89/'
+                linkedin: 'https://www.linkedin.com/in/abelosorio89/',
+                link: 'https://nubel.com/'
             },
             {
                 id: 13,
@@ -117,7 +162,8 @@ export const sponsorsData = [
                 logo: '/sponsors/bertrand-logo.png',
                 type: 'startup',
                 founder: 'Marc Bertrand',
-                linkedin: 'https://www.linkedin.com/in/dr-marc-a-bertrand-0b773939/'
+                linkedin: 'https://www.linkedin.com/in/dr-marc-a-bertrand-0b773939/',
+                link: 'https://bertrandeducation.com/'
             },
             {
                 id: 14,
@@ -125,7 +171,8 @@ export const sponsorsData = [
                 logo: '/sponsors/voxxy-logo.png',
                 type: 'startup',
                 founder: 'Courtney Greer',
-                linkedin: 'https://www.linkedin.com/in/courtney-greer/'
+                linkedin: 'https://www.linkedin.com/in/courtney-greer/',
+                link: 'https://voxxy.ai/'
             }
         ]
     },
@@ -133,29 +180,31 @@ export const sponsorsData = [
         id: 'institutional',
         title: 'Research & Academic Partners',
         sponsors: [
-            {id: 15, name: 'Columbia University', logo: '/sponsors/columbia-logo.png', type: 'institutional'},
-            {id: 16, name: 'New York University', logo: '/sponsors/nyu-logo.png', type: 'institutional'},
-            {id: 17, name: 'Carnegie Mellon University', logo: '/sponsors/cmu-logo.png', type: 'institutional'},
-            {id: 18, name: 'McGill University', logo: '/sponsors/mcgill-logo.png', type: 'institutional'},
-            {id: 19, name: 'Nanyang Technological University', logo: '/sponsors/ntu-logo.png', type: 'institutional'},
+            {id: 15, name: 'Columbia University', logo: '/sponsors/columbia-logo.png', type: 'institutional', link: 'https://www.columbia.edu/'},
+            {id: 16, name: 'New York University', logo: '/sponsors/nyu-logo.png', type: 'institutional', link: 'https://www.nyu.edu/'},
+            {id: 17, name: 'Carnegie Mellon University', logo: '/sponsors/cmu-logo.png', type: 'institutional', link: 'https://www.cmu.edu/'},
+            {id: 18, name: 'McGill University', logo: '/sponsors/mcgill-logo.png', type: 'institutional', link: 'https://www.mcgill.ca/'},
+            {id: 19, name: 'Nanyang Technological University', logo: '/sponsors/ntu-logo.png', type: 'institutional', link: 'https://www.ntu.edu.sg/'},
             {
                 id: 20,
                 name: 'London School of Economics and Political Science',
                 logo: '/sponsors/lse-logo.png',
-                type: 'institutional'
+                type: 'institutional',
+                link: 'https://www.lse.ac.uk/'
             },
-            {id: 21, name: 'University of California, Los Angeles', logo: '/sponsors/ucla-logo.png', type: 'institutional'},
-            {id: 22, name: 'University of Washington', logo: '/sponsors/uw-logo.png', type: 'institutional'},
-            {id: 23, name: 'Cornell University', logo: '/sponsors/cornell-logo.png', type: 'institutional'},
+            {id: 21, name: 'University of California, Los Angeles', logo: '/sponsors/ucla-logo.png', type: 'institutional', link: 'https://www.ucla.edu/'},
+            {id: 22, name: 'University of Washington', logo: '/sponsors/uw-logo.png', type: 'institutional', link: 'https://www.washington.edu/'},
+            {id: 23, name: 'Cornell University', logo: '/sponsors/cornell-logo.png', type: 'institutional', link: 'https://www.cornell.edu/'},
             {
                 id: 24,
                 name: 'SFU Chang Institute for Entrepreneurship',
                 logo: '/sponsors/sfu-logo.png',
                 type: 'institutional',
                 founder: 'Thomas Partridge',
-                linkedin: 'https://www.linkedin.com/in/thomaspartridge/'
+                linkedin: 'https://www.linkedin.com/in/thomaspartridge/',
+                link: 'https://www.sfu.ca/'
             },
-            {id: 25, name: 'Babson College', logo: '/sponsors/babson-logo.png', type: 'institutional'}
+            {id: 25, name: 'Babson College', logo: '/sponsors/babson-logo.png', type: 'institutional', link: 'https://www.babson.edu/'}
         ]
     }
 ];
