@@ -182,6 +182,14 @@ export const keynoteSpeakers = [
         event: "Planetary Resilience: Strengthening Ecosystems, Fostering Biodiversity, and Enabling All Life to Thrive with AI.",
         logo: '/speakers/MattJames.png',
         affiliation: "Chief Animal Officer at Colossal"
+    },
+    {
+        id: 5,
+        name: "Jonathan Yunger",
+        title: "KEYNOTE SPEAKER",
+        event: "Planetary Resilience: Strengthening Ecosystems, Fostering Biodiversity, and Enabling All Life to Thrive with AI.",
+        logo: '/speakers/MattJames.png',
+        affiliation: "Chief Animal Officer at Colossal"
     }
 ];
 

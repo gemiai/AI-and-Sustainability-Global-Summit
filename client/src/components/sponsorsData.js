@@ -101,7 +101,7 @@ export const sponsorsData = [
             {
                 id: 37,
                 name: 'Reality Defender',
-                logo: 'realitydefender-logo.jpg',
+                logo: 'realitydefender-logo.png',
                 linkedin: 'https://www.linkedin.com/company/reality-defender/',
                 link: 'realitydefender.com/'
             },
