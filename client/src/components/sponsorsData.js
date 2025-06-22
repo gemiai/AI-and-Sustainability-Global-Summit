@@ -9,7 +9,6 @@ export const sponsorsData = [
                 logo: '/sponsors/columbia-logo.png',
                 type: 'cohost',
                 link: 'https://www.columbia.edu/',
-                founder: 'Columbia University',
                 linkedin: 'https://www.linkedin.com/school/columbia-university/'
             },
             {
@@ -18,7 +17,6 @@ export const sponsorsData = [
                 logo: '/sponsors/nyu-logo.png',
                 type: 'cohost',
                 link: 'https://www.nyu.edu/',
-                founder: 'New York University',
                 linkedin: 'https://www.linkedin.com/school/new-york-university/'
             },
             {
@@ -27,7 +25,6 @@ export const sponsorsData = [
                 logo: '/sponsors/entreconnect-logo.png',
                 type: 'cohost',
                 link: 'https://entreconnect.org/',
-                founder: 'EntreConnect',
                 linkedin: 'https://www.linkedin.com/company/entreconnect/'
             }
         ]
@@ -242,11 +239,11 @@ export const sponsorsData = [
         id: 'institutional',
         title: 'Research & Academic Partners',
         sponsors: [
-            {id: 15, name: 'Columbia University', logo: '/sponsors/columbia-logo.png', type: 'institutional', link: 'https://www.columbia.edu/'},
-            {id: 16, name: 'New York University', logo: '/sponsors/nyu-logo.png', type: 'institutional', link: 'https://www.nyu.edu/'},
-            {id: 17, name: 'Carnegie Mellon University', logo: '/sponsors/cmu-logo.png', type: 'institutional', link: 'https://www.cmu.edu/'},
-            {id: 18, name: 'McGill University', logo: '/sponsors/mcgill-logo.png', type: 'institutional', link: 'https://www.mcgill.ca/'},
-            {id: 19, name: 'Nanyang Technological University', logo: '/sponsors/ntu-logo.png', type: 'institutional', link: 'https://www.ntu.edu.sg/'},
+            {id: 15, name: 'Columbia University', logo: '/sponsors/columbia-logo.png', type: 'institutional', linkedin: 'https://www.columbia.edu/'},
+            {id: 16, name: 'New York University', logo: '/sponsors/nyu-logo.png', type: 'institutional', linkedin: 'https://www.nyu.edu/'},
+            {id: 17, name: 'Carnegie Mellon University', logo: '/sponsors/cmu-logo.png', type: 'institutional', linkedin: 'https://www.cmu.edu/'},
+            {id: 18, name: 'McGill University', logo: '/sponsors/mcgill-logo.png', type: 'institutional', linkedin: 'https://www.mcgill.ca/'},
+            {id: 19, name: 'Nanyang Technological University', logo: '/sponsors/ntu-logo.png', type: 'institutional', linkedin: 'https://www.ntu.edu.sg/'},
             {
                 id: 20,
                 name: 'London School of Economics and Political Science',
@@ -254,8 +251,8 @@ export const sponsorsData = [
                 type: 'institutional',
                 link: 'https://www.lse.ac.uk/'
             },
-            {id: 21, name: 'University of California, Los Angeles', logo: '/sponsors/ucla-logo.png', type: 'institutional', link: 'https://www.ucla.edu/'},
-            {id: 22, name: 'University of Washington', logo: '/sponsors/uw-logo.png', type: 'institutional', link: 'https://www.washington.edu/'},
+            {id: 21, name: 'University of California, Los Angeles', logo: '/sponsors/ucla-logo.png', type: 'institutional', linkedin: 'https://www.ucla.edu/'},
+            {id: 22, name: 'University of Washington', logo: '/sponsors/uw-logo.png', type: 'institutional', linkedin: 'https://www.washington.edu/'},
             {id: 23, name: 'Cornell University', logo: '/sponsors/cornell-logo.png', type: 'institutional', link: 'https://www.cornell.edu/'},
             {
                 id: 24,
@@ -266,7 +263,7 @@ export const sponsorsData = [
                 linkedin: 'https://www.linkedin.com/in/thomaspartridge/',
                 link: 'https://www.sfu.ca/'
             },
-            {id: 25, name: 'Babson College', logo: '/sponsors/babson-logo.png', type: 'institutional', link: 'https://www.babson.edu/'}
+            {id: 25, name: 'Babson College', logo: '/sponsors/babson-logo.png', type: 'institutional', linkedin: 'https://www.babson.edu/'}
         ]
     }
 ];

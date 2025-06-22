@@ -91,7 +91,7 @@ const Home = () => {
         <div className="min-h-screen bg-white text-black font-bold">
 
             {/* Hero Section */}
-            <section className="py-8 px-6 relative min-h-[600px] overflow-hidden">
+            <section className="py-16 px-6 relative min-h-[600px] overflow-hidden">
                 {/* Landing Page Background */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none mt-10 md:mt-20">
                     <img 
@@ -108,7 +108,7 @@ const Home = () => {
                     {/* Content Section - Left Aligned */}
                     <div className="col-span-12 md:col-span-7 lg:col-span-6 flex flex-col justify-start pt-0 min-h-[60vh]">
                         <div className="text-left w-full">
-                            <div className="inline-block bg-gradient-to-r from-teal-300 to-teal-500 bg-clip-text text-transparent">
+                            <div className="inline-block bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">
                                 <h1 className="text-3xl md:text-5xl font-black mb-4 whitespace-nowrap">AI and Sustainability Global Summit</h1>
                                 <p className="text-lg md:text-2xl font-bold">{eventData.date}</p>
                             </div>

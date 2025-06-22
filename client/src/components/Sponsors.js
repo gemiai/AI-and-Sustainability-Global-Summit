@@ -31,17 +31,16 @@ const Sponsors = ({onNavigate}) => {
         <div className="min-h-screen bg-white text-black font-bold">
 
             {/* Page Title */}
-            <section className="py-16 px-6">
-                <div className="max-w-7xl mx-auto">
-                    <h1 className="text-5xl font-bold mb-8">Summit Partners</h1>
-                    <p className="text-xl text-gray-600 max-w-3xl">
-                        The AI and Sustainability Summit is made possible through collaboration with leading research
-                        institutions,
-                        innovative startups, and organizations committed to leveraging artificial intelligence for
-                        environmental solutions
-                        and sustainable development.
+            <section className="py-10 px-6">
+             <div className= "max-w-7xl mx-auto">
+                    <h1 className=" text-5xl font-bold mb-8 text-left bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">Summit Sponsors</h1>
+                    <p className="text-xl text-gray-600 mb-4 text-left">
+                    The AI and Sustainability Global Summit is made possible through collaboration with forward-looking organizations, leading research institutions, and innovative startups.
                     </p>
-                </div>
+                
+                    <p className="text-xl text-gray-600 mb-4 text-left"> We are dedicated to harnessing artificial intelligence to advance sustainability across industries, drive innovative solutions, and support long-term global progress.</p>
+                    </div>
+              
             </section>
 
             {/* Partners Grid */}
@@ -80,14 +79,12 @@ const Sponsors = ({onNavigate}) => {
                                     </div>
 
                                     {/* Founder overlay */}
-                                    {sponsors.founder && (
+                                  
                                         <div className="absolute inset-0 bg-white bg-opacity-100 rounded-lg opacity-0
                         group-hover:opacity-100 transition-opacity duration-300 flex flex-col
                         justify-center items-center p-4">
                                             <div className="text-center">
-                                                <div className="text-sm font-bold mb-2 text-green-800">{sponsors.name}</div>
-                                                <div
-                                                    className="text-xs text-blue-800 mb-2">Founder: {sponsors.founder}</div>
+                                                <div className="text-sm font-bold mb-2 text-black">{sponsors.name}</div>
                                                 {sponsors.linkedin && (
                                                     <a
                                                         href={sponsors.linkedin}
@@ -106,7 +103,7 @@ const Sponsors = ({onNavigate}) => {
                                                 )}
                                             </div>
                                         </div>
-                                    )}
+                                    
                                 </div>
                             ))}
                         </div>
