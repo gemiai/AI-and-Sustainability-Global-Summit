@@ -81,13 +81,13 @@ const Sponsors = ({onNavigate}) => {
 
                                     {/* Founder overlay */}
                                     {sponsors.founder && (
-                                        <div className="absolute inset-0 bg-black bg-opacity-90 rounded-lg opacity-0
+                                        <div className="absolute inset-0 bg-white bg-opacity-100 rounded-lg opacity-0
                         group-hover:opacity-100 transition-opacity duration-300 flex flex-col
                         justify-center items-center p-4">
                                             <div className="text-center">
-                                                <div className="text-sm font-bold mb-2 text-white">{sponsors.name}</div>
+                                                <div className="text-sm font-bold mb-2 text-green-800">{sponsors.name}</div>
                                                 <div
-                                                    className="text-xs text-gray-300 mb-2">Founder: {sponsors.founder}</div>
+                                                    className="text-xs text-blue-800 mb-2">Founder: {sponsors.founder}</div>
                                                 {sponsors.linkedin && (
                                                     <a
                                                         href={sponsors.linkedin}
