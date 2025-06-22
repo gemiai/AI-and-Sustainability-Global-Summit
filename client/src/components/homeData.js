@@ -150,7 +150,7 @@ export const upcomingSessions = [
 ];
 
 // Featured speakers focused on AI and sustainability
-export const featuredSpeakers = [
+export const keynoteSpeakers = [
     {
         id: 1,
         name: "Steven Cohen",
@@ -182,11 +182,14 @@ export const featuredSpeakers = [
         event: "Planetary Resilience: Strengthening Ecosystems, Fostering Biodiversity, and Enabling All Life to Thrive with AI.",
         logo: '/speakers/MattJames.png',
         affiliation: "Chief Animal Officer at Colossal"
-    },
+    }
+];
+
+export const panelSpeakers = [
     {
         id: 5,
         name: "Katja Schroeder",
-        title: "SPEAKER",
+        title: "PANEL SPEAKER",
         event: "Technology-Enabled Sustainability: Leadership Communications and Entrepreneurial Innovation for Global Impact",
         logo: '/speakers/KatjaSchroeder.png',
         affiliation: "Senior Lecturer, Columbia University Technology Management Program & Founder of Expedition PR"
@@ -194,7 +197,7 @@ export const featuredSpeakers = [
     {
         id: 6,
         name: "Justin Cappos",
-        title: "SPEAKER",
+        title: "PANEL SPEAKER",
         event: "Cybersecurity for Sustainable Systems: Real-World Solutions from Cloud Computing to Automotive Innovation",
         logo: '/speakers/JustinCappos.png',
         affiliation: "Professor of Computer Science & Engineering, NYU & Director, NYU Center for Cybersecurity"
@@ -202,7 +205,7 @@ export const featuredSpeakers = [
     {
         id: 7,
         name: "Matt Ford",
-        title: "SPEAKER",
+        title: "PANEL SPEAKER",
         event: "Strategic Innovation at Scale: Leading R&D and Go-to-Market Initiatives for Sustainable Technology Solutions",
         logo: '/speakers/MattFord.png',
         affiliation: "Senior Engagement Manager, IBM Strategic Business Initiatives"
@@ -210,7 +213,7 @@ export const featuredSpeakers = [
     {
         id: 8,
         name: "Arthy Krishnamurthy",
-        title: "SPEAKER",
+        title: "PANEL SPEAKER",
         event: "AI Literacy and Business Transformation: Bridging the Gap Between Technology and Human Capital",
         logo: '/speakers/ArthyKrishnamurthy.png',
         affiliation: "Senior Director of Business Transformation at Dataiku"
@@ -218,7 +221,7 @@ export const featuredSpeakers = [
     {
         id: 9,
         name: "Xiaoran Cai",
-        title: "SPEAKER",
+        title: "PANEL SPEAKER",
         event: "AI for Good: Building Sustainable Technology Platforms and Global Communities for Positive Impact",
         logo: '/speakers/XiaoranCai.jpg',
         affiliation: "Founder & Product Lead at GEMI.AI"
@@ -226,7 +229,7 @@ export const featuredSpeakers = [
     {
         id: 10,
         name: "Courtney Greer",
-        title: "SPEAKER",
+        title: "PANEL SPEAKER",
         event: "From Chaos to Connection: Building AI-Powered Solutions That Simplify Human Experiences",
         logo: '/speakers/CourtneyGreer.png',
         affiliation: "Founder & CEO of Voxxy AI & Former Senior Technical Program Manager at Microsoft"
@@ -234,7 +237,7 @@ export const featuredSpeakers = [
     {
         id: 11,
         name: "David Baum",
-        title: "SPEAKER",
+        title: "PANEL SPEAKER",
         event: "Human-Centered AI Design: Research-Driven Approaches to Sustainable User Experience Innovation",
         logo: '/speakers/DavidBaum.jpg',
         affiliation: "UX Research Lead at Amazon Ads & Service Design Strategist"
@@ -242,10 +245,12 @@ export const featuredSpeakers = [
     {
         id: 12,
         name: "Karen Farah",
-        title: "SPEAKER",
+        title: "PANEL SPEAKER",
         event: "Digital Transformation for Sustainability: AI, Cloud, and Cybersecurity Solutions for Future-Ready Organizations",
         logo: '/speakers/KarenFarah.png',
         affiliation: "CEO at The Melting Pot Studio & AI & Cloud Solutions Leader"
-    },
-  
+    }
 ];
+
+// Keep the original featuredSpeakers for backward compatibility
+export const featuredSpeakers = [...keynoteSpeakers, ...panelSpeakers];

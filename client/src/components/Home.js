@@ -3,7 +3,7 @@ import CountdownTimer from './CountdownTimer.js';
 import Registration from './Registration.js';
 
 import { useNavigate } from 'react-router-dom';
-import { eventData,upcomingSessions,featuredSpeakers } from './homeData.js';
+import { eventData, upcomingSessions, keynoteSpeakers, panelSpeakers } from './homeData.js';
 
 
 
@@ -14,7 +14,7 @@ const Home = () => {
     const [isRegistrationModalOpen, setIsRegistrationModalOpen] = useState(false);
     const [fetchError, setFetchError] = useState(null);
     // const [data, setData] = useState(null);
-    const data = {eventData, upcomingSessions,featuredSpeakers };
+    const data = {eventData, upcomingSessions, keynoteSpeakers, panelSpeakers };
 
     const navigate = useNavigate()
 
@@ -139,7 +139,7 @@ const Home = () => {
                         Thrive in the AI World.
                     </p>
                     <p className="text-sm md:text-lg font-medium text-black">
-                        AI with clear purpose, strong guardrails and real-world impact.
+                        AI with a clear purpose, strong guardrails and real-world impact.
                     </p>
                     <button
                         className="mt-2 md:mt-4 bg-transparent text-teal-400 font-bold py-1 md:py-2 px-0 text-sm md:text-base hover:underline transition"
@@ -150,25 +150,25 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Featured Speakers Section */}
+            {/* Keynote Speakers Section */}
             <section className="py-16 px-6 border-t border-gray-200">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex items-center mb-12">
                         <div
                             className="w-16 h-16 border border-gray-400 rounded-full flex items-center justify-center mr-4">
                             <div className="w-12 h-12 flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600" fill="none"
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none"
                                      viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                                           d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                                 </svg>
                             </div>
                         </div>
-                        <h2 className="text-3xl font-black">Featured Speakers</h2>
+                        <h2 className="text-3xl font-black text-blue-600">Keynote Speakers</h2>
                     </div>
 
-                    <div className="grid md:grid-cols-4 lg:grid-cols-4 gap-8 justify-center">
-                        {featuredSpeakers.map((speaker, index) => (
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
+                        {keynoteSpeakers.map((speaker, index) => (
                             <div key={speaker.id} className="mb-8">
                                 <div
                                     className="w-full h-64 bg-gray-100 rounded-md mb-4 overflow-hidden relative">
@@ -183,13 +183,68 @@ const Home = () => {
                                         }}
                                     />
                                     <div
-                                        className={`hidden w-full h-full absolute inset-0 ${index === 0 ? 'bg-gradient-to-b from-purple-600 to-green-600' : 'bg-gradient-to-b from-blue-600 to-green-600'} flex items-center justify-center`}>
+                                        className={`hidden w-full h-full absolute inset-0 bg-gradient-to-b from-blue-600 to-purple-600 flex items-center justify-center`}>
                                         <div className="text-4xl font-black text-white">
                                             {speaker.name.split(' ').map(n => n[0]).join('')}
                                         </div>
                                     </div>
                                 </div>
-                                <div className="text-gray-600 text-sm">{speaker.title}</div>
+                                <div className="text-blue-600 text-sm font-bold">{speaker.title}</div>
+                                <h3 className="text-2xl font-black mb-2">{speaker.name}</h3>
+                                {speaker.affiliation && (
+                                    <div className="text-green-600 text-sm mb-2">{speaker.affiliation}</div>
+                                )}
+                                {speaker.event && (
+                                    <p className="text-xs text-gray-600">
+                                        {speaker.event}
+                                    </p>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Panel Speakers Section */}
+            <section className="py-16 px-6 border-t border-gray-200">
+                <div className="max-w-7xl mx-auto">
+                    <div className="flex items-center mb-12">
+                        <div
+                            className="w-16 h-16 border border-gray-400 rounded-full flex items-center justify-center mr-4">
+                            <div className="w-12 h-12 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600" fill="none"
+                                     viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h2 className="text-3xl font-black text-green-600">Panel Speakers</h2>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
+                        {panelSpeakers.map((speaker, index) => (
+                            <div key={speaker.id} className="mb-8">
+                                <div
+                                    className="w-full h-64 bg-gray-100 rounded-md mb-4 overflow-hidden relative">
+                                    <img
+                                        src={speaker.logo}
+                                        alt={`${speaker.name} photo`}
+                                        className="w-full h-full object-cover object-top"
+                                        onError={(e) => {
+                                            // Fallback to gradient with initials if image fails to load
+                                            e.target.style.display = 'none';
+                                            e.target.nextSibling.style.display = 'flex';
+                                        }}
+                                    />
+                                    <div
+                                        className={`hidden w-full h-full absolute inset-0 bg-gradient-to-b from-green-600 to-blue-600 flex items-center justify-center`}>
+                                        <div className="text-4xl font-black text-white">
+                                            {speaker.name.split(' ').map(n => n[0]).join('')}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="text-green-600 text-sm font-bold">{speaker.title}</div>
                                 <h3 className="text-2xl font-black mb-2">{speaker.name}</h3>
                                 {speaker.affiliation && (
                                     <div className="text-green-600 text-sm mb-2">{speaker.affiliation}</div>

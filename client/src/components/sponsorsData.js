@@ -53,6 +53,51 @@ export const sponsorsData = [
                 founder: 'Matthew Collado',
                 linkedin: 'https://www.linkedin.com/company/arcanaai/posts/?feedView=all',
                 link: 'https://arcana.ai/'
+            },
+            {
+                id: 29,
+                name: 'IBM',
+                logo: '/sponsors/IBM-logo.png',
+                type: 'keynote',
+                founder: 'IBM Corporation',
+                linkedin: 'https://www.linkedin.com/company/ibm/',
+                link: 'https://www.ibm.com/'
+            },
+            {
+                id: 30,
+                name: 'Microsoft',
+                logo: '/sponsors/microsoft-logo.png',
+                type: 'keynote',
+                founder: 'Microsoft Corporation',
+                linkedin: 'https://www.linkedin.com/company/microsoft/',
+                link: 'https://www.microsoft.com/'
+            },
+            {
+                id: 31,
+                name: 'Amazon',
+                logo: '/sponsors/amazon-logo.png',
+                type: 'keynote',
+                founder: 'Amazon.com, Inc.',
+                linkedin: 'https://www.linkedin.com/company/amazon/',
+                link: 'https://www.amazon.com/'
+            },
+            {
+                id: 32,
+                name: 'Citadel',
+                logo: '/sponsors/citadel-logo.png',
+                type: 'keynote',
+                founder: 'Citadel LLC',
+                linkedin: 'https://www.linkedin.com/company/citadel/',
+                link: 'https://www.citadel.com/'
+            },
+            {
+                id: 33,
+                name: 'Morgan Stanley',
+                logo: '/sponsors/morganstanley-logo.jpg',
+                type: 'keynote',
+                founder: 'Morgan Stanley',
+                linkedin: 'https://www.linkedin.com/company/morgan-stanley/',
+                link: 'https://www.morganstanley.com/'
             }
         ]
     },
