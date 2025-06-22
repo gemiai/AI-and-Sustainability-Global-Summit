@@ -88,16 +88,16 @@ const Home = () => {
     }
 
     return (
-        <div className="min-h-screen bg-white text-black font-bold">
+        <div className="min-h-screen bg-white text-black font-bold overflow-x-hidden">
 
             {/* Hero Section */}
-            <section className="py-10 px-4 sm:px-6 relative min-h-[600px] overflow-x-hidden">
+            <section className="py-10 px-4 sm:px-6 relative min-h-[600px] overflow-hidden">
                 {/* Landing Page Background */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none mt-10 md:mt-20">
                     <img 
                         src="/earth.png" 
                         alt="Globe background"
-                        className="w-[250px] h-[250px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-contain z-0 transition-opacity duration-500"
+                        className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-cover z-0 transition-opacity duration-500"
                         style={{
                             opacity: 0.8,
                             animation: 'rotate-clockwise 40s linear infinite'
@@ -109,7 +109,7 @@ const Home = () => {
                     <div className="col-span-12 md:col-span-7 lg:col-span-6 flex flex-col justify-start pt-0 min-h-[60vh]">
                         <div className="text-left w-full">
                             <div className="inline-block bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">
-                                <h1 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4 whitespace-normal md:whitespace-nowrap">AI and Sustainability Global Summit</h1>
+                                <h1 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">AI and Sustainability Global Summit</h1>
                                 <p className="text-base sm:text-lg md:text-2xl font-bold">{eventData.date}</p>
                             </div>
                             
@@ -134,7 +134,7 @@ const Home = () => {
                 </div>
 
                 {/* Overlaid Description Card */}
-                <div className="absolute z-20 bottom-4 right-4 md:bottom-8 md:right-[6.25rem] w-[calc(100%-2rem)] max-w-xs md:max-w-2xl p-4 md:p-6 rounded-lg bg-white/20 backdrop-blur-md shadow-lg text-left">
+                <div className="absolute z-20 bottom-4 left-4 right-4 md:bottom-8 md:left-auto md:right-[6.25rem] w-[calc(100%-2rem)] md:w-auto max-w-xs md:max-w-2xl p-4 md:p-6 rounded-lg bg-white/20 backdrop-blur-md shadow-lg text-left">
                     <p className="text-xl sm:text-2xl md:text-4xl font-extrabold text-black mb-2">
                         Thrive in the AI World.
                     </p>
