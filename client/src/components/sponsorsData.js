@@ -40,7 +40,7 @@ export const sponsorsData = [
             {
                 id: 29,
                 name: 'IBM',
-                logo: '/sponsors/IBM-logo.png',
+                logo: '/sponsors/ibm-logo.png',
                 linkedin: 'https://www.linkedin.com/company/ibm/',
                 link: 'https://www.ibm.com/'
             },
@@ -94,6 +94,28 @@ export const sponsorsData = [
                 linkedin: 'https://www.linkedin.com/company/arcanaai/posts/?feedView=all',
                 link: 'https://arcana.ai/'
             },
+            {
+                id: 35,
+                name: 'Tofu',
+                logo: '/sponsors/tofu-logo.jpg',
+                linkedin: 'https://www.linkedin.com/company/tofuai/',
+                link: 'https://www.tofuhq.com/?utm_source=linkedin&utm_medium=social&utm_campaign=li_page'
+            },
+            {
+                id: 37,
+                name: 'Reality Defender',
+                logo: 'realitydefender-logo.jpg',
+                linkedin: 'https://www.linkedin.com/company/reality-defender/',
+                link: 'realitydefender.com/'
+            },
+            {
+                id: 36,
+                name: 'Embry University',
+                logo: '/sponsors/embry-riddleaeronauticaluniversity.jpg',
+                linkedin: 'https://www.linkedin.com/school/embry-riddle-aeronautical-university',
+                link: 'https://erau.edu'
+            },
+
         ]
     },
     {
