@@ -46,7 +46,7 @@ export const upcomingSessions = [
             {name: "Vivan Zhang", avatar: '/speakers/placeholder-avatar.png'},
             {name: "Phil Ahn", avatar: '/speakers/placeholder-avatar.png'}
         ],
-        description: "This session explores how education can harness the power of AI to cultivate a new wave of entrepreneurs commnts for the green economy, to personalize .",
+        description: "Educating the Next Generation of Changemakers and Impact Leaders: AI is Transforming Education",
     },
     {
         id: 3,
@@ -63,11 +63,8 @@ export const upcomingSessions = [
             {name: "Erik Solheim", avatar: '/speakers/ErikSolheim.png'},
             {name: "Di Wu", avatar: '/speakers/DiWu.png'},
             {name: "Andrew Dumit", avatar: '/speakers/placeholder-avatar.png'},
-            {name: "Anthony Leiserowitz", avatar: '/speakers/placeholder-avatar.png'},
-            {name: "Anna Lerner Nesbitt", avatar: '/speakers/placeholder-avatar.png'},
-            {name: "Maria Mähl", avatar: '/speakers/placeholder-avatar.png'}
         ],
-        description: "From tracking endangered species DNA to optimizing conservation efforts and network, AI gives us tools to respond faster, smarter, and at scale."
+        description: "Planetary Resilience: Advancing Ecosystem Integrity, Climate Actions, and Space Sustainability with AI"
     },
     {
         id: 4,
@@ -85,7 +82,7 @@ export const upcomingSessions = [
             {name: "Matthew Collado", avatar: '/speakers/MatthewCollado.png'},
             {name: "Joshua", avatar: '/speakers/placeholder-avatar.png'}
         ],
-        description: "AI is making every artistic dream feel possible and important. By keeping humans at the center, it brings more joy and meaning to the creative process. better quality and new possibilities for everyone.",
+        description: "Igniting Every Artist’s Dream with AI: Unlock Opportunities and make high-quality art accessible to all",
     },
     {
         id: 5,
@@ -105,7 +102,7 @@ export const upcomingSessions = [
             {name: "Arthy Krishnamurthy", avatar: '/speakers/ArthyKrishnamurthy.png'},
             {name: "Lakshminarayanan Subramanian", avatar: '/speakers/placeholder-avatar.png'}
         ],
-        description: "Artificial ither than sacrificing quality or speed for savings, leading experts will share how AI enables organizations to simultaneously reduce operational costs and enhance capabilities.",
+        description: "From Trade-Offs to Win-Wins, From Cost-Saving to Revenue Growth: AI as the Engine of Business and Technology Innovation",
     },
     {
         id: 6,
@@ -126,7 +123,7 @@ export const upcomingSessions = [
             {name: "Talha Khan", avatar: '/speakers/placeholder-avatar.png'},
             {name: "Phil Brady", avatar: '/speakers/placeholder-avatar.png'}
         ],
-        description: "AI is redefining  and automated compliance. This panel explores how financial institutions, regulators, and investors are leveraging AI to enhance decision-making.",
+        description: "Redefining Finance: Precision, Speed, and Insight for Smarter, Data-Driven Decisions",
     },
     {
         id: 7,
@@ -145,7 +142,7 @@ export const upcomingSessions = [
             {name: "Himanshu Joshi", avatar: '/speakers/placeholder-avatar.png'},
             {name: "Dan Reich", avatar: '/speakers/placeholder-avatar.png'}
         ],
-        description: "AI is advancing rapnel dives into how researchers, policymakers, and technologists are working together to build AI systems that are transparent, fair, and aligned with human values.",
+        description: "AI for Humanity: Driving Innovation with Ethics, Guardrails, and a Deep Commitment to Humanity’s Well-Being",
     }
 ];
 
