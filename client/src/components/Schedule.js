@@ -48,8 +48,8 @@ const Schedule = ({onNavigate}) => {
 
             <div className="flex flex-col md:flex-row min-h-[calc(100vh-76px)]">
                 {/* Left Panel */}
-                <div className="w-full md:w-1/3 border-r border-gray-200 p-8">
-                    <h1 className="text-5xl font-bold mb-8">AI & Sustainability<br/>Summit Program</h1>
+                <div className="w-full md:w-1/3 border-r border-gray-200 p-8 ">
+                    <h1 className="text-5xl font-bold mb-8 bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent ">AI & Sustainability<br/>Summit Schedule</h1>
 
                     <div
                         className="mb-12 border border-gray-200 rounded-lg p-6 flex flex-col items-center justify-center">
@@ -80,7 +80,7 @@ const Schedule = ({onNavigate}) => {
                             {scheduleData.categories.map(category => (
                                 <button
                                     key={category}
-                                    className={`py-2 px-4 rounded-md text-sm ${activeCategory === category ? 'bg-green-300' : 'border border-gray-300'}`}
+                                    className={`py-2 px-4 rounded-md text-sm ${activeCategory === category ? 'bg-teal-400' : 'border border-gray-300'}`}
                                     onClick={() => setActiveCategory(category)}
                                 >
                                     {category}
@@ -90,7 +90,7 @@ const Schedule = ({onNavigate}) => {
                     </div>
 
                     <button
-                        className="w-full bg-green-600 text-white py-3 rounded-md hover:bg-green-500 transition"
+                        className="w-full border-teal-400 border-2 py-3 rounded-md hover:bg-green-600 transition"
                         onClick={handleRegisterClick}
                     >
                         REGISTER FOR SUMMIT

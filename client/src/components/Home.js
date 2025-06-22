@@ -91,7 +91,7 @@ const Home = () => {
         <div className="min-h-screen bg-white text-black font-bold">
 
             {/* Hero Section */}
-            <section className="py-16 px-6 relative min-h-[600px] overflow-hidden">
+            <section className="py-10 px-6 relative min-h-[600px] overflow-hidden">
                 {/* Landing Page Background */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none mt-10 md:mt-20">
                     <img 
