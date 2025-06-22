@@ -32,15 +32,15 @@ const LoadingScreen = ({ onLoadingComplete }) => {
   }, [onLoadingComplete]);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-white text-black font-mono">
-      <div className="mb-4 text-sm tracking-widest">LOADING ...</div>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-white text-black font-mono relative">
+      <div className="mb-2 md:mb-4 text-xs md:text-sm tracking-widest">LOADING ...</div>
       <div className="flex border border-black p-0.5">
         {Array.from({ length: 10 }).map((_, i) => {
           const filled = progress > i;
           return (
             <div
               key={i}
-              className="w-3 h-5 mx-0.5 rounded"
+              className="w-2 h-4 md:w-3 md:h-5 mx-0.5 rounded"
               style={{
                 backgroundColor: filled ? colors[i % colors.length] : '#D1D5DB' // Tailwind gray-300 equivalent
               }}
@@ -50,18 +50,19 @@ const LoadingScreen = ({ onLoadingComplete }) => {
         })}
       </div>
 
-       {/* Globe background */}
-      <img 
-        src="/earth.png" 
-        alt="Globe background"
-        className="absolute top-1/2 left-1/2 w-96 h-96 object-cover z-0 transition-opacity duration-500"
-        style={{
-          opacity: progress / 10,
-          transform: 'translate(-50%, -50%)'// fades in as progress increases
-        }}
-      />
+      {/* Globe background */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none mt-10 md:mt-20">
+        <img 
+          src="/earth.png" 
+          alt="Globe background"
+          className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-cover z-0 transition-opacity duration-500"
+          style={{
+            opacity: progress / 10
+          }}
+        />
+      </div>
 
-           {/* Left vertical line moving left off-screen */}
+      {/* Left vertical line moving left off-screen */}
       <div
         className="absolute top-0 bottom-0 w-0.5 bg-black"
         style={{
