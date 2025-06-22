@@ -183,7 +183,7 @@ const Home = () => {
                                         }}
                                     />
                                     <div
-                                        className={`hidden w-full h-full absolute inset-0 bg-gradient-to-b from-blue-600 to-purple-600 flex items-center justify-center`}>
+                                        className={`hidden w-full h-full absolute inset-0 bg-gradient-to-b from-blue-500 to-purple-600 flex items-center justify-center`}>
                                         <div className="text-4xl font-black text-white">
                                             {speaker.name.split(' ').map(n => n[0]).join('')}
                                         </div>
@@ -212,14 +212,14 @@ const Home = () => {
                         <div
                             className="w-16 h-16 border border-gray-400 rounded-full flex items-center justify-center mr-4">
                             <div className="w-12 h-12 flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none"
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-500" fill="none"
                                      viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                                           d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                                 </svg>
                             </div>
                         </div>
-                        <h2 className="text-3xl font-black text-blue-600">Panel Speakers</h2>
+                        <h2 className="text-3xl font-black text-blue-500">Panel Speakers</h2>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
@@ -238,7 +238,7 @@ const Home = () => {
                                         }}
                                     />
                                     <div
-                                        className={`hidden w-full h-full absolute inset-0 bg-gradient-to-b from-blue-600 to-blue-600 flex items-center justify-center`}>
+                                        className={`hidden w-full h-full absolute inset-0 bg-gradient-to-b from-blue-500 to-blue-500 flex items-center justify-center`}>
                                         <div className="text-4xl font-black text-white">
                                             {speaker.name.split(' ').map(n => n[0]).join('')}
                                         </div>
@@ -247,7 +247,7 @@ const Home = () => {
                                
                                 <h3 className="text-2xl font-black mb-2">{speaker.name}</h3>
                                 {speaker.affiliation && (
-                                    <div className="text-blue-600 text-sm mb-2">{speaker.affiliation}</div>
+                                    <div className="text-blue-500 text-sm mb-2">{speaker.affiliation}</div>
                                 )}
                                 {speaker.event && (
                                     <p className="text-xs text-gray-600">
@@ -336,7 +336,7 @@ const Home = () => {
                                 {/* Middle row: Keynote */}
                                 <div className="flex items-center mb-2">
                                     <div className="w-32 mr-6 flex-shrink-0">
-                                        <div className="border-green-600 text-white text-sm font-bold uppercase tracking-wide px-3 py-2 rounded text-center">
+                                        <div className="border border-teal-500 text-black text-sm font-bold tracking-wide px-3 py-2 rounded text-center">
                                             Keynote
                                         </div>
                                     </div>
@@ -358,7 +358,7 @@ const Home = () => {
                                 {/* Bottom row: Panel */}
                                 <div className="flex items-center">
                                     <div className="w-32 mr-6 flex-shrink-0">
-                                        <div className="border-blue-600 text-white text-sm font-bold uppercase tracking-wide px-3 py-2 rounded text-center">
+                                        <div className="border border-blue-600 text-black text-sm font-bold tracking-wide px-3 py-2 rounded text-center">
                                             Panel
                                         </div>
                                     </div>
@@ -434,7 +434,7 @@ const Home = () => {
                                     <div className="w-140 bg-white p-2 ">
                                         <div className="text-gray-500 mb-1 text-xs-4">{session.date}</div>
                                         <h3 className="text-lg font-black mb-2 text-gray-800 leading-tight">{session.title}</h3>
-                                        <p className="text-gray-600 text-xs-2 mb- leading-relaxed lowercase">{session.description}</p>
+                                        <p className="text-gray-600 text-xs-2 mb- leading-relaxed">{session.description}</p>
                                         {session.location && (
                                             <div className="text-gray-500 text-xs">📍 {session.location}</div>
                                         )}
@@ -444,7 +444,7 @@ const Home = () => {
                                 {/* Middle row: Keynote */}
                                 <div className="flex items-center mb-2">
                                     <div className="w-32 mr-6 flex-shrink-0">
-                                        <div className="bg-blue-600 text-white text-sm font-bold uppercase tracking-wide px-3 py-2 rounded text-center">
+                                        <div className="border border-teal-500 text-black text-sm font-bold tracking-wide px-3 py-2 rounded text-center">
                                             Keynote
                                         </div>
                                     </div>
@@ -466,7 +466,7 @@ const Home = () => {
                                 {/* Bottom row: Panel */}
                                 <div className="flex items-center">
                                     <div className="w-32 mr-6 flex-shrink-0">
-                                        <div className="bg-green-600 text-white text-sm font-bold uppercase tracking-wide px-3 py-2 rounded text-center">
+                                        <div className="border border-blue-500 text-black text-sm font-bold tracking-wide px-3 py-2 rounded text-center">
                                             Panel
                                         </div>
                                     </div>

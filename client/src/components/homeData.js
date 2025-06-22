@@ -25,7 +25,7 @@ export const upcomingSessions = [
         panelSpeakers: [
             {name: "Xiaoran Cai", avatar: '/XiaoranCai.jpg'}
         ],
-        description: "The AI and Sustainability Global Summit brings together leaders from academia, industry, government, an .",
+        description: "Thrive in the AI World: Unlocking innovation, inclusion, and impact in the age of AI",
     },
     {
         id: 2,
