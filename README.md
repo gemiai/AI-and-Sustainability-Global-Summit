@@ -1,6 +1,6 @@
 # 🌐 Gemi-AI and Sustainability Global Summit
 
-A sleek, dynamic React web application built with Tailwind CSS, designed to showcase Toronto Tech Week 2025. The site features interactive event listings, keynote speakers, partner highlights, and a fully responsive layout to elevate the user experience across devices.
+A React web application built with Tailwind CSS, designed to showcase Toronto Tech Week 2025. The site features interactive event listings, keynote speakers, partner highlights, and a fully responsive layout to elevate the user experience across devices.
 
 ---
 
