@@ -114,14 +114,14 @@ const Home = () => {
                             </div>
                             
                             {/* Countdown Section */}
-                            <div className="mt-8 text-left">
+                            <div className="mt-12 text-left">
                                 <h3 className="text-lg md:text-xl font-semibold tracking-wider text-gray-600 mb-4">
                                     Summit Countdown
                                 </h3>
                                 <CountdownTimer targetDate="2025-07-18T09:00:00"/>
                                 <button
                                     onClick={handleRegisterClick}
-                                    className="mt-6 w-auto bg-transparent hover:bg-teal-50 transition
+                                    className="mt-8 w-auto bg-transparent hover:bg-teal-50 transition
                                        py-2 px-8 rounded-md text-sm md:text-base font-bold text-teal-500 text-center border-2 border-teal-500"
                                 >
                                     Secure Your Seat
@@ -327,23 +327,6 @@ const Home = () => {
                                 </div>
                             </div>
                         ))}
-                    </div>
-
-                    {/* Injected Countdown Section */}
-                    <div className="my-16 flex flex-col items-center">
-                         <div className="w-full max-w-xs text-center">
-                            <h3 className="text-xl font-semibold uppercase tracking-wider text-green-600 mb-4">
-                                Event Countdown
-                            </h3>
-                            <CountdownTimer targetDate="2025-07-19T09:00:00"/>
-                            <button
-                                onClick={handleRegisterClick}
-                                className="w-full bg-green-600 hover:bg-green-500 transition mt-6
-                   py-3 px-10 rounded-md text-xl font-black text-white text-center"
-                            >
-                                Secure Your Seat
-                            </button>
-                        </div>
                     </div>
 
                      <div className="grid md:grid-cols-2 gap-8">

@@ -36,7 +36,7 @@ const CountdownTimer = ({ targetDate }) => {
         }
 
         timerComponents.push(
-            <div key={interval} className="text-center bg-gray-100/80 p-3 rounded-lg min-w-[20px] shadow-md">
+            <div key={interval} className="text-center bg-gray-100/80 p-2.5 rounded-lg shadow-md">
                 <span className="text-3xl font-bold text-teal-400">{String(timeLeft[interval]).padStart(2, '0')}</span>
                 <div className="text-xs text-gray-800 font-semibold tracking-wider">
                     {interval.charAt(0).toUpperCase() + interval.slice(1)}
@@ -46,7 +46,7 @@ const CountdownTimer = ({ targetDate }) => {
     });
 
     return (
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-2 gap-y-4 gap-x-6 max-w-[288px]">
             {timerComponents.length ? timerComponents : <span>Time's up!</span>}
         </div>
     );
