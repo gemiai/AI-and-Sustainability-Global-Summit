@@ -102,7 +102,7 @@ export const upcomingSessions = [
             {name: "Arthy Krishnamurthy", avatar: '/speakers/ArthyKrishnamurthy.png'},
             {name: "Lakshminarayanan Subramanian", avatar: '/speakers/placeholder-avatar.png'}
         ],
-        description: "From Trade-Offs to Win-Wins, From Cost-Saving to Revenue Growth: AI as the Engine of Business and Technology Innovation",
+        description: "From Trade-Offs to Win-Wins, From Cost-Saving to Revenue Growth: AI as the Engine of Business Growth",
     },
     {
         id: 6,
