@@ -55,7 +55,7 @@ const Sponsors = ({onNavigate}) => {
                                 <div
                                     key={sponsors.id}
                                     className="border border-gray-300 bg-white rounded-lg p-4 flex items-center justify-center aspect-square
-                                    hover:bg-green-100 transition-colors group relative overflow-hidden"
+                                    hover:border-green-600 transition-colors group relative overflow-hidden"
                                 >
                                     {sponsors.logo ? (
                                         <img
