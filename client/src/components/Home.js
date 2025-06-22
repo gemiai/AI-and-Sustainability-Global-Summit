@@ -326,7 +326,7 @@ const Home = () => {
                                     <div className="w-140 bg-white p-2 ">
                                         <div className="text-gray-500 mb-1 text-xs-4">{session.date}</div>
                                         <h3 className="text-lg font-black mb-2 text-gray-800 leading-tight">{session.title}</h3>
-                                        <p className="text-gray-600 text-xs-2 mb- leading-relaxed lowercase">{session.description}</p>
+                                        <p className="text-gray-600 text-xs-2 mb- leading-relaxed">{session.description}</p>
                                         {session.location && (
                                             <div className="text-gray-500 text-xs">📍 {session.location}</div>
                                         )}
@@ -336,7 +336,7 @@ const Home = () => {
                                 {/* Middle row: Keynote */}
                                 <div className="flex items-center mb-2">
                                     <div className="w-32 mr-6 flex-shrink-0">
-                                        <div className="bg-blue-600 text-white text-sm font-bold uppercase tracking-wide px-3 py-2 rounded text-center">
+                                        <div className="border-green-600 text-white text-sm font-bold uppercase tracking-wide px-3 py-2 rounded text-center">
                                             Keynote
                                         </div>
                                     </div>
@@ -358,7 +358,7 @@ const Home = () => {
                                 {/* Bottom row: Panel */}
                                 <div className="flex items-center">
                                     <div className="w-32 mr-6 flex-shrink-0">
-                                        <div className="bg-green-600 text-white text-sm font-bold uppercase tracking-wide px-3 py-2 rounded text-center">
+                                        <div className="border-blue-600 text-white text-sm font-bold uppercase tracking-wide px-3 py-2 rounded text-center">
                                             Panel
                                         </div>
                                     </div>
