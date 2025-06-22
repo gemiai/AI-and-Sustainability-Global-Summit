@@ -15,7 +15,7 @@ export const upcomingSessions = [
     {
         id: 1,
         title: "Opening Remark",
-        date: "July 18, 9:00 AM",
+        date: "July 18, 9:00 AM - 9:30 AM",
         category: 'Opening',
         format: 'keynote',
         keynoteSpeaker: {
@@ -25,7 +25,7 @@ export const upcomingSessions = [
         panelSpeakers: [
             {name: "Xiaoran Cai", avatar: '/XiaoranCai.jpg'}
         ],
-        description: "The AI and Sustainability Global Summit brings together leaders from academia, industry, government, and entrepreneurship to explore how artificial intelligence can be leveraged to accelerate sustainable development.",
+        description: "The AI and Sustainability Global Summit brings together leaders from academia, industry, government, an .",
     },
     {
         id: 2,
@@ -46,12 +46,12 @@ export const upcomingSessions = [
             {name: "Vivan Zhang", avatar: '/speakers/placeholder-avatar.png'},
             {name: "Phil Ahn", avatar: '/speakers/placeholder-avatar.png'}
         ],
-        description: "This session explores how education can harness the power of AI to cultivate a new wave of entrepreneurs committed to sustainability. As institutions rethink how they prepare students for the green economy, AI offers tools to personalize learning, simulate real-world challenges, and support venture creation.",
+        description: "This session explores how education can harness the power of AI to cultivate a new wave of entrepreneurs commnts for the green economy, to personalize .",
     },
     {
         id: 3,
         title: "AI and the Planet",
-        date: "July 18, 10:30 AM",
+        date: "July 18, 10:30 AM - 11:30 AM",
         category: 'Planet',
         format: 'panel',
         keynoteSpeaker: {
@@ -72,7 +72,7 @@ export const upcomingSessions = [
     {
         id: 4,
         title: "AI and Art",
-        date: "July 18, 11:30 AM",
+        date: "July 18, 11:30 AM - 12:30 PM",
         category: 'Art',
         format: 'panel',
         keynoteSpeaker: {
@@ -85,12 +85,12 @@ export const upcomingSessions = [
             {name: "Matthew Collado", avatar: '/speakers/MatthewCollado.png'},
             {name: "Joshua", avatar: '/speakers/placeholder-avatar.png'}
         ],
-        description: "AI is making every artistic dream feel possible and important. By keeping humans at the center, it brings more joy and meaning to the creative process. Accessibility doesn't mean compromise, but rather, better quality and new possibilities for everyone.",
+        description: "AI is making every artistic dream feel possible and important. By keeping humans at the center, it brings more joy and meaning to the creative process. better quality and new possibilities for everyone.",
     },
     {
         id: 5,
         title: "AI and Technology",
-        date: "July 18, 1:30 PM",
+        date: "July 18, 1:30 PM - 2:30 PM",
         category: 'Technology',
         format: 'panel',
         keynoteSpeaker: {
@@ -105,12 +105,12 @@ export const upcomingSessions = [
             {name: "Arthy Krishnamurthy", avatar: '/speakers/ArthyKrishnamurthy.png'},
             {name: "Lakshminarayanan Subramanian", avatar: '/speakers/placeholder-avatar.png'}
         ],
-        description: "Artificial intelligence is transforming the traditional cost-performance trade-off in business and technology. Rather than sacrificing quality or speed for savings, leading experts will share how AI enables organizations to simultaneously reduce operational costs and enhance capabilities.",
+        description: "Artificial ither than sacrificing quality or speed for savings, leading experts will share how AI enables organizations to simultaneously reduce operational costs and enhance capabilities.",
     },
     {
         id: 6,
         title: "AI and Finance, Compliance",
-        date: "July 18, 2:30 PM",
+        date: "July 18, 2:30 PM - 3:30 PM",
         category: 'Finance',
         format: 'panel',
         keynoteSpeaker: {
@@ -126,12 +126,12 @@ export const upcomingSessions = [
             {name: "Talha Khan", avatar: '/speakers/placeholder-avatar.png'},
             {name: "Phil Brady", avatar: '/speakers/placeholder-avatar.png'}
         ],
-        description: "AI is redefining the future of finance by powering smarter investment strategies, real-time risk detection, and automated compliance. This panel explores how financial institutions, regulators, and investors are leveraging AI to enhance decision-making.",
+        description: "AI is redefining  and automated compliance. This panel explores how financial institutions, regulators, and investors are leveraging AI to enhance decision-making.",
     },
     {
         id: 7,
         title: "Responsible AI",
-        date: "July 18, 3:30 PM",
+        date: "July 18, 3:30 PM - 4:30 PM",
         category: 'Ethics',
         format: 'panel',
         keynoteSpeaker: {
@@ -145,7 +145,7 @@ export const upcomingSessions = [
             {name: "Himanshu Joshi", avatar: '/speakers/placeholder-avatar.png'},
             {name: "Dan Reich", avatar: '/speakers/placeholder-avatar.png'}
         ],
-        description: "AI is advancing rapidly, but with great power comes greater responsibility. This panel dives into how researchers, policymakers, and technologists are working together to build AI systems that are transparent, fair, and aligned with human values.",
+        description: "AI is advancing rapnel dives into how researchers, policymakers, and technologists are working together to build AI systems that are transparent, fair, and aligned with human values.",
     }
 ];
 
