@@ -91,38 +91,38 @@ const Home = () => {
         <div className="min-h-screen bg-white text-black font-bold">
 
             {/* Hero Section */}
-            <section className="py-10 px-6 relative min-h-[600px] overflow-hidden">
+            <section className="py-10 px-4 sm:px-6 relative min-h-[600px] overflow-x-hidden">
                 {/* Landing Page Background */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none mt-10 md:mt-20">
                     <img 
                         src="/earth.png" 
                         alt="Globe background"
-                        className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-cover z-0 transition-opacity duration-500"
+                        className="w-[250px] h-[250px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-contain z-0 transition-opacity duration-500"
                         style={{
                             opacity: 0.8,
                             animation: 'rotate-clockwise 40s linear infinite'
                         }}
                     />
                 </div>
-                <div className="max-w-7xl mx-auto grid grid-cols-12 gap-8 relative z-10">
+                <div className="max-w-7xl mx-auto grid grid-cols-12 gap-4 md:gap-8 relative z-10">
                     {/* Content Section - Left Aligned */}
                     <div className="col-span-12 md:col-span-7 lg:col-span-6 flex flex-col justify-start pt-0 min-h-[60vh]">
                         <div className="text-left w-full">
                             <div className="inline-block bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">
-                                <h1 className="text-3xl md:text-5xl font-black mb-4 whitespace-nowrap">AI and Sustainability Global Summit</h1>
-                                <p className="text-lg md:text-2xl font-bold">{eventData.date}</p>
+                                <h1 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4 whitespace-normal md:whitespace-nowrap">AI and Sustainability Global Summit</h1>
+                                <p className="text-base sm:text-lg md:text-2xl font-bold">{eventData.date}</p>
                             </div>
                             
                             {/* Countdown Section */}
-                            <div className="mt-12 text-left">
-                                <h3 className="text-lg md:text-xl font-semibold tracking-wider text-black mb-4">
+                            <div className="mt-8 md:mt-12 text-left">
+                                <h3 className="text-base md:text-xl font-semibold tracking-wider text-black mb-4">
                                     Summit Countdown
                                 </h3>
                                 <CountdownTimer targetDate="2025-07-18T09:00:00"/>
                                 <button
                                     onClick={handleRegisterClick}
-                                    className="mt-8 w-auto bg-transparent hover:bg-teal-50 transition
-                                       py-2 px-8 rounded-md text-sm md:text-base font-bold text-teal-500 text-center border-2 border-teal-500"
+                                    className="mt-6 md:mt-8 w-auto bg-transparent hover:bg-teal-50 transition
+                                       py-2 px-6 md:px-8 rounded-md text-sm md:text-base font-bold text-teal-500 text-center border-2 border-teal-500"
                                 >
                                     Secure Your Seat
                                 </button>
@@ -134,8 +134,8 @@ const Home = () => {
                 </div>
 
                 {/* Overlaid Description Card */}
-                <div className="absolute z-20 bottom-4 md:bottom-8 right-4 md:right-[6.25rem] max-w-xs md:max-w-2xl p-4 md:p-6 rounded-lg bg-white/20 backdrop-blur-md shadow-lg text-left">
-                    <p className="text-2xl md:text-4xl font-extrabold text-black mb-2">
+                <div className="absolute z-20 bottom-4 right-4 md:bottom-8 md:right-[6.25rem] w-[calc(100%-2rem)] max-w-xs md:max-w-2xl p-4 md:p-6 rounded-lg bg-white/20 backdrop-blur-md shadow-lg text-left">
+                    <p className="text-xl sm:text-2xl md:text-4xl font-extrabold text-black mb-2">
                         Thrive in the AI World.
                     </p>
                     <p className="text-sm md:text-lg font-medium text-black">
@@ -151,20 +151,20 @@ const Home = () => {
             </section>
 
             {/* Keynote Speakers Section */}
-            <section className="py-16 px-6 border-t border-gray-200">
+            <section className="py-12 md:py-16 px-4 sm:px-6 border-t border-gray-200">
                 <div className="max-w-7xl mx-auto">
-                    <div className="flex items-center mb-12">
+                    <div className="flex items-center mb-8 md:mb-12">
                         <div
-                            className="w-16 h-16 border border-gray-400 rounded-full flex items-center justify-center mr-4">
-                            <div className="w-12 h-12 flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none"
+                            className="w-12 h-12 md:w-16 md:h-16 border border-gray-400 rounded-full flex items-center justify-center mr-3 md:mr-4">
+                            <div className="w-8 h-8 md:w-12 md:h-12 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6 text-blue-600" fill="none"
                                      viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                                           d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                                 </svg>
                             </div>
                         </div>
-                        <h2 className="text-3xl font-black text-blue-600">Keynote Speakers</h2>
+                        <h2 className="text-2xl md:text-3xl font-black text-blue-600">Keynote Speakers</h2>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">

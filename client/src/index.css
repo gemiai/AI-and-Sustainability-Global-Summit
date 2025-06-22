@@ -15,3 +15,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add global styles to prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure proper mobile viewport behavior */
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
