@@ -6,7 +6,7 @@
   "scripts": {
     "test": "react-scripts test",
     "start": "react-scripts start",
-    "build": "node ./node_modules/react-scripts/bin/react-scripts.js build",
+    "build": "react-scripts build",
     "eject": "react-scripts eject"
   },
   "keywords": [],
