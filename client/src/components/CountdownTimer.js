@@ -37,7 +37,7 @@ const CountdownTimer = ({ targetDate }) => {
 
         timerComponents.push(
             <div key={interval} className="text-center bg-gray-100/80 p-2.5 rounded-lg shadow-md">
-                <span className="text-3xl font-bold text-teal-400">{String(timeLeft[interval]).padStart(2, '0')}</span>
+                <span className="text-3xl font-bold text-teal-500">{String(timeLeft[interval]).padStart(2, '0')}</span>
                 <div className="text-xs text-gray-800 font-semibold tracking-wider">
                     {interval.charAt(0).toUpperCase() + interval.slice(1)}
                 </div>

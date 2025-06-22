@@ -154,7 +154,7 @@ export const featuredSpeakers = [
     {
         id: 1,
         name: "Steven Cohen",
-        title: "SPEAKER",
+        title: "KEYNOTE SPEAKER",
         event: "Sustainability Management and Environmental Policy: Leading the Green Transformation in Business and Academia",
         logo: '/speakers/DeanCohen.png',
         affiliation: "Senior Vice Dean at Columbia University School of Professional Studies & Director of Sustainability Management Program"
@@ -170,7 +170,7 @@ export const featuredSpeakers = [
     {
         id: 3,
         name: "Veeral Shah",
-        title: "SPEAKER",
+        title: "KEYNOTE SPEAKER",
         event: "Building Impactful Technology: 20+ Years of Innovation in Product Strategy and Sustainable Business Solutions",
         logo: '/speakers/VeeralShah.png',
         affiliation: "Managing Director in Kroll"
@@ -178,7 +178,7 @@ export const featuredSpeakers = [
     {
         id: 4,
         name: "Matt James",
-        title: "SPEAKER",
+        title: "KEYNOTE SPEAKER",
         event: "Planetary Resilience: Strengthening Ecosystems, Fostering Biodiversity, and Enabling All Life to Thrive with AI.",
         logo: '/speakers/MattJames.png',
         affiliation: "Chief Animal Officer at Colossal"
@@ -218,7 +218,7 @@ export const featuredSpeakers = [
     {
         id: 9,
         name: "Xiaoran Cai",
-        title: "KEYNOTE SPEAKER",
+        title: "SPEAKER",
         event: "AI for Good: Building Sustainable Technology Platforms and Global Communities for Positive Impact",
         logo: '/speakers/XiaoranCai.jpg',
         affiliation: "Founder & Product Lead at GEMI.AI"

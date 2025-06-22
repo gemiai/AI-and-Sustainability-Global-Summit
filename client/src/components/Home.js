@@ -115,7 +115,7 @@ const Home = () => {
                             
                             {/* Countdown Section */}
                             <div className="mt-12 text-left">
-                                <h3 className="text-lg md:text-xl font-semibold tracking-wider text-gray-600 mb-4">
+                                <h3 className="text-lg md:text-xl font-semibold tracking-wider text-black mb-4">
                                     Summit Countdown
                                 </h3>
                                 <CountdownTimer targetDate="2025-07-18T09:00:00"/>
@@ -135,10 +135,10 @@ const Home = () => {
 
                 {/* Overlaid Description Card */}
                 <div className="absolute z-20 bottom-4 md:bottom-8 right-4 md:right-[6.25rem] max-w-xs md:max-w-2xl p-4 md:p-6 rounded-lg bg-white/20 backdrop-blur-md shadow-lg text-left">
-                    <p className="text-2xl md:text-4xl font-extrabold text-gray-600 mb-2">
+                    <p className="text-2xl md:text-4xl font-extrabold text-black mb-2">
                         Thrive in the AI World.
                     </p>
-                    <p className="text-sm md:text-lg font-medium text-gray-600">
+                    <p className="text-sm md:text-lg font-medium text-black">
                         AI with clear purpose, strong guardrails and real-world impact.
                     </p>
                     <button
@@ -229,18 +229,18 @@ const Home = () => {
 
                     <div className="grid md:grid-cols-2 gap-8">
                         {upcomingSessions.slice(0, 2).map((session, index) => (
-                            <div key={session.id} className="flex mb-8">
-                                <div className="w-32 h-32 bg-gray-100 rounded-md mr-6 flex-shrink-0 overflow-hidden">
+                            <div key={session.id} className="flex mb-8 group">
+                                <div className="w-32 mr-6 flex-shrink-0">
                                     <div
-                                        className={`w-full h-full flex flex-col items-center justify-center relative overflow-hidden rounded-md ${
-                                            session.category === 'Opening' ? 'bg-gradient-to-br from-blue-600 via-cyan-500 to-teal-400' :
-                                                session.category === 'Education' ? 'bg-gradient-to-br from-indigo-600 via-blue-500 to-cyan-400' :
-                                                    session.category === 'Planet' ? 'bg-gradient-to-br from-green-600 via-emerald-500 to-teal-400' :
-                                                        session.category === 'Art' ? 'bg-gradient-to-br from-purple-600 via-fuchsia-500 to-pink-400' :
-                                                            session.category === 'Technology' ? 'bg-gradient-to-br from-orange-600 via-red-500 to-pink-400' :
-                                                                session.category === 'Finance' ? 'bg-gradient-to-br from-yellow-600 via-orange-500 to-red-400' :
-                                                                    session.category === 'Ethics' ? 'bg-gradient-to-br from-slate-600 via-gray-500 to-blue-400' :
-                                                                        'bg-gradient-to-br from-green-500 to-blue-600'
+                                        className={`w-full h-32 flex flex-col items-center justify-center relative overflow-hidden rounded-md ${
+                                            session.category === 'Opening' ? 'bg-gradient-to-br from-blue-300 via-cyan-200 to-teal-100' :
+                                                session.category === 'Education' ? 'bg-gradient-to-br from-indigo-300 via-blue-200 to-cyan-100' :
+                                                    session.category === 'Planet' ? 'bg-gradient-to-br from-green-300 via-emerald-200 to-teal-100' :
+                                                        session.category === 'Art' ? 'bg-gradient-to-br from-purple-300 via-fuchsia-200 to-pink-100' :
+                                                            session.category === 'Technology' ? 'bg-gradient-to-br from-orange-300 via-red-200 to-pink-100' :
+                                                                session.category === 'Finance' ? 'bg-gradient-to-br from-yellow-300 via-orange-200 to-red-100' :
+                                                                    session.category === 'Ethics' ? 'bg-gradient-to-br from-slate-300 via-gray-200 to-blue-100' :
+                                                                        'bg-gradient-to-br from-green-200 to-blue-300'
                                         }`}>
                                         {/* Background pattern */}
                                         <div className="absolute inset-0 opacity-20">
@@ -254,7 +254,7 @@ const Home = () => {
 
                                         {/* Main icon */}
                                         <div
-                                            className="text-2xl font-bold text-white drop-shadow-lg transform group-hover:scale-110 transition-transform duration-300 mb-3">
+                                            className="text-3xl font-bold text-white drop-shadow-lg transform group-hover:scale-110 transition-transform duration-300 mb-3">
                                             {session.category === 'Opening' && '🎯'}
                                             {session.category === 'Education' && '🎓'}
                                             {session.category === 'Planet' && '🌍'}
@@ -265,65 +265,45 @@ const Home = () => {
                                             {!['Opening', 'Education', 'Planet', 'Art', 'Technology', 'Finance', 'Ethics'].includes(session.category) && '💡'}
                                         </div>
                                     </div>
+                                    <div className="mt-2 space-y-1 flex flex-col items-start">
+                                        {session.keynoteSpeaker && (
+                                             <span className="inline-block w-full text-center px-2 py-1 rounded text-xs font-bold uppercase tracking-wide bg-blue-100 text-blue-800">
+                                                 Keynote
+                                             </span>
+                                        )}
+                                        {session.panelSpeakers && session.panelSpeakers.length > 0 && (
+                                            <span className="inline-block w-full text-center px-2 py-1 rounded text-xs font-bold uppercase tracking-wide bg-green-100 text-green-800">
+                                                Panel
+                                            </span>
+                                        )}
+                                    </div>
                                 </div>
                                 <div>
                                     <div className="text-gray-600 mb-1">{session.date}</div>
                                     <h3 className="text-2xl font-black mb-2">{session.title}</h3>
-
-                                    {/* Speaker info - Both Keynote and Panel with Avatars */}
-                                    <div className="mb-3 space-y-2">
+                                    <p className="text-gray-600 text-sm mb-3">{session.description}</p>
+                                    <div className="flex flex-wrap gap-1">
                                         {session.keynoteSpeaker && (
-                                            <div className="flex items-center space-x-2">
-                                                <span className="inline-block px-2 py-1 rounded text-xs font-bold uppercase tracking-wide bg-blue-100 text-blue-800">
-                                                    Keynote
-                                                </span>
-                                                <div className="flex items-center space-x-1">
-                                                    <img
-                                                        src={session.keynoteSpeaker.avatar}
-                                                        alt={session.keynoteSpeaker.name}
-                                                        className="w-6 h-6 rounded-full object-cover border border-gray-300"
-                                                        onError={(e) => {
-                                                            e.target.style.display = 'none';
-                                                            e.target.nextSibling.style.display = 'flex';
-                                                        }}
-                                                    />
-                                                    <div className="hidden w-6 h-6 rounded-full bg-blue-500 border border-gray-300 items-center justify-center text-xs text-white font-bold">
-                                                        {session.keynoteSpeaker.name.split(' ').map(n => n[0]).join('')}
-                                                    </div>
-                                                </div>
+                                            <div className="flex items-center space-x-1">
+                                                <img
+                                                    src={session.keynoteSpeaker.avatar}
+                                                    alt={session.keynoteSpeaker.name}
+                                                    className="w-6 h-6 rounded-full object-cover border border-gray-300"
+                                                />
                                             </div>
                                         )}
-                                        {session.panelSpeakers && session.panelSpeakers.length > 0 && (
-                                            <div className="flex items-start space-x-2">
-                                                <span className="inline-block px-2 py-1 rounded text-xs font-bold uppercase tracking-wide bg-green-100 text-green-800">
-                                                    Panel
-                                                </span>
-                                                <div className="flex flex-wrap gap-1">
-                                                    {session.panelSpeakers.map((speaker, idx) => (
-                                                        <div key={idx} className="flex items-center">
-                                                            <img
-                                                                src={speaker.avatar}
-                                                                alt={speaker.name}
-                                                                className="w-6 h-6 rounded-full object-cover border border-gray-300"
-                                                                onError={(e) => {
-                                                                    e.target.style.display = 'none';
-                                                                    e.target.nextSibling.style.display = 'flex';
-                                                                }}
-                                                            />
-                                                            <div className="hidden w-6 h-6 rounded-full bg-green-500 border border-gray-300 items-center justify-center text-xs text-white font-bold">
-                                                                {speaker.name.split(' ').map(n => n[0]).join('')}
-                                                            </div>
-                                                        </div>
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        )}
+                                        {session.panelSpeakers && session.panelSpeakers.map((speaker, idx) => (
+                                            <img
+                                                key={idx}
+                                                src={speaker.avatar}
+                                                alt={speaker.name}
+                                                className="w-6 h-6 rounded-full object-cover border border-gray-300"
+                                            />
+                                        ))}
                                     </div>
-
                                     {session.location && (
-                                        <div className="text-gray-500 text-sm mb-1">📍 {session.location}</div>
+                                        <div className="text-gray-500 text-sm mt-2">📍 {session.location}</div>
                                     )}
-                                    <p className="text-gray-600 font-bold text-sm">{session.description}</p>
                                 </div>
                             </div>
                         ))}
@@ -331,18 +311,18 @@ const Home = () => {
 
                      <div className="grid md:grid-cols-2 gap-8">
                         {upcomingSessions.slice(2).map((session, index) => (
-                            <div key={session.id} className="flex mb-8">
-                                <div className="w-32 h-32 bg-gray-100 rounded-md mr-6 flex-shrink-0 overflow-hidden">
-                                    <div
-                                        className={`w-full h-full flex flex-col items-center justify-center relative overflow-hidden rounded-md ${
-                                            session.category === 'Opening' ? 'bg-gradient-to-br from-blue-600 via-cyan-500 to-teal-400' :
-                                                session.category === 'Education' ? 'bg-gradient-to-br from-indigo-600 via-blue-500 to-cyan-400' :
-                                                    session.category === 'Planet' ? 'bg-gradient-to-br from-green-600 via-emerald-500 to-teal-400' :
-                                                        session.category === 'Art' ? 'bg-gradient-to-br from-purple-600 via-fuchsia-500 to-pink-400' :
-                                                            session.category === 'Technology' ? 'bg-gradient-to-br from-orange-600 via-red-500 to-pink-400' :
-                                                                session.category === 'Finance' ? 'bg-gradient-to-br from-yellow-600 via-orange-500 to-red-400' :
-                                                                    session.category === 'Ethics' ? 'bg-gradient-to-br from-slate-600 via-gray-500 to-blue-400' :
-                                                                        'bg-gradient-to-br from-green-500 to-blue-600'
+                            <div key={session.id} className="flex mb-8 group">
+                                <div className="w-32 mr-6 flex-shrink-0">
+                                     <div
+                                        className={`w-full h-32 flex flex-col items-center justify-center relative overflow-hidden rounded-md ${
+                                            session.category === 'Opening' ? 'bg-gradient-to-br from-blue-300 via-cyan-200 to-teal-100' :
+                                                session.category === 'Education' ? 'bg-gradient-to-br from-indigo-300 via-blue-200 to-cyan-100' :
+                                                    session.category === 'Planet' ? 'bg-gradient-to-br from-green-300 via-emerald-200 to-teal-100' :
+                                                        session.category === 'Art' ? 'bg-gradient-to-br from-purple-300 via-fuchsia-200 to-pink-100' :
+                                                            session.category === 'Technology' ? 'bg-gradient-to-br from-orange-300 via-red-200 to-pink-100' :
+                                                                session.category === 'Finance' ? 'bg-gradient-to-br from-yellow-300 via-orange-200 to-red-100' :
+                                                                    session.category === 'Ethics' ? 'bg-gradient-to-br from-slate-300 via-gray-200 to-blue-100' :
+                                                                        'bg-gradient-to-br from-green-200 to-blue-300'
                                         }`}>
                                         {/* Background pattern */}
                                         <div className="absolute inset-0 opacity-20">
@@ -356,7 +336,7 @@ const Home = () => {
 
                                         {/* Main icon */}
                                         <div
-                                            className="text-2xl font-bold text-white drop-shadow-lg transform group-hover:scale-110 transition-transform duration-300 mb-3">
+                                            className="text-3xl font-bold text-white drop-shadow-lg transform group-hover:scale-110 transition-transform duration-300 mb-3">
                                             {session.category === 'Opening' && '🎯'}
                                             {session.category === 'Education' && '🎓'}
                                             {session.category === 'Planet' && '🌍'}
@@ -367,65 +347,45 @@ const Home = () => {
                                             {!['Opening', 'Education', 'Planet', 'Art', 'Technology', 'Finance', 'Ethics'].includes(session.category) && '💡'}
                                         </div>
                                     </div>
+                                    <div className="mt-2 space-y-1 flex flex-col items-start">
+                                        {session.keynoteSpeaker && (
+                                             <span className="inline-block w-full text-center px-2 py-1 rounded text-xs font-bold uppercase tracking-wide bg-blue-100 text-blue-800">
+                                                 Keynote
+                                             </span>
+                                        )}
+                                        {session.panelSpeakers && session.panelSpeakers.length > 0 && (
+                                            <span className="inline-block w-full text-center px-2 py-1 rounded text-xs font-bold uppercase tracking-wide bg-green-100 text-green-800">
+                                                Panel
+                                            </span>
+                                        )}
+                                    </div>
                                 </div>
                                 <div>
                                     <div className="text-gray-600 mb-1">{session.date}</div>
                                     <h3 className="text-2xl font-black mb-2">{session.title}</h3>
-
-                                    {/* Speaker info - Both Keynote and Panel with Avatars */}
-                                    <div className="mb-3 space-y-2">
+                                    <p className="text-gray-600 text-sm mb-3">{session.description}</p>
+                                    <div className="flex flex-wrap gap-1">
                                         {session.keynoteSpeaker && (
-                                            <div className="flex items-center space-x-2">
-                                                <span className="inline-block px-2 py-1 rounded text-xs font-bold uppercase tracking-wide bg-blue-100 text-blue-800">
-                                                    Keynote
-                                                </span>
-                                                <div className="flex items-center space-x-1">
-                                                    <img
-                                                        src={session.keynoteSpeaker.avatar}
-                                                        alt={session.keynoteSpeaker.name}
-                                                        className="w-6 h-6 rounded-full object-cover border border-gray-300"
-                                                        onError={(e) => {
-                                                            e.target.style.display = 'none';
-                                                            e.target.nextSibling.style.display = 'flex';
-                                                        }}
-                                                    />
-                                                    <div className="hidden w-6 h-6 rounded-full bg-blue-500 border border-gray-300 items-center justify-center text-xs text-white font-bold">
-                                                        {session.keynoteSpeaker.name.split(' ').map(n => n[0]).join('')}
-                                                    </div>
-                                                </div>
+                                            <div className="flex items-center space-x-1">
+                                                <img
+                                                    src={session.keynoteSpeaker.avatar}
+                                                    alt={session.keynoteSpeaker.name}
+                                                    className="w-6 h-6 rounded-full object-cover border border-gray-300"
+                                                />
                                             </div>
                                         )}
-                                        {session.panelSpeakers && session.panelSpeakers.length > 0 && (
-                                            <div className="flex items-start space-x-2">
-                                                <span className="inline-block px-2 py-1 rounded text-xs font-bold uppercase tracking-wide bg-green-100 text-green-800">
-                                                    Panel
-                                                </span>
-                                                <div className="flex flex-wrap gap-1">
-                                                    {session.panelSpeakers.map((speaker, idx) => (
-                                                        <div key={idx} className="flex items-center">
-                                                            <img
-                                                                src={speaker.avatar}
-                                                                alt={speaker.name}
-                                                                className="w-6 h-6 rounded-full object-cover border border-gray-300"
-                                                                onError={(e) => {
-                                                                    e.target.style.display = 'none';
-                                                                    e.target.nextSibling.style.display = 'flex';
-                                                                }}
-                                                            />
-                                                            <div className="hidden w-6 h-6 rounded-full bg-green-500 border border-gray-300 items-center justify-center text-xs text-white font-bold">
-                                                                {speaker.name.split(' ').map(n => n[0]).join('')}
-                                                            </div>
-                                                        </div>
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        )}
+                                        {session.panelSpeakers && session.panelSpeakers.map((speaker, idx) => (
+                                            <img
+                                                key={idx}
+                                                src={speaker.avatar}
+                                                alt={speaker.name}
+                                                className="w-6 h-6 rounded-full object-cover border border-gray-300"
+                                            />
+                                        ))}
                                     </div>
-
                                     {session.location && (
-                                        <div className="text-gray-500 text-sm mb-1">📍 {session.location}</div>
+                                        <div className="text-gray-500 text-sm mt-2">📍 {session.location}</div>
                                     )}
-                                    <p className="text-gray-600 font-bold text-sm">{session.description}</p>
                                 </div>
                             </div>
                         ))}
