@@ -355,10 +355,10 @@ export const onlinePanels = [
         description: "Exploring the critical importance of ethical AI development, governance frameworks, and responsible implementation strategies for sustainable AI systems.",
         speakers: [
             {
-                name: "Ben Colman",
-                title: "Co-founder & CEO at Reality Defender",
-                avatar: "/speakers/BenColmon.jpg",
-                expertise: "AI Ethics & Deepfake Detection"
+                name: "Hongyu Song",
+                title: "Co-founder at EntreConnect",
+                avatar: "/speakers/HongyuSong.png",
+                expertise: "AI Engineer"
             },
           
         ],
@@ -367,129 +367,13 @@ export const onlinePanels = [
         attendeeCount: 250,
         maxCapacity: 500
     },
-    {
-        id: 2,
-        title: "AI in Education Innovation Panel",
-        topic: "Transforming Learning Through Artificial Intelligence",
-        date: "July 18, 2025",
-        time: "11:30 AM - 12:30 PM EST",
-        format: "Interactive Virtual Panel",
-        platform: "Zoom Webinar",
-        category: "Education",
-        description: "Discussing how AI is revolutionizing education, from personalized learning experiences to innovative teaching methodologies.",
-        speakers: [
-            {
-                name: "Katja Schroeder",
-                title: "Professor at Columbia University & Founder of Expedition PR",
-                avatar: "/speakers/KatjaSchroeder.png",
-                expertise: "Technology-enabled Sustainability & Education"
-            },
-            {
-                name: "Al Olsen",
-                title: "Professor at NYU",
-                avatar: "/speakers/AIOlsen.png",
-                expertise: "Games for Learning & AI in Education"
-            },
-            {
-                name: "Vivian Zhang",
-                title: "CTO at NYC Data Science Academy",
-                avatar: "/speakers/VivianZhang.png",
-                expertise: "Data Science Education & Training"
-            },
-            {
-                name: "Tia Kumar",
-                title: "Education Technology Specialist",
-                avatar: "/speakers/TiaKumar.jpg",
-                expertise: "EdTech Innovation & Implementation"
-            }
-        ],
-        registrationLink: "#register",
-        isLive: true,
-        attendeeCount: 180,
-        maxCapacity: 400
-    },
-    {
-        id: 3,
-        title: "AI for Climate & Sustainability Panel",
-        topic: "Leveraging AI for Environmental Impact and Climate Solutions",
-        date: "July 18, 2025",
-        time: "2:00 PM - 3:00 PM EST",
-        format: "Live Virtual Panel",
-        platform: "Zoom Webinar",
-        category: "Planet",
-        description: "Exploring innovative AI applications in climate science, environmental monitoring, and sustainable development initiatives.",
-        speakers: [
-            {
-                name: "Matt James",
-                title: "Chief Animal Officer at Colossal",
-                avatar: "/speakers/MattJames.png",
-                expertise: "AI for Biodiversity & Ecosystem Restoration"
-            },
-            {
-                name: "Andrew Dumit",
-                title: "Data Science at Watershed",
-                avatar: "/speakers/AndrewDumit.png",
-                expertise: "Carbon Data Science & Climate Tech"
-            },
-            {
-                name: "Di Wu",
-                title: "Assistant Professor at Embry-Riddle Aeronautical University",
-                avatar: "/speakers/DiWu.png",
-                expertise: "AI for Space & Space Sustainability"
-            },
-            {
-                name: "Olga Usyk",
-                title: "Business Strategy at IBM",
-                avatar: "/speakers/OlgaUsyk.jpg",
-                expertise: "Material Safety & R&D Strategy"
-            }
-        ],
-        registrationLink: "#register",
-        isLive: true,
-        attendeeCount: 220,
-        maxCapacity: 450
-    },
-    {
-        id: 4,
-        title: "AI in Creative Industries Panel",
-        topic: "Democratizing Art and Creativity with Artificial Intelligence",
-        date: "July 18, 2025",
-        time: "3:30 PM - 4:30 PM EST",
-        format: "Creative Showcase Panel",
-        platform: "Zoom Webinar",
-        category: "Art",
-        description: "Showcasing how AI is transforming creative industries, from digital art to immersive experiences and creative democratization.",
-        speakers: [
-            {
-                name: "Jonathan Yunger",
-                title: "Chief Executive Officer at Arcana",
-                avatar: "/speakers/Johnathan.jpg",
-                expertise: "AI in Film & Digital Art Creation"
-            },
-            {
-                name: "Zach Krall",
-                title: "Head of Design at Hume AI",
-                avatar: "/speakers/ZackKrall.png",
-                expertise: "Empathic AI & Emotional Intelligence"
-            },
-            {
-                name: "Rudy R. Rodriguez",
-                title: "Technical Director at Lincoln Center",
-                avatar: "/speakers/RudyRRodriguez.png",
-                expertise: "AI Audio Engineering & AR/VR"
-            },
-            {
-                name: "Jiajian Min",
-                title: "MIT Media Lab | Co-founder of HavardXR",
-                avatar: "/speakers/JiajianMin.png",
-                expertise: "Human-Centric Art & XR Innovation"
-            }
-        ],
-        registrationLink: "#register",
-        isLive: true,
-        attendeeCount: 195,
-        maxCapacity: 350
-    }
+    
+               
+        
+    
+              
+        
+  
 ];
 
 // Keep the original featuredSpeakers for backward compatibility
