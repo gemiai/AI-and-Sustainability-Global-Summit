@@ -500,6 +500,55 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Panels Section */}
+            <section className="py-16 px-6 border-t border-gray-200">
+                <div className="max-w-7xl mx-auto">
+                    <div className="flex justify-between items-center mb-12">
+                        <div className="flex items-center">
+                            <div
+                                className="w-16 h-16 border border-gray-400 rounded-full flex items-center justify-center mr-4">
+                                <div
+                                    className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-full flex items-center justify-center">
+                                    <span className="text-xl">🎯</span>
+                                </div>
+                            </div>
+                            <h2 className="text-3xl font-black">Online Panels</h2>
+                        </div>
+                     
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-8">
+                        {panelSpeakers.slice(0, 4).map((speaker, index) => (
+                            <div key={speaker.id} className="mb-8 group">
+                                <div className="flex mb-4">
+                                    <div className="w-32 mr-6 flex-shrink-0">
+                                        <div className="w-full h-32 bg-gradient-to-br from-purple-300 via-indigo-200 to-blue-100 flex flex-col items-center justify-center relative overflow-hidden rounded-md">
+                                            {/* Background pattern */}
+                                            <div className="absolute inset-0 opacity-20">
+                                                <div className="absolute top-2 left-2 w-3 h-3 bg-white rounded-full"></div>
+                                                <div className="absolute top-6 right-4 w-2 h-2 bg-white rounded-full"></div>
+                                                <div className="absolute bottom-4 left-6 w-1.5 h-1.5 bg-white rounded-full"></div>
+                                                <div className="absolute bottom-2 right-2 w-2.5 h-2.5 bg-white rounded-full"></div>
+                                            </div>
+
+                                            {/* Main icon */}
+                                            <div className="text-3xl font-bold text-white drop-shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                                                🎤
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="w-140 bg-white p-2">
+                                        <h3 className="text-lg font-black mb-2 text-gray-800 leading-tight">{speaker.name}</h3>
+                                        <p className="text-purple-600 text-sm font-bold mb-2">{speaker.affiliation}</p>
+                                        <p className="text-gray-600 text-xs-2 leading-relaxed">{speaker.event}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* Summit Feature Section */}
             <section className="py-16 px-6 border-t border-gray-200">
                 <div className="max-w-7xl mx-auto">
