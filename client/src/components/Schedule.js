@@ -160,23 +160,25 @@ const Schedule = ({onNavigate}) => {
                                     </div>
 
                                     <div className="flex-grow">
-                                        <div className="flex items-center mb-2">
+                                        <div className="flex flex-col md:flex-row md:items-center mb-2 space-y-2 md:space-y-0">
                                             <div className="text-gray-600 font-mono">{schedule.date}, {schedule.time}</div>
-                                            <span className={`ml-3 px-2 py-0.5 text-xs rounded ${
-                                                schedule.type === 'KEYNOTE' ? 'bg-purple-200 text-purple-800' :
-                                                    schedule.type === 'RESEARCH' ? 'bg-blue-200 text-blue-800' :
-                                                        schedule.type === 'WORKSHOP' ? 'bg-orange-200 text-orange-800' :
-                                                            schedule.type === 'SHOWCASE' ? 'bg-green-200 text-green-800' :
-                                                                schedule.type === 'PANEL' ? 'bg-red-200 text-red-800' :
-                                                                    'bg-gray-200 text-gray-800'
-                                            }`}>
-                        {schedule.type}
-                      </span>
-                                            {schedule.category && (
-                                                <span className="ml-2 px-2 py-0.5 text-xs rounded bg-green-200 text-green-800">
-                          {schedule.category}
-                        </span>
-                                            )}
+                                            <div className="flex items-center space-x-2 md:ml-3">
+                                                <span className={`px-2 py-0.5 text-xs rounded ${
+                                                    schedule.type === 'KEYNOTE' ? 'bg-purple-200 text-purple-800' :
+                                                        schedule.type === 'RESEARCH' ? 'bg-blue-200 text-blue-800' :
+                                                            schedule.type === 'WORKSHOP' ? 'bg-orange-200 text-orange-800' :
+                                                                schedule.type === 'SHOWCASE' ? 'bg-green-200 text-green-800' :
+                                                                    schedule.type === 'PANEL' ? 'bg-red-200 text-red-800' :
+                                                                        'bg-gray-200 text-gray-800'
+                                                }`}>
+                            {schedule.type}
+                          </span>
+                                                {schedule.category && (
+                                                    <span className="px-2 py-0.5 text-xs rounded bg-green-200 text-green-800">
+                              {schedule.category}
+                            </span>
+                                                )}
+                                            </div>
                                         </div>
 
                                         <h3 className="text-2xl font-bold mb-2">{schedule.title}</h3>
