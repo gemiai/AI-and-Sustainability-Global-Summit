@@ -192,10 +192,10 @@ const Home = () => {
     
                                 <h3 className="text-2xl font-black mb-2">{speaker.name}</h3>
                                 {speaker.affiliation && (
-                                    <div className="text-green-600 text-sm mb-2">{speaker.affiliation}</div>
+                                    <div className="text-green-600 text-lg leading-tight mb-2">{speaker.affiliation}</div>
                                 )}
                                 {speaker.event && (
-                                    <p className="text-xs text-gray-600">
+                                    <p className="text-xs-2 text-gray-600">
                                         {speaker.event}
                                     </p>
                                 )}
@@ -247,10 +247,10 @@ const Home = () => {
                                
                                 <h3 className="text-2xl font-black mb-2">{speaker.name}</h3>
                                 {speaker.affiliation && (
-                                    <div className="text-blue-500 text-sm mb-2">{speaker.affiliation}</div>
+                                    <div className="text-blue-500 text-lg mb-2">{speaker.affiliation}</div>
                                 )}
                                 {speaker.event && (
-                                    <p className="text-xs text-gray-600">
+                                    <p className="text-xs-2 text-gray-600">
                                         {speaker.event}
                                     </p>
                                 )}
@@ -434,7 +434,7 @@ const Home = () => {
                                     <div className="w-140 bg-white p-2 ">
                                         <div className="text-gray-500 mb-1 text-xs-4">{session.date}</div>
                                         <h3 className="text-lg font-black mb-2 text-gray-800 leading-tight">{session.title}</h3>
-                                        <p className="text-gray-600 text-xs-2 mb- leading-relaxed">{session.description}</p>
+                                        <p className="text-gray-600 text-xs-2 leading-relaxed">{session.description}</p>
                                         {session.location && (
                                             <div className="text-gray-500 text-xs">📍 {session.location}</div>
                                         )}

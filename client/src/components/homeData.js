@@ -154,26 +154,10 @@ export const keynoteSpeakers = [
         title: "KEYNOTE SPEAKER",
         event: "Sustainability Management and Environmental Policy: Leading the Green Transformation in Business and Academia",
         logo: '/speakers/DeanCohen.png',
-        affiliation: "Senior Vice Dean at Columbia University School of Professional Studies & Director of Sustainability Management Program"
+        affiliation: "Senior Vice Dean at Columbia University SPS"
     },
     {
         id: 2,
-        name: "Eric Horvitz",
-        title: "KEYNOTE SPEAKER",
-        event: "AI at the Intersection of Science and Society: Navigating Technology's Role in Sustainable Innovation",
-        logo: '/speakers/EricHorvitz.png',
-        affiliation: "Chief Scientific Officer at Microsoft"
-    },
-    {
-        id: 3,
-        name: "Veeral Shah",
-        title: "KEYNOTE SPEAKER",
-        event: "Building Impactful Technology: 20+ Years of Innovation in Product Strategy and Sustainable Business Solutions",
-        logo: '/speakers/VeeralShah.png',
-        affiliation: "Managing Director in Kroll"
-    },
-    {
-        id: 4,
         name: "Matt James",
         title: "KEYNOTE SPEAKER",
         event: "Planetary Resilience: Strengthening Ecosystems, Fostering Biodiversity, and Enabling All Life to Thrive with AI.",
@@ -181,13 +165,38 @@ export const keynoteSpeakers = [
         affiliation: "Chief Animal Officer at Colossal"
     },
     {
-        id: 5,
+        id: 3,
         name: "Jonathan Yunger",
         title: "KEYNOTE SPEAKER",
-        event: "Planetary Resilience: Strengthening Ecosystems, Fostering Biodiversity, and Enabling All Life to Thrive with AI.",
-        logo: '/speakers/MattJames.png',
-        affiliation: "Chief Animal Officer at Colossal"
-    }
+        event: "AI Movie and Art: Enable High-quality and Human Centric AI Movie",
+        logo: '/speakers/Johnathan.jpg',
+        affiliation: "Chief Executive Officer at Arcana"
+    },
+     
+      {
+        id: 4,
+        name: "Sumeet Agrawal",
+        title: "KEYNOTE SPEAKER",
+        event: "Building Impactful AI Agents: 15+ Years of Innovation in Product Strategy and Sustainable Business Solutions",
+        logo: '/speakers/SumeetAgrawal.png',
+        affiliation: "VP of Product at Informatica"
+    },
+     {
+        id: 6,
+        name: "Veeral Shah",
+        title: "KEYNOTE SPEAKER",
+        event: "Building Impactful Technology: 20+ Years of Innovation in Finance and Sustainable Business Solutions",
+        logo: '/speakers/VeeralShah.png',
+        affiliation: "Managing Director in Kroll"
+    },
+     {
+        id: 6,
+        name: "Ben Colman",
+        title: "KEYNOTE SPEAKER",
+        event: "Responsible AI for Identifying Deepfaked Audio, Video, Images and Text",
+        logo: '/speakers/BenColmon.jpg',
+        affiliation: "Co-founder | CEO"
+    },
 ];
 
 export const panelSpeakers = [
@@ -197,7 +206,7 @@ export const panelSpeakers = [
         title: "PANEL SPEAKER",
         event: "Technology-Enabled Sustainability: Leadership Communications and Entrepreneurial Innovation for Global Impact",
         logo: '/speakers/KatjaSchroeder.png',
-        affiliation: "Senior Lecturer, Columbia University Technology Management Program & Founder of Expedition PR"
+        affiliation: "Senior Lecturer at Columbia University & Founder of Expedition PR"
     },
     {
         id: 6,
@@ -237,7 +246,7 @@ export const panelSpeakers = [
         title: "PANEL SPEAKER",
         event: "From Chaos to Connection: Building AI-Powered Solutions That Simplify Human Experiences",
         logo: '/speakers/CourtneyGreer.png',
-        affiliation: "Founder & CEO of Voxxy AI & Former Senior Technical Program Manager at Microsoft"
+        affiliation: "Founder & CEO of Voxxy AI & Former Senior TPM at Microsoft"
     },
     {
         id: 11,
@@ -245,7 +254,7 @@ export const panelSpeakers = [
         title: "PANEL SPEAKER",
         event: "Human-Centered AI Design: Research-Driven Approaches to Sustainable User Experience Innovation",
         logo: '/speakers/DavidBaum.jpg',
-        affiliation: "UX Research Lead at Amazon Ads & Service Design Strategist"
+        affiliation: "UX Research Lead-Ads & Service Design Strategist at Amazon"
     },
     {
         id: 12,
@@ -253,8 +262,9 @@ export const panelSpeakers = [
         title: "PANEL SPEAKER",
         event: "Digital Transformation for Sustainability: AI, Cloud, and Cybersecurity Solutions for Future-Ready Organizations",
         logo: '/speakers/KarenFarah.png',
-        affiliation: "CEO at The Melting Pot Studio & AI & Cloud Solutions Leader"
+        affiliation: "CEO at The Melting Pot Studio & Harvard MBA"
     }
+   
 ];
 
 // Keep the original featuredSpeakers for backward compatibility
