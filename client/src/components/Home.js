@@ -91,7 +91,7 @@ const Home = () => {
         <div className="min-h-screen bg-white text-black font-bold overflow-x-hidden">
 
             {/* Hero Section */}
-            <section className="py-6 sm:py-10 px-4 sm:px-6 relative min-h-[500px] sm:min-h-[600px] overflow-hidden">
+            <section className="py-6 sm:py-10 px-4 sm:px-6 lg:px-8 xl:px-12 relative min-h-[500px] sm:min-h-[600px] overflow-hidden">
                 {/* Landing Page Background */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none mt-10 md:mt-20">
                     <img 
@@ -151,7 +151,7 @@ const Home = () => {
             </section>
 
             {/* Keynote Speakers Section */}
-            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 border-t border-gray-200 mt-4 sm:mt-0">
+            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8 xl:px-12 border-t border-gray-200 mt-4 sm:mt-0">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex items-center mb-8 md:mb-12">
                         <div
@@ -206,7 +206,7 @@ const Home = () => {
             </section>
 
             {/* Panel Speakers Section */}
-            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 border-t border-gray-200">
+            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8 xl:px-12 border-t border-gray-200">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex items-center mb-12">
                         <div
@@ -261,7 +261,7 @@ const Home = () => {
             </section>
 
             {/* Featured Sessions Section */}
-            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 border-t border-gray-200">
+            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8 xl:px-12 border-t border-gray-200">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex justify-between items-center mb-12">
                         <div className="flex items-center">
@@ -501,7 +501,7 @@ const Home = () => {
             </section>
 
             {/* Panels Section */}
-            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 border-t border-gray-200">
+            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8 xl:px-12 border-t border-gray-200">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex justify-between items-center mb-12">
                         <div className="flex items-center">
@@ -579,7 +579,7 @@ const Home = () => {
             </section>
 
             {/* Summit Feature Section */}
-            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 border-t border-gray-200">
+            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8 xl:px-12 border-t border-gray-200">
                 <div className="max-w-7xl mx-auto">
                     <div
                         className="bg-gradient-to-r from-green-100 to-blue-100 rounded-2xl overflow-hidden border border-gray-200">

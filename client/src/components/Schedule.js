@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { scheduleData } from './scheduleData.js';
+import Registration from './Registration.js';
 
 // Summit Program Page Component
 const Schedule = ({onNavigate}) => {
@@ -33,8 +34,12 @@ const Schedule = ({onNavigate}) => {
     
 
     const handleRegisterClick = () => {
-    setIsRegistrationModalOpen(true);
-    console.log('Register button clicked');
+        setIsRegistrationModalOpen(true);
+        console.log('Register button clicked');
+    };
+
+    const handleCloseRegistrationModal = () => {
+        setIsRegistrationModalOpen(false);
     };
 
     const filteredEvents = scheduleData.schedule.filter(schedule => {
@@ -217,6 +222,12 @@ const Schedule = ({onNavigate}) => {
                     )}
                 </div>
             </div>
+
+            <Registration
+                isOpen={isRegistrationModalOpen}
+                onClose={handleCloseRegistrationModal}
+                navigateHome={() => {}} // Stay on schedule page, don't navigate
+            />
 
         </div>
     );
