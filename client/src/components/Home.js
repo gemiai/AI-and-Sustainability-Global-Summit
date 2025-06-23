@@ -121,8 +121,8 @@ const Home = () => {
                                 <CountdownTimer targetDate="2025-07-18T09:00:00"/>
                                 <button
                                     onClick={handleRegisterClick}
-                                    className="mt-4 sm:mt-6 md:mt-8 w-full sm:w-auto bg-transparent hover:bg-teal-50 transition
-                                       py-2 sm:py-2 px-4 sm:px-6 md:px-8 rounded-md text-sm md:text-base font-bold text-teal-500 text-center border-2 border-teal-500"
+                                    className="mt-4 sm:mt-6 md:mt-8 w-full sm:w-auto bg-teal-500 sm:bg-transparent hover:bg-teal-600 sm:hover:bg-teal-50 transition
+                                       py-2 sm:py-2 px-4 sm:px-6 md:px-8 rounded-md text-sm md:text-base font-bold text-white sm:text-teal-500 text-center border-0 sm:border-2 sm:border-teal-500"
                                 >
                                     Secure Your Seat
                                 </button>

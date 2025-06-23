@@ -21,10 +21,10 @@ const Navbar = ({ currentPage, onNavigate, onRegisterClick }) => {
     };
     
     return (
-        <header className="px-4 sm:px-6 py-4 border-b border-gray-200 bg-white relative">
+        <header className="px-4 sm:px-6 lg:px-8 xl:px-12 py-4 border-b border-gray-200 bg-white relative">
             <div className="flex justify-between max-w-7xl mx-auto items-center">
                 {/* LEFT - Desktop Navigation */}
-                <div className="hidden md:flex justify-start space-x-6">
+                <div className="hidden md:flex justify-start space-x-6 lg:space-x-8 xl:space-x-10">
                     <a
                         href="/schedule"
                         className={`font-bold text-sm lg:text-base ${location.pathname === '/schedule' ? 'text-black border-b-2 border-black' : 'text-gray-600 hover:text-black'} transition-colors`}
@@ -86,7 +86,7 @@ const Navbar = ({ currentPage, onNavigate, onRegisterClick }) => {
                 </div>
                 
                 {/* RIGHT - Desktop Navigation */}
-                <div className="hidden md:flex justify-end space-x-4 lg:space-x-6">
+                <div className="hidden md:flex justify-end space-x-4 lg:space-x-6 xl:space-x-8">
                     <a
                         href="#"
                         className="text-gray-600 hover:text-black font-bold text-sm lg:text-base transition-colors"
