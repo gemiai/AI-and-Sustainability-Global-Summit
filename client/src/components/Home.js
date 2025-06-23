@@ -523,7 +523,7 @@ const Home = () => {
                             </div>
 
                             <div className="p-8 flex flex-col justify-center">
-                                <div className="font-black mb-2 text-green-700">SATURDAY, JULY 18 / 1:00 PM</div>
+                                <div className="font-black mb-2 text-green-700">Friday, JULY 18 / 4:00 PM</div>
                                 <p className="text-blue-800 font-bold">
                                     Our mission is to harness the transformative power of artificial intelligence to
                                     drive ethical innovation, social impact, and sustainability, fostering a future
