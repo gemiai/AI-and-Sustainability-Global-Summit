@@ -114,7 +114,7 @@ const Home = () => {
                             </div>
                             
                             {/* Countdown Section */}
-                            <div className="mt-6 sm:mt-8 md:mt-12 text-left">
+                            <div className="mt-6 sm:mt-8 md:mt-12 text-left mb-32 sm:mb-20 md:mb-0">
                                 <h3 className="text-sm sm:text-base md:text-xl font-semibold tracking-wider text-black mb-3 sm:mb-4">
                                     Summit Countdown
                                 </h3>
@@ -134,7 +134,7 @@ const Home = () => {
                 </div>
 
                 {/* Overlaid Description Card */}
-                <div className="absolute z-20 bottom-4 left-4 right-4 md:bottom-8 md:left-auto md:right-[6.25rem] w-[calc(100%-2rem)] md:w-auto max-w-xs md:max-w-2xl p-3 sm:p-4 md:p-6 rounded-lg bg-white/20 backdrop-blur-md shadow-lg text-left">
+                <div className="absolute z-20 bottom-2 sm:bottom-4 md:bottom-8 left-4 right-4 md:left-auto md:right-[6.25rem] w-[calc(100%-2rem)] md:w-auto max-w-xs md:max-w-2xl p-3 sm:p-4 md:p-6 rounded-lg bg-white/20 backdrop-blur-md shadow-lg text-left">
                     <p className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-extrabold text-black mb-2">
                         Thrive in the AI World.
                     </p>
