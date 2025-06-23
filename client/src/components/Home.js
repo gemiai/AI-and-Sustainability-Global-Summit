@@ -377,9 +377,9 @@ const Home = () => {
                                                         }}
                                                     />
                                                 ))}
-                                                {session.panelSpeakers.length > 4 && (
+                                                {session.panelSpeakers.length > 10 && (
                                                     <div className="w-10 h-10 rounded-full bg-green-200 text-green-800 text-xs flex items-center justify-center border border-green-300">
-                                                        +{session.panelSpeakers.length - 4}
+                                                        +{session.panelSpeakers.length - 10}
                                                     </div>
                                                 )}
                                             </>
@@ -473,7 +473,7 @@ const Home = () => {
                                     <div className="flex-1 flex items-center gap-2 pl-2">
                                         {session.panelSpeakers && session.panelSpeakers.length > 0 && (
                                             <>
-                                                {session.panelSpeakers.slice(0, 4).map((speaker, speakerIndex) => (
+                                                {session.panelSpeakers.slice(0, 6).map((speaker, speakerIndex) => (
                                                     <img
                                                         key={speakerIndex}
                                                         src={speaker.avatar}
@@ -485,9 +485,9 @@ const Home = () => {
                                                         }}
                                                     />
                                                 ))}
-                                                {session.panelSpeakers.length > 4 && (
+                                                {session.panelSpeakers.length > 6 && (
                                                     <div className="w-10 h-10 rounded-full bg-green-200 text-green-800 text-xs flex items-center justify-center border border-green-300">
-                                                        +{session.panelSpeakers.length - 4}
+                                                        +{session.panelSpeakers.length - 6}
                                                     </div>
                                                 )}
                                             </>

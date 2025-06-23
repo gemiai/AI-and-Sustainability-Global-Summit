@@ -39,12 +39,10 @@ export const upcomingSessions = [
         },
         panelSpeakers: [
             {name: "Katja Schroeder", avatar: '/speakers/KatjaSchroeder.png'},
-            {name: "Ben Jakob Zulechner", avatar: '/speakers/placeholder-avatar.png'},
-            {name: "Dr. Dong Guo", avatar: '/speakers/DongGuo.png'},
-            {name: "Al Olsen", avatar: '/speakers/placeholder-avatar.png'},
-            {name: "Tia Kumar", avatar: '/speakers/placeholder-avatar.png'},
-            {name: "Vivan Zhang", avatar: '/speakers/placeholder-avatar.png'},
-            {name: "Phil Ahn", avatar: '/speakers/placeholder-avatar.png'}
+            {name: "Ben Jakob Zulechner", avatar: '/speakers/BenJakobZulechner.png'},
+            {name: "Al Olsen", avatar: 'speakers/AIOlsen.png'},
+            {name: "Tia Kumar", avatar: '/speakers/TiaKumar.jpg'},
+            {name: "Vivan Zhang", avatar: '/speakers/VivianZhang.png'},
         ],
         description: "Educating the Next Generation of Changemakers and Impact Leaders: AI is Transforming Education",
     },
@@ -60,9 +58,9 @@ export const upcomingSessions = [
         },
         panelSpeakers: [
             {name: "Matt James", avatar: '/speakers/MattJames.png'},
-            {name: "Erik Solheim", avatar: '/speakers/ErikSolheim.png'},
+            {name: "Olga Usyk", avatar: '/speakers/OlgaUsyk.jpg'},
             {name: "Di Wu", avatar: '/speakers/DiWu.png'},
-            {name: "Andrew Dumit", avatar: '/speakers/placeholder-avatar.png'},
+            {name: "Andrew Dumit", avatar: '/speakers/AndrewDumit.png'},
         ],
         description: "Planetary Resilience: Advancing Ecosystem Integrity, Climate Actions, and Space Sustainability with AI"
     },
@@ -79,8 +77,8 @@ export const upcomingSessions = [
         panelSpeakers: [
             {name: "Johnathan", avatar: '/speakers/Johnathan.png'},
             {name: "Zach Krall", avatar: '/speakers/ZachKrall.png'},
-            {name: "Matthew Collado", avatar: '/speakers/MatthewCollado.png'},
-            {name: "Joshua", avatar: '/speakers/placeholder-avatar.png'}
+            {name: "Rudy R. Rodriguez.png", avatar: '/speakers/RudyRRodriguez.png'},
+            {name: "Jiajian Min", avatar: '/speakers/JiajianMin.png'}
         ],
         description: "Igniting Every Artist’s Dream with AI: Unlock Opportunities and make high-quality art accessible to all",
     },
@@ -97,10 +95,10 @@ export const upcomingSessions = [
         panelSpeakers: [
             {name: "Oussama Elachqar", avatar: '/speakers/placeholder-avatar.png'},
             {name: "Justin Cappos", avatar: '/speakers/JustinCappos.png'},
+            {name: "Honglei Liu", avatar: '/speakers/Honglei.png'},
             {name: "David Baum", avatar: '/speakers/DavidBaum.png'},
             {name: "Karen Farah", avatar: '/speakers/KarenFarah.png'},
             {name: "Arthy Krishnamurthy", avatar: '/speakers/ArthyKrishnamurthy.png'},
-            {name: "Lakshminarayanan Subramanian", avatar: '/speakers/placeholder-avatar.png'}
         ],
         description: "From Trade-Offs to Win-Wins, From Cost-Saving to Revenue Growth: AI as the Engine of Business Growth",
     },
@@ -117,11 +115,9 @@ export const upcomingSessions = [
         panelSpeakers: [
             {name: "Anand Chaturvedi", avatar: '/speakers/placeholder-avatar.png'},
             {name: "Miguel CuUnjieng", avatar: '/speakers/placeholder-avatar.png'},
-            {name: "Jared Haite", avatar: '/speakers/placeholder-avatar.png'},
-            {name: "Bao Te", avatar: '/speakers/placeholder-avatar.png'},
-            {name: "Taylor Meadows", avatar: '/speakers/placeholder-avatar.png'},
-            {name: "Talha Khan", avatar: '/speakers/placeholder-avatar.png'},
-            {name: "Phil Brady", avatar: '/speakers/placeholder-avatar.png'}
+            {name: "Jared Haite", avatar: '/speakers/JaredHaite.png'},
+            {name: "Aoran Yang", avatar: '/speakers/AoranYang.png'},
+
         ],
         description: "Redefining Finance: Precision, Speed, and Insight for Smarter, Data-Driven Decisions",
     },
@@ -132,15 +128,13 @@ export const upcomingSessions = [
         category: 'Ethics',
         format: 'panel',
         keynoteSpeaker: {
-            name: "Eric Horvitz",
-            avatar: '/speakers/EricHorvitz.png'
+            name: "Ben Colmon",
+            avatar: '/speakers/BenColmon.jpg'
         },
         panelSpeakers: [
             {name: "Matt Ford", avatar: '/speakers/MattFord.png'},
             {name: "Xiaoran Cai", avatar: '/speakers/XiaoranCai.jpg'},
             {name: "Courtney Greer", avatar: '/speakers/CourtneyGreer.png'},
-            {name: "Himanshu Joshi", avatar: '/speakers/placeholder-avatar.png'},
-            {name: "Dan Reich", avatar: '/speakers/placeholder-avatar.png'}
         ],
         description: "AI for Humanity: Driving Innovation with Ethics, Guardrails, and a Deep Commitment to Humanity’s Well-Being",
     }
