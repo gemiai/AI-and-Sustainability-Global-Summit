@@ -304,7 +304,39 @@ export const panelSpeakers = [
         event: "AI for Space and Space Sustainability",
         logo: '/speakers/DiWu.png',
         affiliation: "Assistant Professor at Embry-Riddle Aeronautical University"
-    }
+    },
+    {
+        id: 19,
+        name: "Jared Haite",
+        title: "PANEL SPEAKER",
+        event: "Lead AI strategy and development for a global software as a service (SaaS) company modernizing the insurance industry.",
+        logo: '/speakers/JaredHaite.png',
+        affiliation: "Product at Duck Creek Technologies"
+    },
+     {
+        id: 20,
+        name: "Jiajian Min",
+        title: "PANEL SPEAKER",
+        event: "Human Centric Art, 2023 Forbes 100 Most Influential Artist",
+        logo: '/speakers/JiajianMin.png',
+        affiliation: "MIT Media Lab | Co-founder of HavardXR"
+    },
+     {
+        id: 21,
+        name: "Olga Usyk",
+        title: "PANEL SPEAKER",
+        event: "Material safty and leading a strategy team embedded into the 3,000+ R&D group ",
+        logo: '/speakers/OlgaUsyk.jpg',
+        affiliation: "Business Strategy@IBM"
+    },
+     {
+        id: 22,
+        name: "Al Olsen",
+        title: "PANEL SPEAKER",
+        event: "Games for Learning, Audio Emotional Design and Generative Artificial Intelligence for education",
+        logo: '/speakers/AIOlsen.png',
+        affiliation: "NYU Professor"
+    },
 
    
 ];
