@@ -134,15 +134,15 @@ const Home = () => {
                 </div>
 
                 {/* Overlaid Description Card */}
-                <div className="absolute z-20 bottom-4 left-4 right-4 md:bottom-8 md:left-auto md:right-[6.25rem] w-[calc(100%-2rem)] md:w-auto max-w-xs md:max-w-2xl p-4 md:p-6 rounded-lg bg-white/20 backdrop-blur-md shadow-lg text-left">
-                    <p className="text-xl sm:text-2xl md:text-4xl font-extrabold text-black mb-2">
+                <div className="absolute z-20 bottom-4 left-4 right-4 md:bottom-8 md:left-auto md:right-[6.25rem] w-[calc(100%-2rem)] md:w-auto max-w-xs md:max-w-2xl p-3 sm:p-4 md:p-6 rounded-lg bg-white/20 backdrop-blur-md shadow-lg text-left">
+                    <p className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-extrabold text-black mb-2">
                         Thrive in the AI World.
                     </p>
-                    <p className="text-sm md:text-lg font-medium text-black">
+                    <p className="text-xs sm:text-sm md:text-lg font-medium text-black mb-3 sm:mb-2">
                         AI with a clear purpose, strong guardrails and real-world impact.
                     </p>
                     <button
-                        className="mt-2 md:mt-4 bg-transparent text-teal-400 font-bold py-1 md:py-2 px-0 text-sm md:text-base hover:underline transition"
+                        className="mt-2 md:mt-4 bg-transparent text-teal-400 font-bold py-1 md:py-2 px-0 text-xs sm:text-sm md:text-base hover:underline transition"
                         onClick={() => navigate('/schedule')}
                     >
                         View Full Schedule &rarr;
@@ -151,7 +151,7 @@ const Home = () => {
             </section>
 
             {/* Keynote Speakers Section */}
-            <section className="py-12 md:py-16 px-4 sm:px-6 border-t border-gray-200">
+            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 border-t border-gray-200 mt-4 sm:mt-0">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex items-center mb-8 md:mb-12">
                         <div
@@ -167,9 +167,9 @@ const Home = () => {
                         <h2 className="text-2xl md:text-3xl font-black text-green-600">Keynote Speakers</h2>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 justify-center">
                         {keynoteSpeakers.map((speaker, index) => (
-                            <div key={speaker.id} className="mb-8">
+                            <div key={speaker.id} className="mb-4 sm:mb-8">
                                 <div
                                     className="w-full h-64 bg-gray-100 rounded-md mb-4 overflow-hidden relative">
                                     <img
@@ -206,7 +206,7 @@ const Home = () => {
             </section>
 
             {/* Panel Speakers Section */}
-            <section className="py-16 px-6 border-t border-gray-200">
+            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 border-t border-gray-200">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex items-center mb-12">
                         <div
@@ -222,9 +222,9 @@ const Home = () => {
                         <h2 className="text-3xl font-black text-blue-500">Panel Speakers</h2>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 justify-center">
                         {panelSpeakers.map((speaker, index) => (
-                            <div key={speaker.id} className="mb-8">
+                            <div key={speaker.id} className="mb-4 sm:mb-8">
                                 <div
                                     className="w-full h-64 bg-gray-100 rounded-md mb-4 overflow-hidden relative">
                                     <img
@@ -261,7 +261,7 @@ const Home = () => {
             </section>
 
             {/* Featured Sessions Section */}
-            <section className="py-16 px-6 border-t border-gray-200">
+            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 border-t border-gray-200">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex justify-between items-center mb-12">
                         <div className="flex items-center">
@@ -282,9 +282,9 @@ const Home = () => {
                         </button>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                         {upcomingSessions.slice(0, 2).map((session, index) => (
-                            <div key={session.id} className="mb-8 group">
+                            <div key={session.id} className="mb-6 sm:mb-8 group">
                                 {/* Top row: Icon and content */}
                                 <div className="flex mb-2">
                                     <div className="w-32 mr-6 flex-shrink-0">
@@ -501,7 +501,7 @@ const Home = () => {
             </section>
 
             {/* Panels Section */}
-            <section className="py-16 px-6 border-t border-gray-200">
+            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 border-t border-gray-200">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex justify-between items-center mb-12">
                         <div className="flex items-center">
@@ -517,12 +517,12 @@ const Home = () => {
                      
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                         {onlinePanels.slice(0, 2).map((panel, index) => (
-                            <div key={panel.id} className="mb-8 group">
-                                <div className="flex mb-4">
-                                    <div className="w-32 mr-6 flex-shrink-0">
-                                        <div className="w-full h-32 bg-gradient-to-br from-purple-300 via-indigo-200 to-blue-100 flex flex-col items-center justify-center relative overflow-hidden rounded-md">
+                            <div key={panel.id} className="mb-6 sm:mb-8 group">
+                                <div className="flex flex-col sm:flex-row mb-4 space-y-4 sm:space-y-0">
+                                    <div className="w-full sm:w-32 sm:mr-6 flex-shrink-0 mb-4 sm:mb-0">
+                                        <div className="w-full h-24 sm:h-32 bg-gradient-to-br from-purple-300 via-indigo-200 to-blue-100 flex flex-col items-center justify-center relative overflow-hidden rounded-md">
                                             {/* Background pattern */}
                                             <div className="absolute inset-0 opacity-20">
                                                 <div className="absolute top-2 left-2 w-3 h-3 bg-white rounded-full"></div>
@@ -532,12 +532,12 @@ const Home = () => {
                                             </div>
 
                                             {/* Main icon */}
-                                            <div className="text-3xl font-bold text-white drop-shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                                            <div className="text-2xl sm:text-3xl font-bold text-white drop-shadow-lg transform group-hover:scale-110 transition-transform duration-300">
                                                 🎤
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="flex-1 bg-white p-2">
+                                    <div className="flex-1 bg-white p-3 sm:p-2 rounded-lg sm:rounded-none border sm:border-none border-gray-200">
                                         <div className="text-gray-500 mb-1 text-xs">{panel.time}</div>
                                         <h3 className="text-lg font-black mb-2 text-gray-800 leading-tight">{panel.title}</h3>
                                         <p className="text-purple-600 text-sm font-bold mb-3">{panel.topic}</p>
@@ -579,7 +579,7 @@ const Home = () => {
             </section>
 
             {/* Summit Feature Section */}
-            <section className="py-16 px-6 border-t border-gray-200">
+            <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 border-t border-gray-200">
                 <div className="max-w-7xl mx-auto">
                     <div
                         className="bg-gradient-to-r from-green-100 to-blue-100 rounded-2xl overflow-hidden border border-gray-200">
