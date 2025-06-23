@@ -79,14 +79,14 @@ export const scheduleData = {
         },
         {
             id: 8,
-            title: "AI and Food",
+            title: "AI and Finance, Compliance and Investment",
             date: "July 18",
             time: "2:00 PM",
             type: "PANEL",
-            speaker: "YF Feng",
-            description: "Food is not just taste; it's culture, emotion, and identity. This panel explores how AI is teaming up with food experts, flavor scientists, and food lovers to craft unforgettable flavor experiences. From generating new recipes based on local, seasonal ingredients to enhancing umami or texture without additives, AI is enabling a new era of conscious indulgence.",
+            speaker: "Veeral Shah",
+            description: "AI is reshaping finance by enhancing compliance, improving investment strategies, and driving ethical, data-driven decision-making across the sector.",
             day: 'SAT',
-            category: 'Food',
+            category: 'Finance, Compliance and Investment',
         },
         {
             id: 9,

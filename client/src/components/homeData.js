@@ -114,7 +114,6 @@ export const upcomingSessions = [
             avatar: '/speakers/VeeralShah.png'
         },
         panelSpeakers: [
-            {name: "Anand Chaturvedi", avatar: '/speakers/placeholder-avatar.png'},
             {name: "Miguel CuUnjieng", avatar: '/speakers/placeholder-avatar.png'},
             {name: "Jared Haite", avatar: '/speakers/JaredHaite.png'},
             {name: "Aoran Yang", avatar: '/speakers/AoranYang.png'},
