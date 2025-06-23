@@ -199,7 +199,7 @@ export const panelSpeakers = [
         title: "PANEL SPEAKER",
         event: "Technology-Enabled Sustainability: Leadership Communications and Entrepreneurial Innovation for Global Impact",
         logo: '/speakers/KatjaSchroeder.png',
-        affiliation: "Senior Lecturer at Columbia University & Founder of Expedition PR"
+        affiliation: "Professor at Columba University & Founder of Expedition PR"
     },
     {
         id: 6,
@@ -207,7 +207,7 @@ export const panelSpeakers = [
         title: "PANEL SPEAKER",
         event: "Cybersecurity for Sustainable Systems: Real-World Solutions from Cloud Computing to Automotive Innovation",
         logo: '/speakers/JustinCappos.png',
-        affiliation: "Professor of Computer Science & Engineering, NYU & Director, NYU Center for Cybersecurity"
+        affiliation: "Professor, NYU Center for Cybersecurity"
     },
     {
         id: 7,
@@ -215,48 +215,97 @@ export const panelSpeakers = [
         title: "PANEL SPEAKER",
         event: "Strategic Innovation at Scale: Leading R&D and Go-to-Market Initiatives for Sustainable Technology Solutions",
         logo: '/speakers/MattFord.png',
-        affiliation: "Senior Engagement Manager, IBM Strategic Business Initiatives"
+        affiliation: "IBM Business Strategy"
     },
-    {
+     {
         id: 8,
-        name: "Arthy Krishnamurthy",
+        name: "Zach Krall",
         title: "PANEL SPEAKER",
-        event: "AI Literacy and Business Transformation: Bridging the Gap Between Technology and Human Capital",
-        logo: '/speakers/ArthyKrishnamurthy.png',
-        affiliation: "Senior Director of Business Transformation at Dataiku"
+        event: "Empathic AI research lab building multimodal AI with emotional intelligence.",
+        logo: '/speakers/ZackKrall.png',
+        affiliation: "Head of Design at Hume AI"
     },
     {
         id: 9,
+        name: "Aoran Yang",
+        title: "PANEL SPEAKER",
+        event: "COO Team. +10 experience in equities technology",
+        logo: '/speakers/AoranYang.png',
+        affiliation: "Product at Citadel"
+    },
+    {
+        id: 10,
         name: "Xiaoran Cai",
         title: "PANEL SPEAKER",
         event: "AI for Good: Building Sustainable Technology Platforms and Global Communities for Positive Impact",
         logo: '/speakers/XiaoranCai.jpg',
-        affiliation: "Founder & Product Lead at GEMI.AI"
+        affiliation: "Founder at GEMI.AI"
     },
     {
-        id: 10,
+        id: 11,
         name: "Courtney Greer",
         title: "PANEL SPEAKER",
         event: "From Chaos to Connection: Building AI-Powered Solutions That Simplify Human Experiences",
         logo: '/speakers/CourtneyGreer.png',
-        affiliation: "Founder & CEO of Voxxy AI & Former Senior TPM at Microsoft"
+        affiliation: "Founder at Voxxy AI | Microsoft"
     },
     {
-        id: 11,
+        id: 12,
         name: "David Baum",
         title: "PANEL SPEAKER",
         event: "Human-Centered AI Design: Research-Driven Approaches to Sustainable User Experience Innovation",
         logo: '/speakers/DavidBaum.jpg',
-        affiliation: "UX Research Lead-Ads & Service Design Strategist at Amazon"
+        affiliation: "Design Strategist at Amazon"
     },
     {
-        id: 12,
+        id: 13,
         name: "Karen Farah",
         title: "PANEL SPEAKER",
         event: "Digital Transformation for Sustainability: AI, Cloud, and Cybersecurity Solutions for Future-Ready Organizations",
         logo: '/speakers/KarenFarah.png',
-        affiliation: "CEO at The Melting Pot Studio & Harvard MBA"
+        affiliation: "CEO at The Melting Pot Studio"
+    },
+    {
+        id: 14,
+        name: "Andrew Dumit",
+        title: "PANEL SPEAKER",
+        event: "+10 experience in data science and engineering for cutting carbon. Research presented at NeurIPS",
+        logo: '/speakers/AndrewDumit.png',
+        affiliation: "Data Science at Watershed"
+    },
+       {
+        id: 15,
+        name: "Vivian Zhang",
+        title: "PANEL SPEAKER",
+        event: "Forbes Education, Best of 2024. Trained +1,000 for Data Science job winners",
+        logo: '/speakers/VivianZhang.png',
+        affiliation: "CTO at NYC Data Science Academy"
+    },
+       {
+        id: 16,
+        name: "Hongelei",
+        title: "PANEL SPEAKER",
+        event: "Personalized omni-channel marketing campaigns for B2B go-to-market teams with Series A at 12M",
+        logo: '/speakers/Honglei.png',
+        affiliation: "CTO at Tofu"
+    },
+     {
+        id: 17,
+        name: "Rudy R. Rodriguez",
+        title: "PANEL SPEAKER",
+        event: "AI with Audio and Sound Engineering, Augmented Reality, Virtual Reality, Mixed Reality",
+        logo: '/speakers/RudyRRodriguez.png',
+        affiliation: "Technical Director at Lincoln Center"
+    },
+     {
+        id: 18,
+        name: "Di Wu",
+        title: "PANEL SPEAKER",
+        event: "AI for Space and Space Sustainability",
+        logo: '/speakers/DiWu.png',
+        affiliation: "Assistant Professor at Embry-Riddle Aeronautical University"
     }
+
    
 ];
 
