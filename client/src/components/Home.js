@@ -111,6 +111,7 @@ const Home = () => {
                             <div className="inline-block bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">
                                 <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-black mb-3 sm:mb-4 leading-tight">AI and Sustainability Global Summit</h1>
                                 <p className="text-sm sm:text-base md:text-lg lg:text-2xl font-bold">{eventData.date}</p>
+                                <p className="block sm:hidden text-xs font-bold mt-1">by GEMI.AI</p>
                             </div>
                             
                             {/* Countdown Section */}
@@ -123,7 +124,7 @@ const Home = () => {
                                 </div>
                                 <button
                                     onClick={handleRegisterClick}
-                                    className="mt-4 sm:mt-6 md:mt-8 w-full sm:w-auto bg-teal-500 sm:bg-transparent hover:bg-teal-600 sm:hover:bg-teal-50 transition
+                                    className="hidden sm:block mt-4 sm:mt-6 md:mt-8 w-full sm:w-auto bg-teal-500 sm:bg-transparent hover:bg-teal-600 sm:hover:bg-teal-50 transition
                                        py-2 sm:py-2 px-4 sm:px-6 md:px-8 rounded-md text-sm md:text-base font-bold text-white sm:text-teal-500 text-center border-0 sm:border-2 sm:border-teal-500"
                                 >
                                     Secure Your Seat
