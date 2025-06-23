@@ -91,7 +91,7 @@ const Home = () => {
         <div className="min-h-screen bg-white text-black font-bold overflow-x-hidden">
 
             {/* Hero Section */}
-            <section className="py-10 px-4 sm:px-6 relative min-h-[600px] overflow-hidden">
+            <section className="py-6 sm:py-10 px-4 sm:px-6 relative min-h-[500px] sm:min-h-[600px] overflow-hidden">
                 {/* Landing Page Background */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none mt-10 md:mt-20">
                     <img 
@@ -106,23 +106,23 @@ const Home = () => {
                 </div>
                 <div className="max-w-7xl mx-auto grid grid-cols-12 gap-4 md:gap-8 relative z-10">
                     {/* Content Section - Left Aligned */}
-                    <div className="col-span-12 md:col-span-7 lg:col-span-6 flex flex-col justify-start pt-0 min-h-[60vh]">
+                    <div className="col-span-12 md:col-span-7 lg:col-span-6 flex flex-col justify-start pt-0 min-h-[50vh] sm:min-h-[60vh]">
                         <div className="text-left w-full">
                             <div className="inline-block bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">
-                                <h1 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">AI and Sustainability Global Summit</h1>
-                                <p className="text-base sm:text-lg md:text-2xl font-bold">{eventData.date}</p>
+                                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-black mb-3 sm:mb-4 leading-tight">AI and Sustainability Global Summit</h1>
+                                <p className="text-sm sm:text-base md:text-lg lg:text-2xl font-bold">{eventData.date}</p>
                             </div>
                             
                             {/* Countdown Section */}
-                            <div className="mt-8 md:mt-12 text-left">
-                                <h3 className="text-base md:text-xl font-semibold tracking-wider text-black mb-4">
+                            <div className="mt-6 sm:mt-8 md:mt-12 text-left">
+                                <h3 className="text-sm sm:text-base md:text-xl font-semibold tracking-wider text-black mb-3 sm:mb-4">
                                     Summit Countdown
                                 </h3>
                                 <CountdownTimer targetDate="2025-07-18T09:00:00"/>
                                 <button
                                     onClick={handleRegisterClick}
-                                    className="mt-6 md:mt-8 w-auto bg-transparent hover:bg-teal-50 transition
-                                       py-2 px-6 md:px-8 rounded-md text-sm md:text-base font-bold text-teal-500 text-center border-2 border-teal-500"
+                                    className="mt-4 sm:mt-6 md:mt-8 w-full sm:w-auto bg-transparent hover:bg-teal-50 transition
+                                       py-2 sm:py-2 px-4 sm:px-6 md:px-8 rounded-md text-sm md:text-base font-bold text-teal-500 text-center border-2 border-teal-500"
                                 >
                                     Secure Your Seat
                                 </button>
