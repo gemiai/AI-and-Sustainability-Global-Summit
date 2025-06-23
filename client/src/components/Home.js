@@ -3,7 +3,7 @@ import CountdownTimer from './CountdownTimer.js';
 import Registration from './Registration.js';
 
 import { useNavigate } from 'react-router-dom';
-import { eventData, upcomingSessions, keynoteSpeakers, panelSpeakers } from './homeData.js';
+import { eventData, upcomingSessions, keynoteSpeakers, panelSpeakers, onlinePanels } from './homeData.js';
 
 
 
@@ -14,7 +14,7 @@ const Home = () => {
     const [isRegistrationModalOpen, setIsRegistrationModalOpen] = useState(false);
     const [fetchError, setFetchError] = useState(null);
     // const [data, setData] = useState(null);
-    const data = {eventData, upcomingSessions, keynoteSpeakers, panelSpeakers };
+    const data = {eventData, upcomingSessions, keynoteSpeakers, panelSpeakers, onlinePanels };
 
     const navigate = useNavigate()
 
@@ -518,8 +518,8 @@ const Home = () => {
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-8">
-                        {panelSpeakers.slice(0, 4).map((speaker, index) => (
-                            <div key={speaker.id} className="mb-8 group">
+                        {onlinePanels.slice(0, 2).map((panel, index) => (
+                            <div key={panel.id} className="mb-8 group">
                                 <div className="flex mb-4">
                                     <div className="w-32 mr-6 flex-shrink-0">
                                         <div className="w-full h-32 bg-gradient-to-br from-purple-300 via-indigo-200 to-blue-100 flex flex-col items-center justify-center relative overflow-hidden rounded-md">
@@ -537,10 +537,39 @@ const Home = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="w-140 bg-white p-2">
-                                        <h3 className="text-lg font-black mb-2 text-gray-800 leading-tight">{speaker.name}</h3>
-                                        <p className="text-purple-600 text-sm font-bold mb-2">{speaker.affiliation}</p>
-                                        <p className="text-gray-600 text-xs-2 leading-relaxed">{speaker.event}</p>
+                                    <div className="flex-1 bg-white p-2">
+                                        <div className="text-gray-500 mb-1 text-xs">{panel.time}</div>
+                                        <h3 className="text-lg font-black mb-2 text-gray-800 leading-tight">{panel.title}</h3>
+                                        <p className="text-purple-600 text-sm font-bold mb-3">{panel.topic}</p>
+                                        
+                                        {/* Speakers */}
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <span className="text-xs font-bold text-gray-700">Speakers:</span>
+                                            <div className="flex flex-wrap gap-1">
+                                                {panel.speakers.slice(0, 4).map((speaker, speakerIndex) => (
+                                                    <img
+                                                        key={speakerIndex}
+                                                        src={speaker.avatar}
+                                                        alt={speaker.name}
+                                                        title={`${speaker.name} - ${speaker.expertise}`}
+                                                        className="w-8 h-8 rounded-full object-cover border border-purple-300 cursor-pointer hover:scale-110 hover:border-purple-500 transition-all duration-200"
+                                                        onError={(e) => {
+                                                            e.target.style.display = 'none';
+                                                        }}
+                                                    />
+                                                ))}
+                                                {panel.speakers.length > 4 && (
+                                                    <div className="w-8 h-8 rounded-full bg-purple-200 text-purple-800 text-xs flex items-center justify-center border border-purple-300">
+                                                        +{panel.speakers.length - 4}
+                                                    </div>
+                                                )}
+                                            </div>
+                                        </div>
+                                        
+                                        <div className="flex items-center justify-between text-xs text-gray-500">
+                                            <span>{panel.format} • {panel.platform}</span>
+                                            <span>{panel.attendeeCount}/{panel.maxCapacity} attendees</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
