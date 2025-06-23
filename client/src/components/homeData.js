@@ -90,11 +90,10 @@ export const upcomingSessions = [
         category: 'Technology',
         format: 'panel',
         keynoteSpeaker: {
-            name: "Renee Yao",
-            avatar: '/speakers/placeholder-avatar.png'
+          name: "Sumeet Agrawal.", 
+          avatar: '/speakers/SumeetAgrawal.png'
         },
         panelSpeakers: [
-            {name: "Oussama Elachqar", avatar: '/speakers/placeholder-avatar.png'},
             {name: "Justin Cappos", avatar: '/speakers/JustinCappos.png'},
             {name: "Honglei Liu", avatar: '/speakers/Honglei.png'},
             {name: "David Baum", avatar: '/speakers/DavidBaum.png'},
