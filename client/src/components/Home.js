@@ -115,10 +115,12 @@ const Home = () => {
                             
                             {/* Countdown Section */}
                             <div className="mt-6 sm:mt-8 md:mt-12 text-left mb-32 sm:mb-20 md:mb-0">
-                                <h3 className="text-sm sm:text-base md:text-xl font-semibold tracking-wider text-black mb-3 sm:mb-4">
+                                <h3 className="hidden sm:block text-sm sm:text-base md:text-xl font-semibold tracking-wider text-black mb-3 sm:mb-4">
                                     Summit Countdown
                                 </h3>
-                                <CountdownTimer targetDate="2025-07-18T09:00:00"/>
+                                <div className="hidden sm:block">
+                                    <CountdownTimer targetDate="2025-07-18T09:00:00"/>
+                                </div>
                                 <button
                                     onClick={handleRegisterClick}
                                     className="mt-4 sm:mt-6 md:mt-8 w-full sm:w-auto bg-teal-500 sm:bg-transparent hover:bg-teal-600 sm:hover:bg-teal-50 transition
@@ -134,7 +136,7 @@ const Home = () => {
                 </div>
 
                 {/* Overlaid Description Card */}
-                <div className="absolute z-20 bottom-2 sm:bottom-4 md:bottom-8 left-0 right-0 md:left-auto md:right-[6.25rem] w-full md:w-auto max-w-xs md:max-w-2xl p-3 sm:p-4 md:p-6 rounded-lg bg-white/20 backdrop-blur-md shadow-lg text-left">
+                <div className="absolute z-20 bottom-2 sm:bottom-4 md:bottom-8 left-4 right-4 sm:left-0 sm:right-0 md:left-auto md:right-[6.25rem] w-[calc(100%-2rem)] sm:w-full md:w-auto max-w-xs md:max-w-2xl p-3 sm:p-4 md:p-6 rounded-lg bg-white/20 backdrop-blur-md shadow-lg text-left">
                     <p className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-extrabold text-black mb-2">
                         Thrive in the AI World.
                     </p>
