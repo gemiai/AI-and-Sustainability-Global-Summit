@@ -111,7 +111,7 @@ const Home = () => {
                             <div className="inline-block bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">
                                 <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-black mb-3 sm:mb-4 leading-tight">AI and Sustainability Global Summit</h1>
                                 <p className="text-sm sm:text-base md:text-lg lg:text-2xl font-bold">{eventData.date}</p>
-                                <p className="block sm:hidden text-xs font-bold mt-1">by GEMI.AI</p>
+                                <p className="block sm:hidden text-lg font-bold mt-1">by GEMI.AI</p>
                             </div>
                             
                             {/* Countdown Section */}

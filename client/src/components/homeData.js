@@ -345,8 +345,8 @@ export const panelSpeakers = [
 export const onlinePanels = [
     {
         id: 1,
-        title: "AI Ethics & Governance Panel",
-        topic: "Responsible AI Development and Implementation",
+        title: "A Dynamic Community of Entrepreneurs and Investors",
+        topic: "EntreConnect ",
         date: "July 18, 2025",
         time: "10:00 AM - 11:00 AM EST",
         format: "Live Virtual Panel",
@@ -360,24 +360,7 @@ export const onlinePanels = [
                 avatar: "/speakers/BenColmon.jpg",
                 expertise: "AI Ethics & Deepfake Detection"
             },
-            {
-                name: "Matt Ford",
-                title: "Business Strategy at IBM",
-                avatar: "/speakers/MattFord.png",
-                expertise: "Strategic AI Innovation & R&D"
-            },
-            {
-                name: "Xiaoran Cai",
-                title: "Founder at GEMI.AI",
-                avatar: "/speakers/XiaoranCai.jpg",
-                expertise: "AI for Good & Sustainable Technology"
-            },
-            {
-                name: "Courtney Greer",
-                title: "Founder at Voxxy AI | Microsoft",
-                avatar: "/speakers/CourtneyGreer.png",
-                expertise: "AI-Powered User Experience"
-            }
+          
         ],
         registrationLink: "#register",
         isLive: true,
