@@ -110,8 +110,8 @@ export const upcomingSessions = [
         category: 'Finance',
         format: 'panel',
         keynoteSpeaker: {
-            name: "Veeral Shah",
-            avatar: '/speakers/VeeralShah.png'
+            name: "Shahryar Shaghaghi",
+            avatar: '/speakers/ShahryarShaghaghi.png'
         },
         panelSpeakers: [
             {name: "Miguel CuUnjieng", avatar: '/speakers/placeholder-avatar.png'},
@@ -190,6 +190,14 @@ export const keynoteSpeakers = [
         event: "Responsible AI for Identifying Deepfaked Audio, Video, Images and Text",
         logo: '/speakers/BenColmon.jpg',
         affiliation: "Co-founder | CEO"
+    },
+      {
+        id: 6,
+        name: "Shahryar Shaghaghi",
+        title: "KEYNOTE SPEAKER",
+        event: "Cybersecurity and Risk Management Leader for Global Programs and Industry Standards",
+        logo: '/speakers/ShahryarShaghaghi.png',
+        affiliation: "Program Director at Columbia University | Ex Deloitte Partner"
     },
 ];
 
