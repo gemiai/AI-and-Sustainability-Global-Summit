@@ -192,7 +192,7 @@ export const keynoteSpeakers = [
         affiliation: "Co-founder | CEO"
     },
       {
-        id: 6,
+        id: 7,
         name: "Shahryar Shaghaghi",
         title: "KEYNOTE SPEAKER",
         event: "Cybersecurity and Risk Management Leader for Global Programs and Industry Standards",
@@ -345,6 +345,14 @@ export const panelSpeakers = [
         event: "Games for Learning, Audio Emotional Design and Generative Artificial Intelligence for education",
         logo: '/speakers/AIOlsen.png',
         affiliation: "NYU Professor"
+    },
+    {
+        id: 23,
+        name: "Ben Jakob Zulechner",
+        title: "PANEL SPEAKER",
+        event: "Experts in M&A, venture capital, and scaling transformative projects to empower businesses in the digital economy",
+        logo: '/speakers/BenJakobZulechner.png',
+        affiliation: "Management Consultant at Consileon Frankfurt GmbH"
     },
 
    
