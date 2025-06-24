@@ -98,7 +98,8 @@ export const upcomingSessions = [
             {name: "Honglei Liu", avatar: '/speakers/Honglei.png'},
             {name: "David Baum", avatar: '/speakers/DavidBaum.png'},
             {name: "Karen Farah", avatar: '/speakers/KarenFarah.png'},
-            {name: "Arthy Krishnamurthy", avatar: '/speakers/ArthyKrishnamurthy.png'},
+            {name: "Matt Ford", avatar: '/speakers/MattFord.png'},
+
         ],
         description: "From Trade-Offs to Win-Wins, From Cost-Saving to Revenue Growth: AI as the Engine of Business Growth",
     },
@@ -131,7 +132,7 @@ export const upcomingSessions = [
             avatar: '/speakers/BenColmon.jpg'
         },
         panelSpeakers: [
-            {name: "Matt Ford", avatar: '/speakers/MattFord.png'},
+            
             {name: "Xiaoran Cai", avatar: '/speakers/XiaoranCai.jpg'},
             {name: "Courtney Greer", avatar: '/speakers/CourtneyGreer.png'},
         ],
