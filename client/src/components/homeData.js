@@ -97,10 +97,10 @@ export const upcomingSessions = [
         },
         panelSpeakers: [
             {name: "Justin Cappos", avatar: '/speakers/JustinCappos.png'},
-            {name: "Honglei Liu", avatar: '/speakers/Honglei.png'},
-            {name: "David Baum", avatar: '/speakers/DavidBaum.png'},
-            {name: "Karen Farah", avatar: '/speakers/KarenFarah.png'},
             {name: "Matt Ford", avatar: '/speakers/MattFord.png'},
+            {name: "Honglei Liu", avatar: '/speakers/Honglei.png'},
+            {name: "David Baum", avatar: '/speakers/DavidBaum.jpg'},
+            {name: "Karen Farah", avatar: '/speakers/KarenFarah.png'},
             {name: "Richard Liu", avatar: '/speakers/RichardLiu.png'},
         
         ],

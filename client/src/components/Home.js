@@ -368,7 +368,7 @@ const Home = () => {
                                     <div className="flex-1 flex items-center gap-2 pl-2">
                                         {session.panelSpeakers && session.panelSpeakers.length > 0 && (
                                             <>
-                                                {session.panelSpeakers.slice(0, 6).map((speaker, speakerIndex) => (
+                                                {session.panelSpeakers.slice(0, 10).map((speaker, speakerIndex) => (
                                                     <img
                                                         key={speakerIndex}
                                                         src={speaker.avatar}
@@ -476,7 +476,7 @@ const Home = () => {
                                     <div className="flex-1 flex items-center gap-2 pl-2">
                                         {session.panelSpeakers && session.panelSpeakers.length > 0 && (
                                             <>
-                                                {session.panelSpeakers.slice(0, 6).map((speaker, speakerIndex) => (
+                                                {session.panelSpeakers.slice(0, 8).map((speaker, speakerIndex) => (
                                                     <img
                                                         key={speakerIndex}
                                                         src={speaker.avatar}
@@ -488,9 +488,9 @@ const Home = () => {
                                                         }}
                                                     />
                                                 ))}
-                                                {session.panelSpeakers.length > 6 && (
+                                                {session.panelSpeakers.length > 8 && (
                                                     <div className="w-10 h-10 rounded-full bg-green-200 text-green-800 text-xs flex items-center justify-center border border-green-300">
-                                                        +{session.panelSpeakers.length - 6}
+                                                        +{session.panelSpeakers.length - 8}
                                                     </div>
                                                 )}
                                             </>
@@ -549,7 +549,7 @@ const Home = () => {
                                         <div className="flex items-center gap-2 mb-2">
                                             <span className="text-xs font-bold text-gray-700">Speakers:</span>
                                             <div className="flex flex-wrap gap-1">
-                                                {panel.speakers.slice(0, 4).map((speaker, speakerIndex) => (
+                                                {panel.speakers.slice(0, 8).map((speaker, speakerIndex) => (
                                                     <img
                                                         key={speakerIndex}
                                                         src={speaker.avatar}
@@ -561,9 +561,9 @@ const Home = () => {
                                                         }}
                                                     />
                                                 ))}
-                                                {panel.speakers.length > 4 && (
+                                                {panel.speakers.length > 8 && (
                                                     <div className="w-8 h-8 rounded-full bg-purple-200 text-purple-800 text-xs flex items-center justify-center border border-purple-300">
-                                                        +{panel.speakers.length - 4}
+                                                        +{panel.speakers.length - 8}
                                                     </div>
                                                 )}
                                             </div>
