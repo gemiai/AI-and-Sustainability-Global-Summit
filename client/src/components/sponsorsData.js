@@ -56,13 +56,6 @@ export const sponsorsData = [
                 link: 'https://www.amazon.com/'
             },
             {
-                id: 34,
-                name: 'Dataiku',
-                logo: '/sponsors/dataiku-logo.png',
-                linkedin: 'https://www.linkedin.com/company/dataiku/',
-                link: 'https://www.dataiku.com/'
-            },
-            {
                 id: 32,
                 name: 'Citadel',
                 logo: '/sponsors/citadel-logo.png',
