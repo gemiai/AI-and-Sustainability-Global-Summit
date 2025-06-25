@@ -101,7 +101,8 @@ export const upcomingSessions = [
             {name: "David Baum", avatar: '/speakers/DavidBaum.png'},
             {name: "Karen Farah", avatar: '/speakers/KarenFarah.png'},
             {name: "Matt Ford", avatar: '/speakers/MattFord.png'},
-
+            {name: "Richard Liu", avatar: '/speakers/RichardLiu.png'},
+        
         ],
         description: "From Trade-Offs to Win-Wins, From Cost-Saving to Revenue Growth: AI as the Engine of Business Growth",
     },
