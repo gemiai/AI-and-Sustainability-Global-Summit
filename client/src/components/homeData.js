@@ -43,6 +43,8 @@ export const upcomingSessions = [
             {name: "Al Olsen", avatar: 'speakers/AIOlsen.png'},
             {name: "Tia Kumar", avatar: '/speakers/TiaKumar.jpg'},
             {name: "Vivan Zhang", avatar: '/speakers/VivianZhang.png'},
+            {name: "Phil Ahn", avatar: '/speakers/PhilAhn.png'},
+         
         ],
         description: "Educating the Next Generation of Changemakers and Impact Leaders: AI is Transforming Education",
     },
@@ -115,6 +117,7 @@ export const upcomingSessions = [
         },
         panelSpeakers: [
             {name: "Miguel CuUnjieng", avatar: '/speakers/placeholder-avatar.png'},
+             {name: "WendyDiamond", avatar: '/speakers/WendyDiamond.png'},
             {name: "Jared Haite", avatar: '/speakers/JaredHaite.png'},
             {name: "Aoran Yang", avatar: '/speakers/AoranYang.png'},
 
@@ -135,6 +138,8 @@ export const upcomingSessions = [
             
             {name: "Xiaoran Cai", avatar: '/speakers/XiaoranCai.jpg'},
             {name: "Courtney Greer", avatar: '/speakers/CourtneyGreer.png'},
+            {name: "Himashu Joshi", avatar: '/speakers/HimashuJoshi.png'},
+            {name: "UvikaSharma", avatar: '/speakers/UvikaSharma.png'},
         ],
         description: "AI for Humanity: Driving Innovation with Ethics, Guardrails, and a Deep Commitment to Humanity’s Well-Being",
     }
@@ -220,11 +225,11 @@ export const panelSpeakers = [
     },
     {
         id: 7,
-        name: "Matt Ford",
+        name: "Wendy Diamond",
         title: "PANEL SPEAKER",
-        event: "Strategic Innovation at Scale: Leading R&D and Go-to-Market Initiatives for Sustainable Technology Solutions",
-        logo: '/speakers/MattFord.png',
-        affiliation: "IBM Business Strategy"
+        event: "Serial entrepreneur, impact investor and bestselling author who champions social innovation and animal welfare through ventures, advocacy, and global leadership platforms",
+        logo: '/speakers/WendyDiamond.png',
+        affiliation: "Founder of WEDO and LDP Ventures"
     },
      {
         id: 8,
@@ -234,7 +239,7 @@ export const panelSpeakers = [
         logo: '/speakers/ZackKrall.png',
         affiliation: "Head of Design at Hume AI"
     },
-    {
+     {
         id: 9,
         name: "Aoran Yang",
         title: "PANEL SPEAKER",
@@ -244,6 +249,15 @@ export const panelSpeakers = [
     },
     {
         id: 10,
+        name: "Matt Ford",
+        title: "PANEL SPEAKER",
+        event: "Strategic Innovation at Scale: Leading R&D and Go-to-Market Initiatives for Sustainable Technology Solutions",
+        logo: '/speakers/MattFord.png',
+        affiliation: "IBM Business Strategy"
+    },
+   
+    {
+        id: 11,
         name: "Xiaoran Cai",
         title: "PANEL SPEAKER",
         event: "AI for Good: Building Sustainable Technology Platforms and Global Communities for Positive Impact",
@@ -251,7 +265,7 @@ export const panelSpeakers = [
         affiliation: "Founder at GEMI.AI"
     },
     {
-        id: 11,
+        id: 12,
         name: "Courtney Greer",
         title: "PANEL SPEAKER",
         event: "From Chaos to Connection: Building AI-Powered Solutions That Simplify Human Experiences",
@@ -259,7 +273,7 @@ export const panelSpeakers = [
         affiliation: "Founder at Voxxy AI | Microsoft"
     },
     {
-        id: 12,
+        id: 13,
         name: "David Baum",
         title: "PANEL SPEAKER",
         event: "Human-Centered AI Design: Research-Driven Approaches to Sustainable User Experience Innovation",
@@ -267,7 +281,15 @@ export const panelSpeakers = [
         affiliation: "Design Strategist at Amazon"
     },
     {
-        id: 13,
+        id: 14,
+        name: "Himanshu Joshi",
+        title: "PANEL SPEAKER",
+        event: "Applied AI strategy leader. Advisor for Fortune 500 companies—driving $170M in business value through Generative AI, ethical AI adoption, and executive upskilling programs.",
+        logo: '/speakers/HimashuJoshi.png',
+        affiliation: "AI Adoption at Vector Institute"
+    },
+    {
+        id: 15,
         name: "Karen Farah",
         title: "PANEL SPEAKER",
         event: "Digital Transformation for Sustainability: AI, Cloud, and Cybersecurity Solutions for Future-Ready Organizations",
@@ -275,7 +297,7 @@ export const panelSpeakers = [
         affiliation: "CEO at The Melting Pot Studio"
     },
     {
-        id: 14,
+        id: 16,
         name: "Andrew Dumit",
         title: "PANEL SPEAKER",
         event: "+10 experience in data science and engineering for cutting carbon. Research presented at NeurIPS",
@@ -283,7 +305,7 @@ export const panelSpeakers = [
         affiliation: "Data Science at Watershed"
     },
        {
-        id: 15,
+        id: 17,
         name: "Vivian Zhang",
         title: "PANEL SPEAKER",
         event: "Forbes Education, Best of 2024. Trained +1,000 for Data Science job winners",
@@ -291,7 +313,7 @@ export const panelSpeakers = [
         affiliation: "CTO at NYC Data Science Academy"
     },
        {
-        id: 16,
+        id: 18,
         name: "Hongelei",
         title: "PANEL SPEAKER",
         event: "Personalized omni-channel marketing campaigns for B2B go-to-market teams with Series A at 12M",
@@ -299,7 +321,7 @@ export const panelSpeakers = [
         affiliation: "CTO at Tofu"
     },
      {
-        id: 17,
+        id: 19,
         name: "Rudy R. Rodriguez",
         title: "PANEL SPEAKER",
         event: "AI with Audio and Sound Engineering, Augmented Reality, Virtual Reality, Mixed Reality",
@@ -307,7 +329,7 @@ export const panelSpeakers = [
         affiliation: "Technical Director at Lincoln Center"
     },
      {
-        id: 18,
+        id: 20,
         name: "Di Wu",
         title: "PANEL SPEAKER",
         event: "AI for Space and Space Sustainability",
@@ -315,7 +337,7 @@ export const panelSpeakers = [
         affiliation: "Assistant Professor at Embry-Riddle Aeronautical University"
     },
     {
-        id: 19,
+        id: 21,
         name: "Jared Haite",
         title: "PANEL SPEAKER",
         event: "Lead AI strategy and development for a global software as a service (SaaS) company modernizing the insurance industry.",
@@ -323,7 +345,7 @@ export const panelSpeakers = [
         affiliation: "Product at Duck Creek Technologies"
     },
      {
-        id: 20,
+        id: 22,
         name: "Jiajian Min",
         title: "PANEL SPEAKER",
         event: "Human Centric Art, 2023 Forbes 100 Most Influential Artist",
@@ -331,15 +353,24 @@ export const panelSpeakers = [
         affiliation: "MIT Media Lab | Co-founder of HavardXR"
     },
      {
-        id: 21,
+        id: 23,
         name: "Olga Usyk",
         title: "PANEL SPEAKER",
         event: "Material safty and leading a strategy team embedded into the 3,000+ R&D group ",
         logo: '/speakers/OlgaUsyk.jpg',
         affiliation: "Business Strategy@IBM"
     },
-     {
-        id: 22,
+       {
+        id: 24,
+        name: "Richard Lu",
+        title: "PANEL SPEAKER",
+        event: "AI Workers for Short Video Marketing & Multi-Channel Sales Conversion",
+        logo: '/speakers/RichardLu.png',
+        affiliation: "COO at Spotlize"
+    },
+    
+    {
+        id: 26,
         name: "Al Olsen",
         title: "PANEL SPEAKER",
         event: "Games for Learning, Audio Emotional Design and Generative Artificial Intelligence for education",
@@ -347,13 +378,30 @@ export const panelSpeakers = [
         affiliation: "NYU Professor"
     },
     {
-        id: 23,
+        id: 27,
+        name: "Phil Ahn",
+        title: "PANEL SPEAKER",
+        event: "Energetic leader with deep expertise in data, AI, and business strategy, driving AI experimentation and scaling within the Babson community.",
+        logo: '/speakers/PhilAhn.png',
+        affiliation: "Senior Director, Data Analytics and AI at Babson College"
+    },
+     {
+        id: 25,
+        name: "Uvika Sharma",
+        title: "PANEL SPEAKER",
+        event: "20+ years of experience helping organizations across sectors harness AI responsibly and effectively to drive business transformation, ethical adoption, and measurable impact",
+        logo: '/speakers/UvikaSharma.png',
+        affiliation: "Founder and Managing Partner at INTLDA"
+    },
+    {
+        id: 28,
         name: "Ben Jakob Zulechner",
         title: "PANEL SPEAKER",
         event: "Experts in M&A, venture capital, and scaling transformative projects to empower businesses in the digital economy",
         logo: '/speakers/BenJakobZulechner.png',
         affiliation: "Management Consultant at Consileon Frankfurt GmbH"
     },
+   
 
    
 ];

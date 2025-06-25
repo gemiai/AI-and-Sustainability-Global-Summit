@@ -368,7 +368,7 @@ const Home = () => {
                                     <div className="flex-1 flex items-center gap-2 pl-2">
                                         {session.panelSpeakers && session.panelSpeakers.length > 0 && (
                                             <>
-                                                {session.panelSpeakers.slice(0, 4).map((speaker, speakerIndex) => (
+                                                {session.panelSpeakers.slice(0, 6).map((speaker, speakerIndex) => (
                                                     <img
                                                         key={speakerIndex}
                                                         src={speaker.avatar}
