@@ -61,7 +61,6 @@ export const upcomingSessions = [
         panelSpeakers: [
             {name: "Matt James", avatar: '/speakers/MattJames.png'},
             {name: "Olga Usyk", avatar: '/speakers/OlgaUsyk.jpg'},
-            {name: "Andrew Dumit", avatar: '/speakers/AndrewDumit.png'},
             {name: "Di Wu", avatar: '/speakers/DiWu.png'}
             
         ],
@@ -297,14 +296,7 @@ export const panelSpeakers = [
         logo: '/speakers/KarenFarah.png',
         affiliation: "CEO at The Melting Pot Studio"
     },
-    {
-        id: 16,
-        name: "Andrew Dumit",
-        title: "PANEL SPEAKER",
-        event: "+10 experience in data science and engineering for cutting carbon. Research presented at NeurIPS",
-        logo: '/speakers/AndrewDumit.png',
-        affiliation: "Data Science at Watershed"
-    },
+ 
        {
         id: 17,
         name: "Vivian Zhang",
@@ -337,14 +329,8 @@ export const panelSpeakers = [
         logo: '/speakers/DiWu.png',
         affiliation: "Assistant Professor at Embry-Riddle Aeronautical University"
     },
-    {
-        id: 21,
-        name: "Jared Haite",
-        title: "PANEL SPEAKER",
-        event: "Lead AI strategy and development for a global software as a service (SaaS) company modernizing the insurance industry.",
-        logo: '/speakers/JaredHaite.png',
-        affiliation: "Product at Duck Creek Technologies"
-    },
+ 
+    
      {
         id: 22,
         name: "Jiajian Min",
