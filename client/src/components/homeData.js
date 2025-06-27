@@ -19,8 +19,8 @@ export const upcomingSessions = [
         category: 'Opening',
         format: 'keynote',
         keynoteSpeaker: {
-            name: "Steven Cohen",
-            avatar: '/speakers/DeanCohen.png'
+            name: "Xiaoran Cai",
+            avatar: '/speakers/XiaoranCai.jpg'
         },
         panelSpeakers: [
             {name: "Xiaoran Cai", avatar: '/XiaoranCai.jpg'}
