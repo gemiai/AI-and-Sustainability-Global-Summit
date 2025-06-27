@@ -173,14 +173,7 @@ export const keynoteSpeakers = [
         logo: '/speakers/SumeetAgrawal.png',
         affiliation: "VP of Product at Informatica"
     },
-     {
-        id: 6,
-        name: "Veeral Shah",
-        title: "KEYNOTE SPEAKER",
-        event: "Building Impactful Technology: 20+ Years of Innovation in Finance and Sustainable Business Solutions",
-        logo: '/speakers/VeeralShah.png',
-        affiliation: "Managing Director in Kroll"
-    },
+
      {
         id: 6,
         name: "Ben Colman",
