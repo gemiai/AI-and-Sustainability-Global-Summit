@@ -190,6 +190,14 @@ export const keynoteSpeakers = [
         logo: '/speakers/BenColmon.jpg',
         affiliation: "Co-founder | CEO"
     },
+       {
+        id: 1,
+        name: "Steven Cohen",
+        title: "KEYNOTE SPEAKER",
+        event: "Sustainability Management and Environmental Policy: Leading the Green Transformation in Business and Academia",
+        logo: '/speakers/DeanCohen.png',
+        affiliation: "Senior Vice Dean at Columbia University SPS"
+    },
       {
         id: 7,
         name: "Shahryar Shaghaghi",
@@ -198,14 +206,7 @@ export const keynoteSpeakers = [
         logo: '/speakers/ShahryarShaghaghi.png',
         affiliation: "Program Director at Columbia University | Ex Deloitte Partner"
     },
-      {
-        id: 1,
-        name: "Steven Cohen",
-        title: "KEYNOTE SPEAKER",
-        event: "Sustainability Management and Environmental Policy: Leading the Green Transformation in Business and Academia",
-        logo: '/speakers/DeanCohen.png',
-        affiliation: "Senior Vice Dean at Columbia University SPS"
-    },
+   
 ];
 
 export const panelSpeakers = [
