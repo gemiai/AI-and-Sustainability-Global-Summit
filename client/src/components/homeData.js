@@ -284,6 +284,7 @@ export const panelSpeakers = [
         logo: '/speakers/HimashuJoshi.png',
         affiliation: "AI Adoption at Vector Institute"
     },
+    
     {
         id: 15,
         name: "Karen Farah",
@@ -293,6 +294,14 @@ export const panelSpeakers = [
         affiliation: "CEO at The Melting Pot Studio"
     },
  
+    {
+        id: 14,
+        name: "Joshue Ott",
+        title: "PANEL SPEAKER",
+        event: "Creating Interactive Visual and Audio Experiences for Mobile Devices and Concert Halls",
+        logo: '/speakers/JoshueOtt.png',
+        affiliation: "Technical Director and Creative Technologist at Interval Studio Inc"
+    },
        {
         id: 17,
         name: "Vivian Zhang",
@@ -383,6 +392,14 @@ export const panelSpeakers = [
         event: "Experts in M&A, venture capital, and scaling transformative projects to empower businesses in the digital economy",
         logo: '/speakers/BenJakobZulechner.png',
         affiliation: "Management Consultant at Consileon Frankfurt GmbH"
+    },
+    {
+        id: 14,
+        name: "Echo Zhang",
+        title: "PANEL SPEAKER",
+        event: "Founding product SME of Kick.co, an OpenAI-backed startup",
+        logo: '/speakers/EchoZhang.png',
+        affiliation: "Co-founder at Zhong & Sanchez"
     },
    
 
