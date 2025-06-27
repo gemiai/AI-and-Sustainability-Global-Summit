@@ -223,7 +223,7 @@ export const panelSpeakers = [
         id: 7,
         name: "Wendy Diamond",
         title: "PANEL SPEAKER",
-        event: "Serial entrepreneur, impact investor and bestselling author who champions social innovation and animal welfare through ventures, advocacy, and global leadership platforms",
+        event: "Serial Entrepreneur, Impact Investor and Bestselling Author. Champion for Social Innovation and Animal Welfare",
         logo: '/speakers/WendyDiamond.png',
         affiliation: "Founder of WEDO and LDP Ventures"
     },
