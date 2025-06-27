@@ -148,6 +148,14 @@ export const upcomingSessions = [
 // Featured speakers focused on AI and sustainability
 export const keynoteSpeakers = [
   
+   {
+        id: 5,
+        name: "Katja Schroeder",
+        title: "PANEL SPEAKER",
+        event: "Technology-Enabled Sustainability: Leadership Communications and Entrepreneurial Innovation for Global Impact",
+        logo: '/speakers/KatjaSchroeder.png',
+        affiliation: "Professor at Columba University & Founder of Expedition PR"
+    },
     {
         id: 2,
         name: "Matt James",
@@ -201,14 +209,7 @@ export const keynoteSpeakers = [
 ];
 
 export const panelSpeakers = [
-    {
-        id: 5,
-        name: "Katja Schroeder",
-        title: "PANEL SPEAKER",
-        event: "Technology-Enabled Sustainability: Leadership Communications and Entrepreneurial Innovation for Global Impact",
-        logo: '/speakers/KatjaSchroeder.png',
-        affiliation: "Professor at Columba University & Founder of Expedition PR"
-    },
+    
     {
         id: 6,
         name: "Justin Cappos",
