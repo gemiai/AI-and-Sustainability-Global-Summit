@@ -147,14 +147,7 @@ export const upcomingSessions = [
 
 // Featured speakers focused on AI and sustainability
 export const keynoteSpeakers = [
-    {
-        id: 1,
-        name: "Steven Cohen",
-        title: "KEYNOTE SPEAKER",
-        event: "Sustainability Management and Environmental Policy: Leading the Green Transformation in Business and Academia",
-        logo: '/speakers/DeanCohen.png',
-        affiliation: "Senior Vice Dean at Columbia University SPS"
-    },
+  
     {
         id: 2,
         name: "Matt James",
@@ -203,6 +196,14 @@ export const keynoteSpeakers = [
         event: "Cybersecurity and Risk Management Leader for Global Programs and Industry Standards",
         logo: '/speakers/ShahryarShaghaghi.png',
         affiliation: "Program Director at Columbia University | Ex Deloitte Partner"
+    },
+      {
+        id: 1,
+        name: "Steven Cohen",
+        title: "KEYNOTE SPEAKER",
+        event: "Sustainability Management and Environmental Policy: Leading the Green Transformation in Business and Academia",
+        logo: '/speakers/DeanCohen.png',
+        affiliation: "Senior Vice Dean at Columbia University SPS"
     },
 ];
 
