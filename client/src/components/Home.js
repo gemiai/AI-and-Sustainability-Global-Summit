@@ -8,6 +8,7 @@ import { eventData, upcomingSessions, keynoteSpeakers, panelSpeakers, onlinePane
 // Photo Slideshow Component
 const PhotoSlideshow = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const navigate = useNavigate();
 
     // Auto-scroll functionality
     useEffect(() => {
@@ -65,26 +66,21 @@ const PhotoSlideshow = () => {
                                     </div>
                                     
                                     {/* Know More Link Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent">
-                                        <div className="absolute bottom-8 right-8">
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none">
+                                        <div className="absolute bottom-8 right-8 pointer-events-auto">
                                             {photo.link && (
-                                                photo.link.startsWith('http') ? (
-                                                    <a
-                                                        href={photo.link}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className="inline-block bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-bold py-2 px-6 rounded-full border border-white/30 hover:border-white/50 transition-all duration-300"
-                                                    >
-                                                        Know More →
-                                                    </a>
-                                                ) : (
-                                                    <button
-                                                        onClick={() => navigate(photo.link)}
-                                                        className="inline-block bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-bold py-2 px-6 rounded-full border border-white/30 hover:border-white/50 transition-all duration-300"
-                                                    >
-                                                        Know More →
-                                                    </button>
-                                                )
+                                                <a
+                                                    href={photo.link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        console.log('Clicking link:', photo.link);
+                                                    }}
+                                                    className="block bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-bold py-2 px-6 rounded-full border border-white/30 hover:border-white/50 transition-all duration-300 cursor-pointer z-50 relative"
+                                                >
+                                                    Know More →
+                                                </a>
                                             )}
                                         </div>
                                     </div>
