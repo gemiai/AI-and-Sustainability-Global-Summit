@@ -118,7 +118,6 @@ export const upcomingSessions = [
           avatar: '/speakers/SumeetAgrawal.png'
         },
         panelSpeakers: [
-            {name: "Justin Cappos", avatar: '/speakers/JustinCappos.png'},
             {name: "Matt Ford", avatar: '/speakers/MattFord.png'},
             {name: "Honglei Liu", avatar: '/speakers/Honglei.png'},
             {name: "David Baum", avatar: '/speakers/DavidBaum.jpg'},
@@ -143,6 +142,7 @@ export const upcomingSessions = [
              {name: "WendyDiamond", avatar: '/speakers/WendyDiamond.png'},
             {name: "Jared Haite", avatar: '/speakers/JaredHaite.png'},
             {name: "Aoran Yang", avatar: '/speakers/AoranYang.png'},
+             {name: "Justin Cappos", avatar: '/speakers/JustinCappos.png'},
 
         ],
         description: "Redefining Finance: Precision, Speed, and Insight for Smarter, Data-Driven Decisions",
