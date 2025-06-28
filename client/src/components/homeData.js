@@ -366,11 +366,11 @@ export const panelSpeakers = [
     },
      {
         id: 20,
-        name: "Di Wu",
+        name: "Nathan Francis",
         title: "PANEL SPEAKER",
-        event: "AI for Space and Space Sustainability",
-        logo: '/speakers/DiWu.png',
-        affiliation: "Assistant Professor at Embry-Riddle Aeronautical University"
+        event: "AI for Agriculture and Food",
+        logo: '/speakers/NathanFrancis.png',
+        affiliation: "Head of Business Development at AIZIP"
     },
     
      {
