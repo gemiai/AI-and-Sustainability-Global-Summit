@@ -138,11 +138,12 @@ export const upcomingSessions = [
             avatar: '/speakers/ShahryarShaghaghi.png'
         },
         panelSpeakers: [
+              {name: "Justin Cappos", avatar: '/speakers/JustinCappos.png'},
             {name: "Miguel CuUnjieng", avatar: '/speakers/placeholder-avatar.png'},
              {name: "WendyDiamond", avatar: '/speakers/WendyDiamond.png'},
             {name: "Jared Haite", avatar: '/speakers/JaredHaite.png'},
             {name: "Aoran Yang", avatar: '/speakers/AoranYang.png'},
-             {name: "Justin Cappos", avatar: '/speakers/JustinCappos.png'},
+           
 
         ],
         description: "Redefining Finance: Precision, Speed, and Insight for Smarter, Data-Driven Decisions",
