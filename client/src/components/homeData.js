@@ -14,14 +14,14 @@ export const summitHighlights = [
     {
         id: 1,
         src: "/summithighlights/Times100.png",
-        link: "https://time.com/collection/time100-ai/",
+        link: "https://time.com/collections/time100-companies-2025/7289644/colossal-biosciences/",
         title: "Time 100 AI"
     },
     {
         id: 2,
-        src: "/speakers/EricHorvitz.png",
-        link: "/schedule",
-        title: "Keynote Speaker"
+        src: "/speakers/WorldEconomic.png",
+        link: "https://www.realitydefender.com/insights/reality-defender-named-2025-world-economic-forum-technology-pioneer",
+        title: "worldecomonic"
     },
     {
         id: 3,
@@ -29,12 +29,7 @@ export const summitHighlights = [
         link: "/schedule",
         title: "Panel Discussion"
     },
-    {
-        id: 4,
-        src: "/speakers/VivianZhang.png",
-        link: "/schedule",
-        title: "Expert Session"
-    }
+   
 ];
 
 // AI and Sustainability focused upcoming sessions
