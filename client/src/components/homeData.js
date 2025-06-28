@@ -29,6 +29,12 @@ export const summitHighlights = [
         link: "https://www.forbes.com/sites/charliefink/2025/06/23/three-new-ai-platforms-for-cinematic-ai-productions/",
         title: "Acarna"
     },
+     {
+        id: 4,
+        src: "/summithighlights/AIZIPPlannet.png",
+        link: "https://www.youtube.com/watch?v=oly9TjZZS5Q&t=3814s",
+        title: "softbank"
+    },
    
 ];
 
@@ -358,7 +364,14 @@ export const panelSpeakers = [
         logo: '/speakers/DiWu.png',
         affiliation: "Assistant Professor at Embry-Riddle Aeronautical University"
     },
- 
+     {
+        id: 20,
+        name: "Di Wu",
+        title: "PANEL SPEAKER",
+        event: "AI for Space and Space Sustainability",
+        logo: '/speakers/DiWu.png',
+        affiliation: "Assistant Professor at Embry-Riddle Aeronautical University"
+    },
     
      {
         id: 22,
