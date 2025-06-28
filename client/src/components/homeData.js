@@ -13,7 +13,7 @@ export const eventData = {
 export const summitHighlights = [
     {
         id: 1,
-        src: "/speakers/XiaoranCai.jpg"
+        src: "/summithighlights/Times100.png"
     },
     {
         id: 2,
@@ -27,22 +27,7 @@ export const summitHighlights = [
         id: 4,
         src: "/speakers/VivianZhang.png"
     },
-    {
-        id: 5,
-        src: "/speakers/MatthewCollado.png"
-    },
-    {
-        id: 6,
-        src: "/speakers/MattJames.png"
-    },
-    {
-        id: 7,
-        src: "/speakers/JustinCappos.png"
-    },
-    {
-        id: 8,
-        src: "/speakers/CourtneyGreer.png"
-    }
+   
 ];
 
 // AI and Sustainability focused upcoming sessions
