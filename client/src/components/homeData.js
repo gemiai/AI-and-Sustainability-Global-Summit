@@ -25,7 +25,7 @@ export const summitHighlights = [
     },
     {
         id: 3,
-        src: "/summithighlights/Forbes.png",
+        src: "/summithighlights/fors.png",
         link: "https://www.forbes.com/sites/charliefink/2025/06/23/three-new-ai-platforms-for-cinematic-ai-productions/",
         title: "Acarna"
     },
