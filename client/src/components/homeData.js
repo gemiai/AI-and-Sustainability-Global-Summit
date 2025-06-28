@@ -13,21 +13,28 @@ export const eventData = {
 export const summitHighlights = [
     {
         id: 1,
-        src: "/summithighlights/Times100.png"
+        src: "/summithighlights/Times100.png",
+        link: "https://time.com/collection/time100-ai/",
+        title: "Time 100 AI"
     },
     {
         id: 2,
-        src: "/speakers/EricHorvitz.png"
+        src: "/speakers/EricHorvitz.png",
+        link: "/schedule",
+        title: "Keynote Speaker"
     },
     {
         id: 3,
-        src: "/speakers/DeanCohen.png"
+        src: "/speakers/DeanCohen.png",
+        link: "/schedule",
+        title: "Panel Discussion"
     },
     {
         id: 4,
-        src: "/speakers/VivianZhang.png"
-    },
-   
+        src: "/speakers/VivianZhang.png",
+        link: "/schedule",
+        title: "Expert Session"
+    }
 ];
 
 // AI and Sustainability focused upcoming sessions

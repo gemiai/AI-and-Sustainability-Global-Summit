@@ -62,6 +62,31 @@ const PhotoSlideshow = () => {
                                             Summit Highlights
                                         </div>
                                     </div>
+                                    
+                                    {/* Know More Link Overlay */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent">
+                                        <div className="absolute bottom-8 right-8">
+                                            {photo.link && (
+                                                photo.link.startsWith('http') ? (
+                                                    <a
+                                                        href={photo.link}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="inline-block bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-bold py-2 px-6 rounded-full border border-white/30 hover:border-white/50 transition-all duration-300"
+                                                    >
+                                                        Know More →
+                                                    </a>
+                                                ) : (
+                                                    <button
+                                                        onClick={() => navigate(photo.link)}
+                                                        className="inline-block bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-bold py-2 px-6 rounded-full border border-white/30 hover:border-white/50 transition-all duration-300"
+                                                    >
+                                                        Know More →
+                                                    </button>
+                                                )
+                                            )}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         ))}
