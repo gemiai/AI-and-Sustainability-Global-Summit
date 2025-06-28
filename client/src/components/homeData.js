@@ -19,15 +19,15 @@ export const summitHighlights = [
     },
     {
         id: 2,
-        src: "/speakers/WorldEconomic.png",
+        src: "/summithighlights/WorldEconomic.png",
         link: "https://www.realitydefender.com/insights/reality-defender-named-2025-world-economic-forum-technology-pioneer",
         title: "worldecomonic"
     },
     {
         id: 3,
-        src: "/speakers/DeanCohen.png",
-        link: "/schedule",
-        title: "Panel Discussion"
+        src: "/summithighlights/Forbes.png",
+        link: "https://www.forbes.com/sites/charliefink/2025/06/23/three-new-ai-platforms-for-cinematic-ai-productions/",
+        title: "Acarna"
     },
    
 ];
