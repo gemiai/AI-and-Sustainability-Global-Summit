@@ -9,6 +9,42 @@ export const eventData = {
     sponsors: sponsorsData
 };
 
+// Summit Highlights Photos Data
+export const summitHighlights = [
+    {
+        id: 1,
+        src: "/speakers/XiaoranCai.jpg"
+    },
+    {
+        id: 2,
+        src: "/speakers/EricHorvitz.png"
+    },
+    {
+        id: 3,
+        src: "/speakers/DeanCohen.png"
+    },
+    {
+        id: 4,
+        src: "/speakers/VivianZhang.png"
+    },
+    {
+        id: 5,
+        src: "/speakers/MatthewCollado.png"
+    },
+    {
+        id: 6,
+        src: "/speakers/MattJames.png"
+    },
+    {
+        id: 7,
+        src: "/speakers/JustinCappos.png"
+    },
+    {
+        id: 8,
+        src: "/speakers/CourtneyGreer.png"
+    }
+];
+
 // AI and Sustainability focused upcoming sessions
 // Updated upcoming sessions with complete speaker information
 export const upcomingSessions = [
@@ -268,7 +304,7 @@ export const panelSpeakers = [
         logo: '/speakers/CourtneyGreer.png',
         affiliation: "Founder at Voxxy AI | Microsoft"
     },
-    {
+        {
         id: 13,
         name: "David Baum",
         title: "PANEL SPEAKER",
@@ -295,7 +331,7 @@ export const panelSpeakers = [
     },
  
     {
-        id: 14,
+        id: 16,
         name: "Joshue Ott",
         title: "PANEL SPEAKER",
         event: "Creating Interactive Visual and Audio Experiences for Mobile Devices and Concert Halls",

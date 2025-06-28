@@ -3,8 +3,110 @@ import CountdownTimer from './CountdownTimer.js';
 import Registration from './Registration.js';
 
 import { useNavigate } from 'react-router-dom';
-import { eventData, upcomingSessions, keynoteSpeakers, panelSpeakers, onlinePanels } from './homeData.js';
+import { eventData, upcomingSessions, keynoteSpeakers, panelSpeakers, onlinePanels, summitHighlights } from './homeData.js';
 
+// Photo Slideshow Component
+const PhotoSlideshow = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    // Auto-scroll functionality
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentSlide((prev) => (prev + 1) % summitHighlights.length);
+        }, 4000); // Change slide every 4 seconds
+
+        return () => clearInterval(interval);
+    }, []);
+
+    const goToSlide = (index) => {
+        setCurrentSlide(index);
+    };
+
+    return (
+        <div className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8 xl:px-12 border-t border-gray-200">
+            <div className="max-w-7xl mx-auto">
+                <div className="flex items-center mb-8 md:mb-12">
+                    <div className="w-12 h-12 md:w-16 md:h-16 border border-gray-400 rounded-full flex items-center justify-center mr-3 md:mr-4">
+                        <div className="w-8 h-8 md:w-12 md:h-12 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 className="text-2xl md:text-3xl font-black text-purple-600">Summit Highlights</h2>
+                </div>
+
+                <div className="relative">
+                    {/* Main slideshow container */}
+                    <div className="relative w-full h-64 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-lg">
+                        {summitHighlights.map((photo, index) => (
+                            <div
+                                key={photo.id}
+                                className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                                    index === currentSlide ? 'opacity-100' : 'opacity-0'
+                                }`}
+                            >
+                                <div className="relative w-full h-full">
+                                    <img
+                                        src={photo.src}
+                                        alt={`Summit highlight ${photo.id}`}
+                                        className="w-full h-full object-cover"
+                                        onError={(e) => {
+                                            // Fallback to gradient background if image fails
+                                            e.target.style.display = 'none';
+                                            e.target.nextSibling.style.display = 'flex';
+                                        }}
+                                    />
+                                    <div className="hidden absolute inset-0 bg-gradient-to-br from-purple-500 via-blue-500 to-teal-500 flex items-center justify-center">
+                                        <div className="text-white text-4xl md:text-6xl font-bold">
+                                            Summit Highlights
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Navigation dots */}
+                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                        {summitHighlights.map((_, index) => (
+                            <button
+                                key={index}
+                                onClick={() => goToSlide(index)}
+                                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                                    index === currentSlide
+                                        ? 'bg-white scale-125 shadow-lg'
+                                        : 'bg-white/50 hover:bg-white/75'
+                                }`}
+                                aria-label={`Go to slide ${index + 1}`}
+                            />
+                        ))}
+                    </div>
+
+                    {/* Optional navigation arrows */}
+                    <button
+                        onClick={() => setCurrentSlide((prev) => (prev - 1 + summitHighlights.length) % summitHighlights.length)}
+                        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white p-2 rounded-full transition-all duration-200"
+                        aria-label="Previous slide"
+                    >
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button
+                        onClick={() => setCurrentSlide((prev) => (prev + 1) % summitHighlights.length)}
+                        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white p-2 rounded-full transition-all duration-200"
+                        aria-label="Next slide"
+                    >
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    );
+};
 
 
 // Main App Component - Refactored with separated components
@@ -153,6 +255,9 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Photo Slideshow Section */}
+            <PhotoSlideshow />
+
             {/* Keynote Speakers Section */}
             <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8 xl:px-12 border-t border-gray-200 mt-4 sm:mt-0">
                 <div className="max-w-7xl mx-auto">
@@ -286,7 +391,7 @@ const Home = () => {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-                        {upcomingSessions.slice(0, 2).map((session, index) => (
+                        {upcomingSessions.map((session, index) => (
                             <div key={session.id} className="mb-6 sm:mb-8 group">
                                 {/* Top row: Icon and content */}
                                 <div className="flex mb-2">
@@ -383,114 +488,6 @@ const Home = () => {
                                                 {session.panelSpeakers.length > 10 && (
                                                     <div className="w-10 h-10 rounded-full bg-green-200 text-green-800 text-xs flex items-center justify-center border border-green-300">
                                                         +{session.panelSpeakers.length - 10}
-                                                    </div>
-                                                )}
-                                            </>
-                                        )}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                     <div className="grid md:grid-cols-2 gap-8">
-                        {upcomingSessions.slice(2).map((session, index) => (
-                            <div key={session.id} className="mb-8 group">
-                                {/* Top row: Icon and content */}
-                                <div className="flex mb-2">
-                                    <div className="w-32 mr-6 flex-shrink-0">
-                                        <div
-                                            className={`w-full h-32 flex flex-col items-center justify-center relative overflow-hidden rounded-md ${
-                                                session.category === 'Opening' ? 'bg-gradient-to-br from-blue-300 via-cyan-200 to-teal-100' :
-                                                    session.category === 'Education' ? 'bg-gradient-to-br from-indigo-300 via-blue-200 to-cyan-100' :
-                                                        session.category === 'Planet' ? 'bg-gradient-to-br from-green-300 via-emerald-200 to-teal-100' :
-                                                            session.category === 'Art' ? 'bg-gradient-to-br from-purple-300 via-fuchsia-200 to-pink-100' :
-                                                                session.category === 'Technology' ? 'bg-gradient-to-br from-orange-300 via-red-200 to-pink-100' :
-                                                                    session.category === 'Finance' ? 'bg-gradient-to-br from-yellow-300 via-orange-200 to-red-100' :
-                                                                        session.category === 'Ethics' ? 'bg-gradient-to-br from-slate-300 via-gray-200 to-blue-100' :
-                                                                            'bg-gradient-to-br from-green-200 to-blue-300'
-                                            }`}>
-                                            {/* Background pattern */}
-                                            <div className="absolute inset-0 opacity-20">
-                                                <div className="absolute top-2 left-2 w-3 h-3 bg-white rounded-full"></div>
-                                                <div className="absolute top-6 right-4 w-2 h-2 bg-white rounded-full"></div>
-                                                <div
-                                                    className="absolute bottom-4 left-6 w-1.5 h-1.5 bg-white rounded-full"></div>
-                                                <div
-                                                    className="absolute bottom-2 right-2 w-2.5 h-2.5 bg-white rounded-full"></div>
-                                            </div>
-
-                                            {/* Main icon */}
-                                            <div
-                                                className="text-3xl font-bold text-white drop-shadow-lg transform group-hover:scale-110 transition-transform duration-300 mb-3">
-                                                {session.category === 'Opening' && '🎯'}
-                                                {session.category === 'Education' && '🎓'}
-                                                {session.category === 'Planet' && '🌍'}
-                                                {session.category === 'Art' && '🎨'}
-                                                {session.category === 'Technology' && '💻'}
-                                                {session.category === 'Finance' && '💰'}
-                                                {session.category === 'Ethics' && '⚖️'}
-                                                {!['Opening', 'Education', 'Planet', 'Art', 'Technology', 'Finance', 'Ethics'].includes(session.category) && '💡'}
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="w-140 bg-white p-2 ">
-                                        <div className="text-gray-500 mb-1 text-xs-4">{session.date}</div>
-                                        <h3 className="text-lg font-black mb-2 text-gray-800 leading-tight">{session.title}</h3>
-                                        <p className="text-gray-600 text-xs-2 leading-relaxed">{session.description}</p>
-                                        {session.location && (
-                                            <div className="text-gray-500 text-xs">📍 {session.location}</div>
-                                        )}
-                                    </div>
-                                </div>
-                                
-                                {/* Middle row: Keynote */}
-                                <div className="flex items-center mb-2">
-                                    <div className="w-32 mr-6 flex-shrink-0">
-                                        <div className="border border-teal-500 text-black text-sm font-bold tracking-wide px-3 py-2 rounded text-center">
-                                            Keynote
-                                        </div>
-                                    </div>
-                                    <div className="flex-1 flex items-center pl-2">
-                                        {session.keynoteSpeaker && (
-                                            <img
-                                                src={session.keynoteSpeaker.avatar}
-                                                alt={session.keynoteSpeaker.name}
-                                                title={session.keynoteSpeaker.name}
-                                                className="w-10 h-10 rounded-full object-cover border-2 border-blue-300 cursor-pointer hover:scale-110 hover:border-blue-500 transition-all duration-200"
-                                                onError={(e) => {
-                                                    e.target.style.display = 'none';
-                                                }}
-                                            />
-                                        )}
-                                    </div>
-                                </div>
-                                
-                                {/* Bottom row: Panel */}
-                                <div className="flex items-center">
-                                    <div className="w-32 mr-6 flex-shrink-0">
-                                        <div className="border border-blue-500 text-black text-sm font-bold tracking-wide px-3 py-2 rounded text-center">
-                                            Panel
-                                        </div>
-                                    </div>
-                                    <div className="flex-1 flex items-center gap-2 pl-2">
-                                        {session.panelSpeakers && session.panelSpeakers.length > 0 && (
-                                            <>
-                                                {session.panelSpeakers.slice(0, 8).map((speaker, speakerIndex) => (
-                                                    <img
-                                                        key={speakerIndex}
-                                                        src={speaker.avatar}
-                                                        alt={speaker.name}
-                                                        title={speaker.name}
-                                                        className="w-10 h-10 rounded-full object-cover border border-green-300 cursor-pointer hover:scale-110 hover:border-green-500 transition-all duration-200"
-                                                        onError={(e) => {
-                                                            e.target.style.display = 'none';
-                                                        }}
-                                                    />
-                                                ))}
-                                                {session.panelSpeakers.length > 8 && (
-                                                    <div className="w-10 h-10 rounded-full bg-green-200 text-green-800 text-xs flex items-center justify-center border border-green-300">
-                                                        +{session.panelSpeakers.length - 8}
                                                     </div>
                                                 )}
                                             </>
