@@ -90,7 +90,8 @@ export const upcomingSessions = [
         panelSpeakers: [
             {name: "Matt James", avatar: '/speakers/MattJames.png'},
             {name: "Olga Usyk", avatar: '/speakers/OlgaUsyk.jpg'},
-            {name: "Di Wu", avatar: '/speakers/DiWu.png'}
+            {name: "Di Wu", avatar: '/speakers/DiWu.png'},
+             {name: "Nathan Francis", avatar: '/speakers/NathanFrancis.png'}
             
         ],
         description: "Planetary Resilience: Advancing Ecosystem Integrity, Climate Actions, and Space Sustainability with AI"
@@ -108,8 +109,9 @@ export const upcomingSessions = [
         panelSpeakers: [
             {name: "Johnathan", avatar: '/speakers/Johnathan.jpg'},
             {name: "Zach Krall", avatar: '/speakers/ZackKrall.png'},
-            {name: "Rudy R. Rodriguez.png", avatar: '/speakers/RudyRRodriguez.png'},
-            {name: "Jiajian Min", avatar: '/speakers/JiajianMin.png'}
+            {name: "Rudy R. Rodriguez", avatar: '/speakers/RudyRRodriguez.png'},
+            {name: "Jiajian Min", avatar: '/speakers/JiajianMin.png'},
+              {name: "Joshue Ott", avatar: '/speakers/JoshueOtt.png'},
         ],
         description: "Igniting Every Artist’s Dream with AI: Unlock Opportunities and make high-quality art accessible to all",
     },
