@@ -11,6 +11,12 @@ export const eventData = {
 
 // Summit Highlights Photos Data
 export const summitHighlights = [
+      {
+        id: 1,
+        src: "/summithighlights/cohen.png",
+        link: "https://sps.columbia.edu/person/steven-cohen-phd",
+        title: "cohen"
+    },
     {
         id: 1,
         src: "/summithighlights/Times100.png",
