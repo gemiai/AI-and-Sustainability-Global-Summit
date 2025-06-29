@@ -13,30 +13,30 @@ export const eventData = {
 export const summitHighlights = [
       {
         id: 1,
-        src: "/summithighlights/cohen.png",
+        src: "/summithighlights/dean.png",
         link: "https://sps.columbia.edu/person/steven-cohen-phd",
         title: "cohen"
     },
     {
-        id: 1,
+        id: 2,
         src: "/summithighlights/Times100.png",
         link: "https://time.com/collections/time100-companies-2025/7289644/colossal-biosciences/",
         title: "Time 100 AI"
     },
     {
-        id: 2,
+        id: 3,
         src: "/summithighlights/WorldEconomic.png",
         link: "https://www.realitydefender.com/insights/reality-defender-named-2025-world-economic-forum-technology-pioneer",
         title: "worldecomonic"
     },
     {
-        id: 3,
+        id: 4,
         src: "/summithighlights/fors.png",
         link: "https://www.forbes.com/sites/charliefink/2025/06/23/three-new-ai-platforms-for-cinematic-ai-productions/",
         title: "Acarna"
     },
      {
-        id: 4,
+        id: 5,
         src: "/summithighlights/AIZIPPlannet.png",
         link: "https://www.youtube.com/watch?v=oly9TjZZS5Q&t=3814s",
         title: "softbank"
@@ -185,6 +185,14 @@ export const upcomingSessions = [
 
 // Featured speakers focused on AI and sustainability
 export const keynoteSpeakers = [
+    {
+        id: 1,
+        name: "Steven Cohen",
+        title: "KEYNOTE SPEAKER",
+        event: "Sustainability Management and Environmental Policy: Leading the Green Transformation in Business and Academia",
+        logo: '/speakers/DeanCohen.png',
+        affiliation: "Senior Vice Dean at Columbia University SPS"
+    },
   
    {
         id: 5,
@@ -228,14 +236,7 @@ export const keynoteSpeakers = [
         logo: '/speakers/BenColmon.jpg',
         affiliation: "Co-founder | CEO"
     },
-       {
-        id: 1,
-        name: "Steven Cohen",
-        title: "KEYNOTE SPEAKER",
-        event: "Sustainability Management and Environmental Policy: Leading the Green Transformation in Business and Academia",
-        logo: '/speakers/DeanCohen.png',
-        affiliation: "Senior Vice Dean at Columbia University SPS"
-    },
+   
       {
         id: 7,
         name: "Shahryar Shaghaghi",
