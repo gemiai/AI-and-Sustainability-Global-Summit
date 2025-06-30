@@ -8,10 +8,10 @@ const Registration = ({isOpen, onClose, navigateHome}) => {
     const registrationRoles = [
         {
             id: 'early-bird',
-            title: 'Early Bird Ticket',
+            title: 'Tickets',
             description: 'Get your discounted ticket now!',
             icon: '🎟️',
-            link: 'https://www.eventbrite.com/e/1403279870869?aff=oddtdtcreator'
+            link: 'https://www.eventbrite.com/e/1427480796489?aff=oddtdtcreator'
         },
         {
             id: 'keynote',
