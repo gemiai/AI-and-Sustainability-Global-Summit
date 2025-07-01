@@ -441,7 +441,7 @@ export const panelSpeakers = [
     },
     {
         id: 14,
-        name: "Echo Zhang",
+        name: "Echo Zhong",
         title: "PANEL SPEAKER",
         event: "Founding Product SME of Kick.co, an OpenAI-backed Startup",
         logo: '/speakers/EchoZhang.png',
