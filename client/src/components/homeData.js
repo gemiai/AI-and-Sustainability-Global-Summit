@@ -443,7 +443,7 @@ export const panelSpeakers = [
         id: 14,
         name: "Echo Zhong",
         title: "PANEL SPEAKER",
-        event: "Founding Product SME of Kick.co, an OpenAI-backed Startup",
+        event: "Founding Product SME of Kick.co (backed by OpenAI and General Catalyst), 15+ years of domain expertise in Accounting and Tax compliance",
         logo: '/speakers/EchoZhang.png',
         affiliation: "Co-founder at Zhong & Sanchez"
     },
