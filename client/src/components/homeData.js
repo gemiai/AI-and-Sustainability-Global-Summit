@@ -113,7 +113,7 @@ export const upcomingSessions = [
             avatar: '/speakers/Johnathan.jpg'
         },
         panelSpeakers: [
-            {name: "Johnathan", avatar: '/speakers/Johnathan.jpg'},
+
             {name: "Zach Krall", avatar: '/speakers/ZackKrall.png'},
             {name: "Rudy R. Rodriguez", avatar: '/speakers/RudyRRodriguez.png'},
             {name: "Jiajian Min", avatar: '/speakers/JiajianMin.png'},
@@ -373,14 +373,7 @@ export const panelSpeakers = [
         logo: '/speakers/DiWu.png',
         affiliation: "Assistant Professor at Embry-Riddle Aeronautical University"
     },
-     {
-        id: 20,
-        name: "Nathan Francis",
-        title: "PANEL SPEAKER",
-        event: "AI for Agriculture and Food",
-        logo: '/speakers/NathanFrancis.png',
-        affiliation: "Head of Business Development at AIZIP"
-    },
+   
     
      {
         id: 22,
