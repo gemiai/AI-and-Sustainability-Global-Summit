@@ -35,12 +35,7 @@ export const summitHighlights = [
         link: "https://www.forbes.com/sites/charliefink/2025/06/23/three-new-ai-platforms-for-cinematic-ai-productions/",
         title: "Acarna"
     },
-     {
-        id: 5,
-        src: "/summithighlights/AIZIPPlannet.png",
-        link: "https://www.youtube.com/watch?v=oly9TjZZS5Q&t=3814s",
-        title: "softbank"
-    },
+   
    
 ];
 
@@ -155,7 +150,7 @@ export const upcomingSessions = [
               {name: "Justin Cappos", avatar: '/speakers/JustinCappos.png'},
             {name: "Miguel CuUnjieng", avatar: '/speakers/placeholder-avatar.png'},
              {name: "WendyDiamond", avatar: '/speakers/WendyDiamond.png'},
-            {name: "Jared Haite", avatar: '/speakers/JaredHaite.png'},
+              {name: "Echo Zhong", avatar: '/speakers/EchoZhang.png'},
             {name: "Aoran Yang", avatar: '/speakers/AoranYang.png'},
            
 
