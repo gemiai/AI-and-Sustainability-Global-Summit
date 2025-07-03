@@ -428,14 +428,21 @@ export const panelSpeakers = [
         affiliation: "Management Consultant at Consileon Frankfurt GmbH"
     },
     {
-        id: 14,
+        id: 29,
         name: "Echo Zhong",
         title: "PANEL SPEAKER",
         event: "Founding Product SME of Kick.co (backed by OpenAI and General Catalyst), 15+ years of domain expertise in Accounting and Tax compliance",
         logo: '/speakers/EchoZhang.png',
         affiliation: "Co-founder at Zhong & Sanchez"
     },
-   
+     {
+        id: 30 ,
+        name: "Santino Luis Lopez Uy",
+        title: "PANEL SPEAKER",
+        event: "Student Leader at Columbia University, Technology in Business Association (TIBA) - Vice President",
+        logo: '/speakers/SantinoLopez.png',
+        affiliation: "Co-founder at GEMI.AI"
+    },
 
    
 ];
