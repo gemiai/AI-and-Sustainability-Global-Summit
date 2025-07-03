@@ -68,6 +68,7 @@ export const upcomingSessions = [
             avatar: '/speakers/KatjaSchroeder.png'
         },
         panelSpeakers: [
+            {name: "Katja Schroeder", avatar: '/speakers/KatjaSchroeder.png'},
             {name: "Santino Luis Lopez Uy", avatar: '/speakers/SantinoLopez.png'},
             {name: "Al Olsen", avatar: 'speakers/AIOlsen.png'},
             {name: "Tia Kumar", avatar: '/speakers/TiaKumar.jpg'},
