@@ -138,7 +138,7 @@ export const upcomingSessions = [
     },
     {
         id: 6,
-        title: "AI and Finance, Compliance",
+        title: "AI and Finance, Investment and Security",
         date: "July 18, 2:30 PM - 3:30 PM",
         category: 'Finance',
         format: 'panel',
@@ -191,7 +191,7 @@ export const keynoteSpeakers = [
     },
   
    {
-        id: 5,
+        id: 2,
         name: "Katja Schroeder",
         title: "PANEL SPEAKER",
         event: "Technology-Enabled Sustainability: Leadership Communications and Entrepreneurial Innovation for Global Impact",
@@ -199,7 +199,7 @@ export const keynoteSpeakers = [
         affiliation: "Professor at Columba University & Founder of Expedition PR"
     },
     {
-        id: 2,
+        id: 3,
         name: "Matt James",
         title: "KEYNOTE SPEAKER",
         event: "Planetary Resilience: Strengthening Ecosystems, Fostering Biodiversity, and Enabling All Life to Thrive with AI.",
@@ -207,32 +207,30 @@ export const keynoteSpeakers = [
         affiliation: "Chief Animal Officer at Colossal"
     },
     {
-        id: 3,
+        id: 4,
         name: "Jonathan Yunger",
         title: "KEYNOTE SPEAKER",
         event: "AI Movie and Art: Enable High-quality and Human Centric AI Movie",
         logo: '/speakers/Johnathan.jpg',
         affiliation: "Chief Executive Officer at Arcana"
     },
-     
+    
+     {
+        id: 5,
+        name: "Justin Cappos",
+        title: "PANEL SPEAKER",
+        event: "Computer Science professor at NYU whose research improves real-world systems through practical deployments. 5 Linux foundation project and contributed to widely used tools like Python and Git",
+        logo: '/speakers/JustinCappos.png',
+        affiliation: "Professor, NYU Center for Cybersecurity"
+    },
       {
-        id: 4,
+        id: 6,
         name: "Sumeet Agrawal",
         title: "KEYNOTE SPEAKER",
         event: "Building Impactful AI Agents: 15+ Years of Innovation in Product Strategy and Sustainable Business Solutions",
         logo: '/speakers/SumeetAgrawal.png',
         affiliation: "VP of Product at Informatica"
     },
-
-     {
-        id: 6,
-        name: "Ben Colman",
-        title: "KEYNOTE SPEAKER",
-        event: "Responsible AI for Identifying Deepfaked Audio, Video, Images and Text",
-        logo: '/speakers/BenColmon.jpg',
-        affiliation: "Co-founder | CEO"
-    },
-   
       {
         id: 7,
         name: "Shahryar Shaghaghi",
@@ -241,19 +239,23 @@ export const keynoteSpeakers = [
         logo: '/speakers/ShahryarShaghaghi.png',
         affiliation: "Program Director at Columbia University | Ex Deloitte Partner"
     },
+
+     {
+        id: 8,
+        name: "Ben Colman",
+        title: "KEYNOTE SPEAKER",
+        event: "Responsible AI for Identifying Deepfaked Audio, Video, Images and Text",
+        logo: '/speakers/BenColmon.jpg',
+        affiliation: "Co-founder | CEO"
+    },
+   
+    
    
 ];
 
 export const panelSpeakers = [
     
-    {
-        id: 6,
-        name: "Justin Cappos",
-        title: "PANEL SPEAKER",
-        event: "Cybersecurity for Sustainable Systems: Real-World Solutions from Cloud Computing to Automotive Innovation",
-        logo: '/speakers/JustinCappos.png',
-        affiliation: "Professor, NYU Center for Cybersecurity"
-    },
+  
     {
         id: 7,
         name: "Wendy Diamond",
@@ -442,7 +444,7 @@ export const panelSpeakers = [
         title: "PANEL SPEAKER",
         event: "Student Leader at Columbia University, Technology in Business Association (TIBA) - Vice President",
         logo: '/speakers/SantinoLopez.png',
-        affiliation: "Co-founder at GEMI.AI"
+        affiliation: "Product Strategy at GEMI.AI"
     },
 
    
