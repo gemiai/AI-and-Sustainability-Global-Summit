@@ -50,7 +50,7 @@ export const upcomingSessions = [
         format: 'keynote',
         keynoteSpeaker: {
             name: "Steven Cohen",
-            avatar: '/speakers/DeanCohen.jpg'
+            avatar: '/speakers/DeanCohen.png'
         },
         panelSpeakers: [
             {name: "Xiaoran Cai", avatar: '/XiaoranCai.jpg'}
@@ -172,7 +172,8 @@ export const upcomingSessions = [
             {name: "Xiaoran Cai", avatar: '/speakers/XiaoranCai.jpg'},
             {name: "Courtney Greer", avatar: '/speakers/CourtneyGreer.png'},
             {name: "Himashu Joshi", avatar: '/speakers/HimashuJoshi.png'},
-            {name: "UvikaSharma", avatar: '/speakers/UvikaSharma.png'},
+            {name: "Uvika Sharma", avatar: '/speakers/UvikaSharma.png'},
+             {name: "Ben Jakob Zulechner", avatar: '/speakers/BenJakobZulechner.png'}
         ],
         description: "AI for Humanity: Driving Innovation with Ethics, Guardrails, and a Deep Commitment to Humanity’s Well-Being",
     }
