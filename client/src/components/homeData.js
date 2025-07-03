@@ -49,8 +49,8 @@ export const upcomingSessions = [
         category: 'Opening',
         format: 'keynote',
         keynoteSpeaker: {
-            name: "Xiaoran Cai",
-            avatar: '/speakers/XiaoranCai.jpg'
+            name: "Steven Cohen",
+            avatar: '/speakers/DeanCohen.jpg'
         },
         panelSpeakers: [
             {name: "Xiaoran Cai", avatar: '/XiaoranCai.jpg'}
@@ -68,7 +68,7 @@ export const upcomingSessions = [
             avatar: '/speakers/KatjaSchroeder.png'
         },
         panelSpeakers: [
-            {name: "Santino Luis Lopez Uy", avatar: '/speakers/SantinoLuisLopezUy.png'},
+            {name: "Santino Luis Lopez Uy", avatar: '/speakers/SantinoLopez.png'},
             {name: "Al Olsen", avatar: 'speakers/AIOlsen.png'},
             {name: "Tia Kumar", avatar: '/speakers/TiaKumar.jpg'},
             {name: "Vivan Zhang", avatar: '/speakers/VivianZhang.png'},
