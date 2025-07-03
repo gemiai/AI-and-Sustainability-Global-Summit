@@ -219,7 +219,7 @@ export const keynoteSpeakers = [
         id: 5,
         name: "Justin Cappos",
         title: "PANEL SPEAKER",
-        event: "Computer Science professor at NYU whose research improves real-world systems through practical deployments. 5 Linux foundation project and contributed to widely used tools like Python and Git",
+        event: "Computer Science professor at NYU. Improve Real-world Systems through Practical Deployments. 5 Linux Foundation Projects and Key Contributors of Tools like Python and Git",
         logo: '/speakers/JustinCappos.png',
         affiliation: "Professor, NYU Center for Cybersecurity"
     },
