@@ -64,12 +64,11 @@ export const upcomingSessions = [
         category: 'Education',
         format: 'panel',
         keynoteSpeaker: {
-            name: "Steven Cohen",
-            avatar: '/speakers/DeanCohen.png'
+            name: "Katja Schroeder",
+            avatar: '/speakers/KatjaSchroeder.png'
         },
         panelSpeakers: [
-            {name: "Katja Schroeder", avatar: '/speakers/KatjaSchroeder.png'},
-            {name: "Ben Jakob Zulechner", avatar: '/speakers/BenJakobZulechner.png'},
+            {name: "Santino Luis Lopez Uy", avatar: '/speakers/SantinoLuisLopezUy.png'},
             {name: "Al Olsen", avatar: 'speakers/AIOlsen.png'},
             {name: "Tia Kumar", avatar: '/speakers/TiaKumar.jpg'},
             {name: "Vivan Zhang", avatar: '/speakers/VivianZhang.png'},
