@@ -127,7 +127,7 @@ export const upcomingSessions = [
             avatar: '/speakers/JustinCappos.png'
         },
         panelSpeakers: [],
-        description: "Build and integrate intelligent agents that can seamlessly connect with your development workflow and tools.",
+        description: "Build and Integrate Intelligent Agents to Seamlessly Connect with Development Workflow and Tools.",
     },
     {
         id: 6,
