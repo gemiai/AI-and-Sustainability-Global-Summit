@@ -34,7 +34,7 @@ const AppContent = () => {
   const showHeaderFooter = !['/some-other-full-page-route'].includes(location.pathname);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-white">
       {showHeaderFooter && <Navbar onRegisterClick={handleRegisterClick} />}
       
       <main className="flex-grow">
