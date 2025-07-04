@@ -118,6 +118,19 @@ export const upcomingSessions = [
     },
     {
         id: 5,
+        title: "Lunch and Learn: MCP",
+        date: "July 18, 12:30 PM - 1:30 PM",
+        category: 'MCP',
+        format: 'workshop',
+        keynoteSpeaker: {
+            name: "Justin Cappos",
+            avatar: '/speakers/JustinCappos.png'
+        },
+        panelSpeakers: [],
+        description: "Model Context Protocol (MCP): Learn how to build and integrate intelligent agents that can seamlessly connect with your development workflow and tools.",
+    },
+    {
+        id: 6,
         title: "AI and Technology",
         date: "July 18, 1:30 PM - 2:30 PM",
         category: 'Technology',
@@ -137,8 +150,8 @@ export const upcomingSessions = [
         description: "From Trade-Offs to Win-Wins, From Cost-Saving to Revenue Growth: AI as the Engine of Business Growth",
     },
     {
-        id: 6,
-        title: "AI and Finance, Investment and Security",
+        id: 7,
+        title: "AI and Finance and Investment",
         date: "July 18, 2:30 PM - 3:30 PM",
         category: 'Finance',
         format: 'panel',
@@ -158,7 +171,7 @@ export const upcomingSessions = [
         description: "Redefining Finance: Precision, Speed, and Insight for Smarter, Data-Driven Decisions",
     },
     {
-        id: 7,
+        id: 8,
         title: "Responsible AI",
         date: "July 18, 3:30 PM - 4:30 PM",
         category: 'Ethics',

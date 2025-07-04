@@ -424,10 +424,11 @@ const Home = () => {
                                                     session.category === 'Education' ? 'bg-gradient-to-br from-indigo-300 via-blue-200 to-cyan-100' :
                                                         session.category === 'Planet' ? 'bg-gradient-to-br from-green-300 via-emerald-200 to-teal-100' :
                                                             session.category === 'Art' ? 'bg-gradient-to-br from-purple-300 via-fuchsia-200 to-pink-100' :
-                                                                session.category === 'Technology' ? 'bg-gradient-to-br from-orange-300 via-red-200 to-pink-100' :
-                                                                    session.category === 'Finance' ? 'bg-gradient-to-br from-yellow-300 via-orange-200 to-red-100' :
-                                                                        session.category === 'Ethics' ? 'bg-gradient-to-br from-slate-300 via-gray-200 to-blue-100' :
-                                                                            'bg-gradient-to-br from-green-200 to-blue-300'
+                                                                session.category === 'MCP' ? 'bg-gradient-to-br from-cyan-300 via-blue-200 to-indigo-100' :
+                                                                    session.category === 'Technology' ? 'bg-gradient-to-br from-orange-300 via-red-200 to-pink-100' :
+                                                                        session.category === 'Finance' ? 'bg-gradient-to-br from-yellow-300 via-orange-200 to-red-100' :
+                                                                            session.category === 'Ethics' ? 'bg-gradient-to-br from-slate-300 via-gray-200 to-blue-100' :
+                                                                                'bg-gradient-to-br from-green-200 to-blue-300'
                                             }`}>
                                             {/* Background pattern */}
                                             <div className="absolute inset-0 opacity-20">
@@ -446,10 +447,11 @@ const Home = () => {
                                                 {session.category === 'Education' && '🎓'}
                                                 {session.category === 'Planet' && '🌍'}
                                                 {session.category === 'Art' && '🎨'}
+                                                {session.category === 'MCP' && '🍽️'}
                                                 {session.category === 'Technology' && '💻'}
                                                 {session.category === 'Finance' && '💰'}
                                                 {session.category === 'Ethics' && '⚖️'}
-                                                {!['Opening', 'Education', 'Planet', 'Art', 'Technology', 'Finance', 'Ethics'].includes(session.category) && '💡'}
+                                                {!['Opening', 'Education', 'Planet', 'Art', 'MCP', 'Technology', 'Finance', 'Ethics'].includes(session.category) && '💡'}
                                             </div>
                                         </div>
                                     </div>
