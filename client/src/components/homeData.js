@@ -118,16 +118,16 @@ export const upcomingSessions = [
     },
     {
         id: 5,
-        title: "Lunch and Learn: MCP",
+        title: "Lunch and Learn: MCP - New Operating System",
         date: "July 18, 12:30 PM - 1:30 PM",
-        category: 'MCP',
+        category: 'Security',
         format: 'workshop',
         keynoteSpeaker: {
             name: "Justin Cappos",
             avatar: '/speakers/JustinCappos.png'
         },
         panelSpeakers: [],
-        description: "Model Context Protocol (MCP): Learn how to build and integrate intelligent agents that can seamlessly connect with your development workflow and tools.",
+        description: "Build and integrate intelligent agents that can seamlessly connect with your development workflow and tools.",
     },
     {
         id: 6,
@@ -160,11 +160,12 @@ export const upcomingSessions = [
             avatar: '/speakers/ShahryarShaghaghi.png'
         },
         panelSpeakers: [
-              {name: "Justin Cappos", avatar: '/speakers/JustinCappos.png'},
-            {name: "Miguel CuUnjieng", avatar: '/speakers/placeholder-avatar.png'},
-             {name: "WendyDiamond", avatar: '/speakers/WendyDiamond.png'},
-              {name: "Echo Zhong", avatar: '/speakers/EchoZhang.png'},
+            {name: "WendyDiamond", avatar: '/speakers/WendyDiamond.png'},
+            
             {name: "Aoran Yang", avatar: '/speakers/AoranYang.png'},
+           
+            {name: "Echo Zhong", avatar: '/speakers/EchoZhong.png'},
+       
            
 
         ],
