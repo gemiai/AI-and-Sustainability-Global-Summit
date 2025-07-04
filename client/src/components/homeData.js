@@ -161,7 +161,7 @@ export const upcomingSessions = [
         },
         panelSpeakers: [
             {name: "WendyDiamond", avatar: '/speakers/WendyDiamond.png'},
-            
+
             {name: "Aoran Yang", avatar: '/speakers/AoranYang.png'},
            
             {name: "Echo Zhong", avatar: '/speakers/EchoZhong.png'},
@@ -449,7 +449,7 @@ export const panelSpeakers = [
         name: "Echo Zhong",
         title: "PANEL SPEAKER",
         event: "Founding Product SME of Kick.co (backed by OpenAI and General Catalyst), 15+ years of domain expertise in Accounting and Tax compliance",
-        logo: '/speakers/EchoZhang.png',
+        logo: '/speakers/EchoZhong.png',
         affiliation: "Co-founder at Zhong & Sanchez"
     },
      {
