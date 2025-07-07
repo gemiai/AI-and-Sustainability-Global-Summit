@@ -391,9 +391,9 @@ export const panelSpeakers = [
         id: 22,
         name: "Jiajian Min",
         title: "PANEL SPEAKER",
-        event: "Human Centric Art, 2023 Forbes 100 Most Influential Artist",
+        event: "AI Art, Immersive Media, and Interactive Technology. Featured at Venice Biennale, Ars Electronica, NEW INC, CVPR, SIGGRAPH Asia, New York Times, ForbesChina.",
         logo: '/speakers/JiajianMin.png',
-        affiliation: "MIT Media Lab | Co-founder of HavardXR"
+        affiliation: "Media Artist | Chair of MIT AI Film Hack, Co-founder of HavardXR"
     },
      {
         id: 23,
