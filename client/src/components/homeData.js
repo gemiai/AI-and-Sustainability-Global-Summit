@@ -393,7 +393,7 @@ export const panelSpeakers = [
         title: "PANEL SPEAKER",
         event: "AI Art, Immersive Media, and Interactive Technology. Featured at Venice Biennale, Ars Electronica, NEW INC, CVPR, SIGGRAPH Asia, New York Times, ForbesChina.",
         logo: '/speakers/JiajianMin.png',
-        affiliation: "Media Artist | Chair of MIT AI Film Hack, Co-founder of HavardXR"
+        affiliation: "Media Artist | Chair of MIT AI Film Hack, Co-founder of HarvardXR"
     },
      {
         id: 23,
