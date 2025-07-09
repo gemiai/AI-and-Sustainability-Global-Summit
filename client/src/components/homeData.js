@@ -110,6 +110,7 @@ export const upcomingSessions = [
         panelSpeakers: [
 
             {name: "Zach Krall", avatar: '/speakers/ZackKrall.png'},
+            {name: "Cornelia Dai", avatar: '/speakers/corn.png'},
             {name: "Rudy R. Rodriguez", avatar: '/speakers/RudyRRodriguez.png'},
             {name: "Jiajian Min", avatar: '/speakers/JiajianMin.png'},
               {name: "Joshue Ott", avatar: '/speakers/JoshueOtt.png'},
@@ -302,9 +303,16 @@ export const panelSpeakers = [
         logo: '/speakers/MattFord.png',
         affiliation: "IBM Business Strategy"
     },
-   
     {
         id: 11,
+        name: "Cornelia Dai",
+        title: "PANEL SPEAKER",
+        event: "AI-powered Storyteller with 200 M+ Campaign Views and 400 K+ Cross-platform Followers",
+        logo: '/speakers/corn.png',
+        affiliation: "Content Creator | Influencer | Digital Marketing Strategist"
+    },
+    {
+        id: 12,
         name: "Xiaoran Cai",
         title: "PANEL SPEAKER",
         event: "AI for Good: Building Sustainable Technology Platforms and Global Communities for Positive Impact",
@@ -312,7 +320,7 @@ export const panelSpeakers = [
         affiliation: "Founder at GEMI.AI"
     },
     {
-        id: 12,
+        id: 13,
         name: "Courtney Greer",
         title: "PANEL SPEAKER",
         event: "From Chaos to Connection: Building AI-Powered Solutions That Simplify Human Experiences",
@@ -320,7 +328,7 @@ export const panelSpeakers = [
         affiliation: "Founder at Voxxy AI | Microsoft"
     },
         {
-        id: 13,
+        id: 14,
         name: "David Baum",
         title: "PANEL SPEAKER",
         event: "Human-Centered AI Design: Research-Driven Approaches to Sustainable User Experience Innovation",
@@ -328,7 +336,7 @@ export const panelSpeakers = [
         affiliation: "Design Strategist at Amazon"
     },
     {
-        id: 14,
+        id: 15,
         name: "Himanshu Joshi",
         title: "PANEL SPEAKER",
         event: "Applied AI strategy leader. Advisor for Fortune 500 companies—driving $170M in business value through Generative AI, ethical AI adoption, and executive upskilling programs.",
@@ -337,7 +345,7 @@ export const panelSpeakers = [
     },
     
     {
-        id: 15,
+        id: 16,
         name: "Karen Farah",
         title: "PANEL SPEAKER",
         event: "Digital Transformation for Sustainability: AI, Cloud, and Cybersecurity Solutions for Future-Ready Organizations",
@@ -346,7 +354,7 @@ export const panelSpeakers = [
     },
  
     {
-        id: 16,
+        id: 17,
         name: "Joshue Ott",
         title: "PANEL SPEAKER",
         event: "Creating Interactive Visual and Audio Experiences for Mobile Devices and Concert Halls",
@@ -354,7 +362,7 @@ export const panelSpeakers = [
         affiliation: "Technical Director and Creative Technologist at Interval Studio Inc"
     },
        {
-        id: 17,
+        id: 18,
         name: "Vivian Zhang",
         title: "PANEL SPEAKER",
         event: "Forbes Education, Best of 2024. Trained +1,000 for Data Science job winners",
@@ -362,7 +370,7 @@ export const panelSpeakers = [
         affiliation: "CTO at NYC Data Science Academy"
     },
        {
-        id: 18,
+        id: 19,
         name: "Hongelei",
         title: "PANEL SPEAKER",
         event: "Personalized omni-channel marketing campaigns for B2B go-to-market teams with Series A at 12M",
@@ -370,7 +378,7 @@ export const panelSpeakers = [
         affiliation: "CTO at Tofu"
     },
      {
-        id: 19,
+        id: 20,
         name: "Rudy R. Rodriguez",
         title: "PANEL SPEAKER",
         event: "AI with Audio and Sound Engineering, Augmented Reality, Virtual Reality, Mixed Reality",
@@ -378,7 +386,7 @@ export const panelSpeakers = [
         affiliation: "Technical Director at Lincoln Center"
     },
      {
-        id: 20,
+        id: 21,
         name: "Di Wu",
         title: "PANEL SPEAKER",
         event: "AI for Space and Space Sustainability",
