@@ -288,6 +288,14 @@ export const panelSpeakers = [
         affiliation: "Head of Design at Hume AI"
     },
      {
+        id: 11,
+        name: "Cornelia Dai",
+        title: "PANEL SPEAKER",
+        event: "AI-powered Storyteller with 200 M+ Campaign Views and 400 K+ Cross-platform Followers",
+        logo: '/speakers/corn.png',
+        affiliation: "Content Creator | Influencer | Digital Marketing Strategist"
+    },
+     {
         id: 9,
         name: "Aoran Yang",
         title: "PANEL SPEAKER",
@@ -304,12 +312,12 @@ export const panelSpeakers = [
         affiliation: "IBM Business Strategy"
     },
     {
-        id: 11,
-        name: "Cornelia Dai",
+        id: 13,
+        name: "Courtney Greer",
         title: "PANEL SPEAKER",
-        event: "AI-powered Storyteller with 200 M+ Campaign Views and 400 K+ Cross-platform Followers",
-        logo: '/speakers/corn.png',
-        affiliation: "Content Creator | Influencer | Digital Marketing Strategist"
+        event: "From Chaos to Connection: Building AI-Powered Solutions That Simplify Human Experiences",
+        logo: '/speakers/CourtneyGreer.png',
+        affiliation: "Founder at Voxxy AI | Microsoft"
     },
     {
         id: 12,
@@ -319,14 +327,7 @@ export const panelSpeakers = [
         logo: '/speakers/XiaoranCai.jpg',
         affiliation: "Founder at GEMI.AI"
     },
-    {
-        id: 13,
-        name: "Courtney Greer",
-        title: "PANEL SPEAKER",
-        event: "From Chaos to Connection: Building AI-Powered Solutions That Simplify Human Experiences",
-        logo: '/speakers/CourtneyGreer.png',
-        affiliation: "Founder at Voxxy AI | Microsoft"
-    },
+   
         {
         id: 14,
         name: "David Baum",
