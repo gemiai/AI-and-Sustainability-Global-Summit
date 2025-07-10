@@ -115,7 +115,7 @@ export const upcomingSessions = [
             {name: "Jiajian Min", avatar: '/speakers/JiajianMin.png'},
               {name: "Joshue Ott", avatar: '/speakers/JoshueOtt.png'},
         ],
-        description: "Igniting Every Artist’s Dream with AI: Unlock Opportunities and make high-quality art accessible to all",
+        description: "Igniting Every Artist’s Dream with AI: Unlock Opportunities and Make High-quality Art Accessible to All",
     },
     {
         id: 5,
