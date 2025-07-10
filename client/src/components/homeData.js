@@ -288,7 +288,7 @@ export const panelSpeakers = [
         affiliation: "Head of Design at Hume AI"
     },
      {
-        id: 11,
+        id: 9,
         name: "Cornelia Dai",
         title: "PANEL SPEAKER",
         event: "AI-powered Storyteller with 200 M+ Campaign Views and 400 K+ Cross-platform Followers",
@@ -296,7 +296,7 @@ export const panelSpeakers = [
         affiliation: "Content Creator | Influencer | Digital Marketing Strategist"
     },
      {
-        id: 9,
+        id: 10,
         name: "Aoran Yang",
         title: "PANEL SPEAKER",
         event: "COO Team. +10 experience in equities technology",
@@ -304,7 +304,7 @@ export const panelSpeakers = [
         affiliation: "Product at Citadel"
     },
     {
-        id: 10,
+        id: 11,
         name: "Matt Ford",
         title: "PANEL SPEAKER",
         event: "Strategic Innovation at Scale: Leading R&D and Go-to-Market Initiatives for Sustainable Technology Solutions",
@@ -312,7 +312,7 @@ export const panelSpeakers = [
         affiliation: "IBM Business Strategy"
     },
     {
-        id: 13,
+        id: 12,
         name: "Courtney Greer",
         title: "PANEL SPEAKER",
         event: "From Chaos to Connection: Building AI-Powered Solutions That Simplify Human Experiences",
@@ -320,7 +320,7 @@ export const panelSpeakers = [
         affiliation: "Founder at Voxxy AI | Microsoft"
     },
     {
-        id: 12,
+        id: 13,
         name: "Xiaoran Cai",
         title: "PANEL SPEAKER",
         event: "AI for Good: Building Sustainable Technology Platforms and Global Communities for Positive Impact",
