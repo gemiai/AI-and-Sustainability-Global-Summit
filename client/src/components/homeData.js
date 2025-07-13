@@ -179,8 +179,8 @@ export const upcomingSessions = [
         category: 'Ethics',
         format: 'panel',
         keynoteSpeaker: {
-            name: "Ben Colmon",
-            avatar: '/speakers/BenColmon.jpg'
+            name: "Maryam Ashoori",
+            avatar: '/speakers/Maryam.jpg'
         },
         panelSpeakers: [
             
@@ -257,11 +257,11 @@ export const keynoteSpeakers = [
 
      {
         id: 8,
-        name: "Ben Colman",
+        name: "Maryam Ashoori",
         title: "KEYNOTE SPEAKER",
-        event: "Responsible AI for Identifying Deepfaked Audio, Video, Images and Text",
-        logo: '/speakers/BenColmon.jpg',
-        affiliation: "Co-founder | CEO"
+        event: "Bringing trusted generative AI to enterprise and building watsonx.ai and watsonx Foundation Models",
+        logo: '/speakers/Maryam.jpg',
+        affiliation: "Head of Product at IBM watsonx.ai"
     },
    
     
