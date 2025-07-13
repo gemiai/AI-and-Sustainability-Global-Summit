@@ -23,18 +23,8 @@ export const summitHighlights = [
         link: "https://time.com/collections/time100-companies-2025/7289644/colossal-biosciences/",
         title: "Time 100 AI"
     },
-    {
-        id: 3,
-        src: "/summithighlights/WorldEconomic.png",
-        link: "https://www.realitydefender.com/insights/reality-defender-named-2025-world-economic-forum-technology-pioneer",
-        title: "worldecomonic"
-    },
-    {
-        id: 4,
-        src: "/summithighlights/fors.png",
-        link: "https://www.forbes.com/sites/charliefink/2025/06/23/three-new-ai-platforms-for-cinematic-ai-productions/",
-        title: "Acarna"
-    },
+  
+  
    
    
 ];
