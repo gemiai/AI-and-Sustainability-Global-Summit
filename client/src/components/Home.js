@@ -5,6 +5,93 @@ import Registration from './Registration.js';
 import { useNavigate } from 'react-router-dom';
 import { eventData, upcomingSessions, keynoteSpeakers, panelSpeakers, onlinePanels, summitHighlights } from './homeData.js';
 
+// Function to automatically select appropriate emoji based on session content
+const getSessionEmoji = (session) => {
+    const { title, topic, description, category } = session;
+    const content = `${title} ${topic} ${description} ${category}`.toLowerCase();
+    
+    // Education/Learning related
+    if (content.includes('education') || content.includes('learning') || content.includes('teaching') || 
+        content.includes('school') || content.includes('university') || content.includes('student')) {
+        return '📚';
+    }
+    
+    // Business/Entrepreneurship/Investment
+    if (content.includes('entrepreneur') || content.includes('investor') || content.includes('business') || 
+        content.includes('startup') || content.includes('funding') || content.includes('venture') ||
+        content.includes('entreconnect') || content.includes('community')) {
+        return '🤝';
+    }
+    
+    // Technology/AI/Tech
+    if (content.includes('technology') || content.includes('tech') || content.includes('ai ') || 
+        content.includes('artificial intelligence') || content.includes('machine learning') || 
+        content.includes('software') || content.includes('coding')) {
+        return '💻';
+    }
+    
+    // Healthcare/Medical
+    if (content.includes('health') || content.includes('medical') || content.includes('healthcare') || 
+        content.includes('medicine') || content.includes('wellness')) {
+        return '🏥';
+    }
+    
+    // Environment/Sustainability/Climate
+    if (content.includes('environment') || content.includes('sustainability') || content.includes('climate') || 
+        content.includes('green') || content.includes('eco') || content.includes('carbon')) {
+        return '🌍';
+    }
+    
+    // Finance/Banking/Economy
+    if (content.includes('finance') || content.includes('banking') || content.includes('economy') || 
+        content.includes('fintech') || content.includes('payment') || content.includes('cryptocurrency')) {
+        return '💰';
+    }
+    
+    // Ethics/Governance/Policy
+    if (content.includes('ethics') || content.includes('governance') || content.includes('policy') || 
+        content.includes('regulation') || content.includes('responsible') || content.includes('compliance')) {
+        return '⚖️';
+    }
+    
+    // Research/Science/Innovation
+    if (content.includes('research') || content.includes('science') || content.includes('innovation') || 
+        content.includes('discovery') || content.includes('experiment') || content.includes('study')) {
+        return '🔬';
+    }
+    
+    // Art/Creative/Design
+    if (content.includes('art') || content.includes('creative') || content.includes('design') || 
+        content.includes('music') || content.includes('media') || content.includes('culture')) {
+        return '🎨';
+    }
+    
+    // Communication/Marketing/Social
+    if (content.includes('communication') || content.includes('marketing') || content.includes('social') || 
+        content.includes('media') || content.includes('networking') || content.includes('community')) {
+        return '📢';
+    }
+    
+    // Security/Privacy/Safety
+    if (content.includes('security') || content.includes('privacy') || content.includes('safety') || 
+        content.includes('protection') || content.includes('cybersecurity')) {
+        return '🔒';
+    }
+    
+    // Category-based fallback
+    switch(category?.toLowerCase()) {
+        case 'education': return '📚';
+        case 'technology': return '💻';
+        case 'finance': return '💰';
+        case 'ethics': return '⚖️';
+        case 'planet': return '🌍';
+        case 'art': return '🎨';
+        case 'health': return '🏥';
+        case 'mcp': return '🍽️';
+        default: return '🎤'; // Default microphone for general sessions
+    }
+};
+
 // Photo Slideshow Component
 const PhotoSlideshow = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -557,7 +644,7 @@ const Home = () => {
 
                                             {/* Main icon */}
                                             <div className="text-2xl sm:text-3xl font-bold text-white drop-shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-                                                🎤
+                                                {getSessionEmoji(panel)}
                                             </div>
                                         </div>
                                     </div>
@@ -590,9 +677,22 @@ const Home = () => {
                                             </div>
                                         </div>
                                         
-                                        <div className="flex items-center justify-between text-xs text-gray-500">
-                                            <span>{panel.format} • {panel.platform}</span>
+                                        <div className="flex items-center justify-between text-xs text-gray-500 mb-1">
+                                            <span>
+                                                {panel.format} • 
+                                                <a 
+                                                    href={panel.zoomLink} 
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer"
+                                                    className="text-blue-600 hover:text-blue-800 hover:underline ml-1 transition-colors duration-200"
+                                                >
+                                                    {panel.platform}
+                                                </a>
+                                            </span>
                                             <span>{panel.attendeeCount}/{panel.maxCapacity} attendees</span>
+                                        </div>
+                                        <div className="text-xs text-gray-600">
+                                            <span className="font-medium">Time Zone:</span> {panel.zoomTime}
                                         </div>
                                     </div>
                                 </div>
