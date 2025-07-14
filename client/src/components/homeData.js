@@ -175,7 +175,7 @@ export const upcomingSessions = [
             
             {name: "Xiaoran Cai", avatar: '/speakers/XiaoranCai.jpg'},
             {name: "Courtney Greer", avatar: '/speakers/CourtneyGreer.png'},
-            {name: "Himashu Joshi", avatar: '/speakers/HimashuJoshi.png'},
+            {name: "Kiran Bhujle", avatar: '/speakers/Kiran.png'},
             {name: "Uvika Sharma", avatar: '/speakers/UvikaSharma.png'},
              {name: "Ben Jakob Zulechner", avatar: '/speakers/BenJakobZulechner.png'}
         ],
@@ -327,11 +327,11 @@ export const panelSpeakers = [
     },
     {
         id: 15,
-        name: "Himanshu Joshi",
+        name: "Kiran Bhujle ",
         title: "PANEL SPEAKER",
-        event: "Applied AI strategy leader. Advisor for Fortune 500 companies—driving $170M in business value through Generative AI, ethical AI adoption, and executive upskilling programs.",
-        logo: '/speakers/HimashuJoshi.png',
-        affiliation: "AI Adoption at Vector Institute"
+        event: "As Global Head of Cyber at SVAM and a Columbia Faculty Member. Bridge Practice and Theory to Help Organizations Navigate Complex Cybersecurity Challenges with Confidence.",
+        logo: '/speakers/Kiran.png',
+        affiliation: "Global Head of Cyber @ SVAM International Inc."
     },
     
     {
