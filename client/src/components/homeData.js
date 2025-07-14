@@ -23,8 +23,7 @@ export const summitHighlights = [
         link: "https://time.com/collections/time100-companies-2025/7289644/colossal-biosciences/",
         title: "Time 100 AI"
     },
-  
-  
+
    
    
 ];
