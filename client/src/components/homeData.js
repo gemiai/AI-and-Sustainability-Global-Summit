@@ -490,9 +490,30 @@ export const onlinePanels = [
     },
     
                
-        
-    
-              
+    {
+        id: 2,
+        title: "Responsible AI: Education and Learning Tool",
+        topic: "ourBuddyAI",
+        date: "July 18, 2025",
+        time: "10:00 AM - 11:00 AM EST",
+        format: "Live Virtual Panel",
+        platform: "Zoom Webinar: ",
+        category: "Ethics and Education Tool",
+        description: "Purpose-built Autonomous Agents with Deep Vertical Expertise to Solve Real Business Challenges",
+        speakers: [
+            {
+                name: "Himanshu Joshi",
+                title: "Co-founder at ourBuddyAI",
+                avatar: "/speakers/HimashuJoshi.png",
+                expertise: "AI Engineer"
+            },
+          
+        ],
+        registrationLink: "#register",
+        isLive: true,
+        attendeeCount: 250,
+        maxCapacity: 500
+    },
         
   
 ];
