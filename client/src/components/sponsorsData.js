@@ -55,13 +55,7 @@ export const sponsorsData = [
                 linkedin: 'https://www.linkedin.com/company/amazon/',
                 link: 'https://www.amazon.com/'
             },
-            {
-                id: 32,
-                name: 'Citadel',
-                logo: '/sponsors/citadel-logo.png',
-                linkedin: 'https://www.linkedin.com/company/citadel/',
-                link: 'https://www.citadel.com/'
-            },
+          
             {
                 id: 33,
                 name: 'Morgan Stanley',
