@@ -464,23 +464,24 @@ export const panelSpeakers = [
 
 // Online Panels Data - Specific panel sessions for the online format
 export const onlinePanels = [
+           
     {
         id: 1,
-        title: "A Dynamic Community of Entrepreneurs and Investors",
-        topic: "EntreConnect ",
+        title: "Toronto: Responsible AI: Education and Learning Tool",
+        topic: "ourBuddyAI",
         date: "July 18, 2025",
         time: "10:00 AM - 11:00 AM EST",
-        zoomTime: "9:45 AM EST",
+        TimeZon: "9:50 AM EST",
         format: "Live Virtual Panel",
         platform: "Zoom Webinar",
-        zoomLink: "https://zoom.us/j/1234567890",
-        category: "Ethics",
-        description: "Exploring the critical importance of ethical AI development, governance frameworks, and responsible implementation strategies for sustainable AI systems.",
+        zoomLink: "https://meet.google.com/pnb-rvqh-mac",
+        category: "Ethics and Education Tool",
+        description: "Purpose-built Autonomous Agents with Deep Vertical Expertise to Solve Real Business Challenges",
         speakers: [
             {
-                name: "Hongyu Song",
-                title: "Co-founder at EntreConnect",
-                avatar: "/speakers/HongyuSong.png",
+                name: "Himanshu Joshi",
+                title: "Co-founder at ourBuddyAI",
+                avatar: "/speakers/HimashuJoshi.png",
                 expertise: "AI Engineer"
             },
           
@@ -490,10 +491,33 @@ export const onlinePanels = [
         attendeeCount: 250,
         maxCapacity: 500
     },
-    
-               
-    {
-        id: 2,
+        
+     {  id: 2,
+        title: "Singapore: ",
+        topic: "ourBuddyAI",
+        date: "July 18, 2025",
+        time: "10:00 AM - 11:00 AM EST",
+        TimeZon: "9:50 AM EST",
+        format: "Live Virtual Panel",
+        platform: "Zoom Webinar",
+        zoomLink: "https://zoom.us/j/0987654321",
+        category: "Ethics and Education Tool",
+        description: "Purpose-built Autonomous Agents with Deep Vertical Expertise to Solve Real Business Challenges",
+        speakers: [
+            {
+                name: "Dr Zhongmeng Ma",
+                title: "Co-founder at ourBuddyAI",
+                avatar: "/speakers/Dr Zhongmeng Ma",
+                expertise: "AI Engineer, Blockchain, BitCoin"
+            },
+          
+        ],
+        registrationLink: "#register",
+        isLive: true,
+        attendeeCount: 250,
+        maxCapacity: 500
+    },
+     {   id: 2,
         title: "Responsible AI: Education and Learning Tool",
         topic: "ourBuddyAI",
         date: "July 18, 2025",
@@ -518,7 +542,131 @@ export const onlinePanels = [
         attendeeCount: 250,
         maxCapacity: 500
     },
-        
+     {  id: 2,
+        title: "Responsible AI: Education and Learning Tool",
+        topic: "ourBuddyAI",
+        date: "July 18, 2025",
+        time: "10:00 AM - 11:00 AM EST",
+        TimeZon: "9:50 AM EST",
+        format: "Live Virtual Panel",
+        platform: "Zoom Webinar",
+        zoomLink: "https://zoom.us/j/0987654321",
+        category: "Ethics and Education Tool",
+        description: "Purpose-built Autonomous Agents with Deep Vertical Expertise to Solve Real Business Challenges",
+        speakers: [
+            {
+                name: "Himanshu Joshi",
+                title: "Co-founder at ourBuddyAI",
+                avatar: "/speakers/HimashuJoshi.png",
+                expertise: "AI Engineer"
+            },
+          
+        ],
+        registrationLink: "#register",
+        isLive: true,
+        attendeeCount: 250,
+        maxCapacity: 500
+    },
+     {  id: 2,
+        title: "Responsible AI: Education and Learning Tool",
+        topic: "ourBuddyAI",
+        date: "July 18, 2025",
+        time: "10:00 AM - 11:00 AM EST",
+        TimeZon: "9:50 AM EST",
+        format: "Live Virtual Panel",
+        platform: "Zoom Webinar",
+        zoomLink: "https://zoom.us/j/0987654321",
+        category: "Ethics and Education Tool",
+        description: "Purpose-built Autonomous Agents with Deep Vertical Expertise to Solve Real Business Challenges",
+        speakers: [
+            {
+                name: "Himanshu Joshi",
+                title: "Co-founder at ourBuddyAI",
+                avatar: "/speakers/HimashuJoshi.png",
+                expertise: "AI Engineer"
+            },
+          
+        ],
+        registrationLink: "#register",
+        isLive: true,
+        attendeeCount: 250,
+        maxCapacity: 500
+    },
+     {  id: 2,
+        title: "Responsible AI: Education and Learning Tool",
+        topic: "ourBuddyAI",
+        date: "July 18, 2025",
+        time: "10:00 AM - 11:00 AM EST",
+        TimeZon: "9:50 AM EST",
+        format: "Live Virtual Panel",
+        platform: "Zoom Webinar",
+        zoomLink: "https://zoom.us/j/0987654321",
+        category: "Ethics and Education Tool",
+        description: "Purpose-built Autonomous Agents with Deep Vertical Expertise to Solve Real Business Challenges",
+        speakers: [
+            {
+                name: "Himanshu Joshi",
+                title: "Co-founder at ourBuddyAI",
+                avatar: "/speakers/HimashuJoshi.png",
+                expertise: "AI Engineer"
+            },
+          
+        ],
+        registrationLink: "#register",
+        isLive: true,
+        attendeeCount: 250,
+        maxCapacity: 500
+    },
+     {  id: 2,
+        title: "Responsible AI: Education and Learning Tool",
+        topic: "ourBuddyAI",
+        date: "July 18, 2025",
+        time: "10:00 AM - 11:00 AM EST",
+        TimeZon: "9:50 AM EST",
+        format: "Live Virtual Panel",
+        platform: "Zoom Webinar",
+        zoomLink: "https://zoom.us/j/0987654321",
+        category: "Ethics and Education Tool",
+        description: "Purpose-built Autonomous Agents with Deep Vertical Expertise to Solve Real Business Challenges",
+        speakers: [
+            {
+                name: "Himanshu Joshi",
+                title: "Co-founder at ourBuddyAI",
+                avatar: "/speakers/HimashuJoshi.png",
+                expertise: "AI Engineer"
+            },
+          
+        ],
+        registrationLink: "#register",
+        isLive: true,
+        attendeeCount: 250,
+        maxCapacity: 500
+    },
+     {  id: 2,
+        title: "Responsible AI: Education and Learning Tool",
+        topic: "ourBuddyAI",
+        date: "July 18, 2025",
+        time: "10:00 AM - 11:00 AM EST",
+        TimeZon: "9:50 AM EST",
+        format: "Live Virtual Panel",
+        platform: "Zoom Webinar",
+        zoomLink: "https://zoom.us/j/0987654321",
+        category: "Ethics and Education Tool",
+        description: "Purpose-built Autonomous Agents with Deep Vertical Expertise to Solve Real Business Challenges",
+        speakers: [
+            {
+                name: "Himanshu Joshi",
+                title: "Co-founder at ourBuddyAI",
+                avatar: "/speakers/HimashuJoshi.png",
+                expertise: "AI Engineer"
+            },
+          
+        ],
+        registrationLink: "#register",
+        isLive: true,
+        attendeeCount: 250,
+        maxCapacity: 500
+    },
   
 ];
 
