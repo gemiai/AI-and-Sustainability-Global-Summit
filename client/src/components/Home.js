@@ -649,9 +649,20 @@ const Home = () => {
                                         </div>
                                     </div>
                                     <div className="flex-1 bg-white p-3 sm:p-2 rounded-lg sm:rounded-none border sm:border-none border-gray-200">
-                                        <div className="text-gray-500 mb-1 text-xs">{panel.time}</div>
                                         <h3 className="text-lg font-black mb-2 text-gray-800 leading-tight">{panel.title}</h3>
                                         <p className="text-purple-600 text-sm font-bold mb-3">{panel.topic}</p>
+                                        
+                                        {/* Time and Location */}
+                                        <div className="mb-3">
+                                            <div className="flex items-start text-xs mb-1">
+                                                <span className="text-gray-500 text-left w-16">Time:</span>
+                                                <span className="text-blue-600 font-medium">{panel.time}</span>
+                                            </div>
+                                            <div className="flex items-start text-xs">
+                                                <span className="text-gray-500 text-left w-16">Location:</span>
+                                                <span className="text-blue-600 font-medium">{panel.TimeZone}</span>
+                                            </div>
+                                        </div>
                                         
                                         {/* Speakers */}
                                         <div className="flex items-center gap-2 mb-2">
@@ -689,11 +700,11 @@ const Home = () => {
                                                     {panel.platform}
                                                 </a>
                                             </span>
-                                            <span>{panel.attendeeCount}/{panel.maxCapacity} attendees</span>
                                         </div>
-                                        <div className="text-xs text-gray-600">
-                                            <span className="font-medium">Time Zone:</span> {panel.zoomTime}
+                                        <div className="text-xs text-gray-500">
+                                             <span className="text-gray-500 hover:text-blue-800 hover:underline ml-1 transition-colors duration-200">Time:</span> {panel.Time}
                                         </div>
+                                       
                                     </div>
                                 </div>
                             </div>
