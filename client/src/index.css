@@ -1,0 +1,33 @@
+/*body {*/
+/*  margin: 0;*/
+/*  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',*/
+/*    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',*/
+/*    sans-serif;*/
+/*  -webkit-font-smoothing: antialiased;*/
+/*  -moz-osx-font-smoothing: grayscale;*/
+/*}*/
+
+/*code {*/
+/*  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',*/
+/*    monospace;*/
+/*}*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add global styles to prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/* Ensure proper mobile viewport behavior */
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
