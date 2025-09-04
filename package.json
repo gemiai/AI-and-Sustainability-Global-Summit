@@ -4,5 +4,8 @@
     "scripts": {
       "start": "npm start --prefix client",
       "build": "npm run build --prefix client"
+    },
+    "engines": {
+      "node": "20.x"
     }
   }
