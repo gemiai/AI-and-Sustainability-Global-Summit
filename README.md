@@ -91,4 +91,4 @@ Tailwind is integrated through PostCSS.
 | `postcss.config.js`  | Plugin integration (Tailwind, Autoprefixer) |
 | `src/index.css`      | Tailwind directives (`@tailwind base`, etc) |
 
-Customize utility classes and theme values by editing `tailwind.config.js`.
+Customize utility classes and theme values by editing `tailwind.config.js`!
