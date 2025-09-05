@@ -10,13 +10,22 @@ const categories = [
 const videosByCategory = {
     'opening-remark': [
         {
-            title: 'Opening Remark',
+            title: 'Opening Remark (Part 1)',
             url: 'https://www.youtube.com/embed/iV86y4HIpkw',
             speakerName: 'Steven Cohen',
             speakerAffiliation: 'Senior Vice Dean, Columbia University',
             speakerAvatar: '/speakers/DeanCohen.png',
             description:
                 'New York, a hub of AI and technological innovation, brings together unmatched talent, creativity, and purpose-driven collaboration. As sustainability faces enduring challenges, the convergence of AI and human ingenuity opens new possibilities for meaningful change. To realize this potential, we must ensure strong guardrails and embrace diverse voices, fostering solutions that are both inclusive and impactful. May this summit mark not just an event, but the beginning of honest dialogue, deeper understanding, and lasting collaboration.'
+        },
+        {
+            title: 'Opening Remark (Part 2)',
+            url: 'https://www.youtube.com/embed/ez1sHUBoCLQ',
+            speakerName: 'Kathleen Noreau',
+            speakerAffiliation: 'Head of Strategic Partnerships & Head of Professional Services Industry',
+            speakerAvatar: '/speakers/kathleen1.png',
+            description:
+                'The society is navigating an era of rapid technological change, where AI is deeply embedded in daily life. This transformation brings both excitement and unease, raising critical questions of access, benefit, and accountability. Meaningful progress requires broad participation—engineers, policymakers, educators, artists, and communities all shaping AI together. Real-world examples show the power of inclusive approaches: Rwanda’s co-designed AI health policies, India’s AI literacy programs reaching rural schools, global governance alliances setting guardrails, and local initiatives like New York’s task force sparking public debate. Recent developments, from AI-enabled power grids to massive new data centers, demonstrate that AI is not only reshaping digital systems but also physical infrastructure, energy, and sustainability. The central message is clear: building AI with purpose, strong guardrails, and real-world impact depends on collective responsibility, trust, and inclusion—ensuring technology supports more resilient, human-centered systems.'
         }
     ],
     'morning-sessions': [
