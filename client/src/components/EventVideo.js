@@ -30,7 +30,7 @@ const videosByCategory = {
     ],
     'morning-sessions': [
         {
-            title: 'Morning Session: AI and Education',
+            title: 'AI and Education',
             url: 'https://www.youtube.com/embed/njQeWzrP9_M',
             speakerName: 'Katja Schroeder',
             speakerAffiliation: 'Senior Lecturer, Associate Program Director, Technology Management, School of Professional Studies',
@@ -39,7 +39,7 @@ const videosByCategory = {
             slidesLabel: 'Download slides (PDF)'
         },
         {
-            title: 'Morning Session: Education Panel Discusssion',
+            title: 'Education Panel Discusssion',
             url: 'https://www.youtube.com/embed/73A610Z66oA',
             speakers: [
                 { name: 'Karen Farah', avatar: '/speakers/KarenFarah.png' },
@@ -51,11 +51,17 @@ const videosByCategory = {
         }
     ],
     'noon-learning': [
-        { title: 'Lunch & Learn', url: 'https://www.youtube.com/embed/dQw4w9WgXcQ' }
+        {
+            title: 'Lunch & Learn: MCP - New Operating System',
+            url: 'https://www.youtube.com/embed/Wqea_2BoEVo',
+            speakerName: 'Justin Cappos',
+            speakerAffiliation: 'Professor, NYU Center for Cybersecurity',
+            speakerAvatar: '/speakers/JustinCappos.png'
+        }
     ],
     'afternoon-session': [
         {
-            title: 'Afternoon Session: Finance & Investment',
+            title: 'AI and Finance & Investment',
             url: 'https://www.youtube.com/embed/hrYxBHSF5z4',
             speakerName: 'Shahryar Shaghaghi',
             speakerAffiliation: 'Program Director at Columbia University | Ex Deloitte Partner',
