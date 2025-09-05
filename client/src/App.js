@@ -10,6 +10,7 @@ import Home from './components/Home.js';
 import Schedule from "./components/Schedule.js";
 import Sponsors from './components/Sponsors.js';
 import LoadingScreen from './components/LoadingScreen.js'; 
+import EventVideo from './components/EventVideo.js';
 
 // This component handles the main app logic including the loading state
 const AppContent = () => {
@@ -42,6 +43,7 @@ const AppContent = () => {
           <Route path="/home" element={<Home />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/sponsors" element={<Sponsors />} />
+          <Route path="/video" element={<EventVideo />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/" element={<Navigate to="/home" replace />} />
         </Routes>

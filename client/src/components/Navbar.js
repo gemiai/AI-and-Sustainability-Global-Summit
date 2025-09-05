@@ -36,6 +36,16 @@ const Navbar = ({ currentPage, onNavigate, onRegisterClick }) => {
                         Schedule
                     </a>
                     <a
+                        href="/video"
+                        className={`font-bold text-sm lg:text-base ${location.pathname === '/video' ? 'text-black border-b-2 border-black' : 'text-gray-600 hover:text-black'} transition-colors`}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            navigate('/video');
+                        }}
+                    >
+                        Event Video
+                    </a>
+                    <a
                         href="/sponsors"
                         className={`font-bold text-sm lg:text-base ${currentPage === 'sponsors' ? 'text-black border-b-2 border-black' : 'text-gray-600 hover:text-black'} transition-colors`}
                         onClick={(e) => {
@@ -135,6 +145,16 @@ const Navbar = ({ currentPage, onNavigate, onRegisterClick }) => {
                             }}
                         >
                             Schedule
+                        </a>
+                        <a
+                            href="/video"
+                            className={`block py-3 px-2 font-bold text-base ${location.pathname === '/video' ? 'text-black bg-gray-50' : 'text-gray-600'} hover:text-black hover:bg-gray-50 transition-colors rounded-md`}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                handleNavigation('/video');
+                            }}
+                        >
+                            Event Video
                         </a>
                         <a
                             href="/sponsors"
