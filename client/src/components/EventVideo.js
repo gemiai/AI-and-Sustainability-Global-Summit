@@ -54,7 +54,15 @@ const videosByCategory = {
         { title: 'Lunch & Learn', url: 'https://www.youtube.com/embed/dQw4w9WgXcQ' }
     ],
     'afternoon-session': [
-        { title: 'Panel Discussion', url: 'https://www.youtube.com/embed/dQw4w9WgXcQ' }
+        {
+            title: 'Afternoon Session: Finance & Investment',
+            url: 'https://www.youtube.com/embed/hrYxBHSF5z4',
+            speakerName: 'Shahryar Shaghaghi',
+            speakerAffiliation: 'Program Director at Columbia University | Ex Deloitte Partner',
+            speakerAvatar: '/speakers/ShahryarShaghaghi.png',
+            slidesHref: '/slide/5.%20Shahryar%20Slide.pdf',
+            slidesLabel: 'Download slides (PDF)'
+        }
     ]
 };
 
