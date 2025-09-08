@@ -1,0 +1,3 @@
+# Ignore oversized slide PDF that exceeds GitHub 100MB limit
+/client/public/slide/3. AI for Conservation - Matt James-2-2.pdf
+

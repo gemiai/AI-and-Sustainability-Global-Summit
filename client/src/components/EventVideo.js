@@ -48,6 +48,43 @@ const videosByCategory = {
                 { name: 'Tia Kumar', avatar: '/speakers/TiaKumar.jpg' },
                 { name: 'Santino Luis Lopez Uy', avatar: '/speakers/SantinoLopez.png' }
             ]
+        },
+        {
+            title: 'AI and Planet – Keynote',
+            url: 'https://www.youtube.com/embed/d6NPvVKe-l8',
+            speakerName: 'Matt James',
+            speakerAffiliation: 'Chief Animal Officer, Colossal Biosciences',
+            speakerAvatar: '/speakers/MattJames.png'
+        },
+        {
+            title: 'AI and Planet – Panel Discussion',
+            url: 'https://www.youtube.com/embed/Fu1qzPvASXg',
+            speakers: [
+                { name: 'Xiaoran Cai (Moderator)', avatar: '/speakers/XiaoranCai.jpg' },
+                { name: 'Matt James', avatar: '/speakers/MattJames.png' },
+                { name: 'Di Wu', avatar: '/speakers/DiWu.png' }
+            ]
+        },
+        {
+            title: 'Keynote: AI and Art',
+            url: 'https://www.youtube.com/embed/b4TvMVugoFw',
+            speakerName: 'Rudy R. Rodriguez',
+            speakerAffiliation: 'Technical Director at Lincoln Center',
+            speakerAvatar: '/speakers/RudyRRodriguez.png',
+            slidesHref: '/slide/%20between%203%20and%204_%20AI_Arts_Keynote_Rodriguez_2025.pdf',
+            slidesLabel: 'Download slides (PDF)'
+        },
+        {
+            title: 'AI and Art – Panel Discussion',
+            url: 'https://www.youtube.com/embed/XI-BwUFTipk',
+            speakers: [
+                { name: 'Rudy R. Rodriguez', avatar: '/speakers/RudyRRodriguez.png' },
+                { name: 'Joshue Ott', avatar: '/speakers/JoshueOtt.png' },
+                { name: 'Cornelia Dai', avatar: '/speakers/corn.png' },
+                { name: 'Zack Krall', avatar: '/speakers/ZackKrall.png' },
+                { name: 'Jiajian Min', avatar: '/speakers/JiajianMin.png' },
+                { name: 'Aimee Yang', avatar: '/speakers/Aimee.jpeg' }
+            ]
         }
     ],
     'noon-learning': [
@@ -101,16 +138,18 @@ const EventVideo = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {videos.map((v, idx) => (
                     <div key={`${active}-${idx}`} className="w-full">
-                        <div className="relative mb-2" style={{ paddingTop: '56.25%' }}>
-                            <iframe
-                                title={v.title}
-                                src={v.url}
-                                className="absolute top-0 left-0 w-full h-full rounded-lg shadow"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen
-                            />
-                        </div>
+                        {v.url && (
+                            <div className="relative mb-2" style={{ paddingTop: '56.25%' }}>
+                                <iframe
+                                    title={v.title}
+                                    src={v.url}
+                                    className="absolute top-0 left-0 w-full h-full rounded-lg shadow"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen
+                                />
+                            </div>
+                        )}
                         <h2 className="text-base font-semibold text-gray-800">{v.title}</h2>
                         {(v.speakerName || (v.speakers && v.speakers.length)) && (
                             <div className="mt-2 flex items-center gap-3 flex-wrap">
