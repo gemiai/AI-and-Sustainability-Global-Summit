@@ -50,7 +50,7 @@ const videosByCategory = {
             ]
         },
         {
-            title: 'AI and Planet – Keynote',
+            title: 'AI and Planet',
             url: 'https://www.youtube.com/embed/d6NPvVKe-l8',
             speakerName: 'Matt James',
             speakerAffiliation: 'Chief Animal Officer, Colossal Biosciences',
@@ -66,7 +66,7 @@ const videosByCategory = {
             ]
         },
         {
-            title: 'Keynote: AI and Art',
+            title: 'AI and Art',
             url: 'https://www.youtube.com/embed/b4TvMVugoFw',
             speakerName: 'Rudy R. Rodriguez',
             speakerAffiliation: 'Technical Director at Lincoln Center',
@@ -98,6 +98,23 @@ const videosByCategory = {
     ],
     'afternoon-session': [
         {
+            title: 'AI and Technology',
+            url: 'https://www.youtube.com/embed/ugbmSP74g9o',
+            speakerName: 'Sumeet Agrawal',
+            speakerAffiliation: 'VP of Product at Informatica',
+            speakerAvatar: '/speakers/SumeetAgrawal.png'
+        },
+        {
+            title: 'AI and Technology – Panel Discussion',
+            url: 'https://www.youtube.com/embed/4l-jfjdUl4Y',
+            speakers: [
+                { name: 'Matt Ford', avatar: '/speakers/MattFord.png' },
+                { name: 'David Baum', avatar: '/speakers/DavidBaum.jpg' },
+                { name: 'Karen Farah', avatar: '/speakers/KarenFarah.png' },
+                { name: 'Richard Lu', avatar: '/speakers/RichardLu.png' }
+            ]
+        },
+        {
             title: 'AI and Finance & Investment',
             url: 'https://www.youtube.com/embed/hrYxBHSF5z4',
             speakerName: 'Shahryar Shaghaghi',
@@ -105,6 +122,33 @@ const videosByCategory = {
             speakerAvatar: '/speakers/ShahryarShaghaghi.png',
             slidesHref: '/slide/5.%20Shahryar%20Slide.pdf',
             slidesLabel: 'Download slides (PDF)'
+        },
+        {
+            title: 'AI and Finance & Investment – Panel Discussion',
+            url: 'https://www.youtube.com/embed/I3gHatEuRJE',
+            speakers: [
+                { name: 'Shahryar Shaghaghi', avatar: '/speakers/ShahryarShaghaghi.png' },
+                { name: 'Wendy Diamond', avatar: '/speakers/WendyDiamond.png' },
+                { name: 'Echo Zhong', avatar: '/speakers/EchoZhong.png' }
+            ]
+        },
+        {
+            title: 'Responsible AI',
+            url: 'https://www.youtube.com/embed/FL8gkR0gKRM',
+            speakerName: 'Maryam Ashoori',
+            speakerAffiliation: 'Head of Product at IBM watsonx.ai',
+            speakerAvatar: '/speakers/Maryam.jpg'
+        },
+        {
+            title: 'Responsible AI – Panel Discussion',
+            url: 'https://www.youtube.com/embed/wuPEHcyUJK0',
+            speakers: [
+                { name: 'Ben Jakob Zulechner', avatar: '/speakers/BenJakobZulechner.png' },
+                { name: 'Kiran Bhujle', avatar: '/speakers/Kiran.png' },
+                { name: 'Uvika Sharma', avatar: '/speakers/UvikaSharma.png' },
+                { name: 'Courtney Greer', avatar: '/speakers/CourtneyGreer.png' },
+                { name: 'Manhar Arora', avatar: '/speakers/manhar.jpg' }
+            ]
         }
     ]
 };
